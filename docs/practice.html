@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Hub - Andrew Cullen PGA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-button">← Home</a>
+            <h1>Practice Hub</h1>
+            <p class="subtitle">Warm-up first, then choose your station</p>
+        </header>
+
+        <!-- Warm-up Section -->
+        <section id="warmup-section" class="practice-section">
+            <h2>Step 1: Warm-Up (10 Minutes)</h2>
+            <div class="warmup-content">
+                <!-- Content will be loaded here by JavaScript -->
+            </div>
+            <button id="warmup-done-btn" class="action-button">Done with Warm-Up →</button>
+        </section>
+
+        <!-- Station Selector -->
+        <section id="station-selector" class="practice-section hidden">
+            <h2>Step 2: Choose Your Station</h2>
+            <nav class="station-grid">
+                <button class="station-button" data-station="driver">
+                    <span class="icon">🚗</span>
+                    <span class="label">Driver</span>
+                </button>
+                <button class="station-button" data-station="irons">
+                    <span class="icon">⚙️</span>
+                    <span class="label">Irons</span>
+                </button>
+                <button class="station-button" data-station="wedges">
+                    <span class="icon">🔪</span>
+                    <span class="label">Wedges</span>
+                </button>
+                <button class="station-button" data-station="chipping">
+                    <span class="icon">⛳</span>
+                    <span class="label">Chipping</span>
+                </button>
+                <button class="station-button" data-station="putting">
+                    <span class="icon">🎯</span>
+                    <span class="label">Putting</span>
+                </button>
+                <button class="station-button" data-station="bunker">
+                    <span class="icon">🏖️</span>
+                    <span class="label">Bunker</span>
+                </button>
+            </nav>
+            <button id="back-to-warmup-btn" class="secondary-button">← Back to Warm-Up</button>
+        </section>
+
+        <!-- Station Content -->
+        <section id="station-content" class="practice-section hidden">
+            <div class="station-header">
+                <button id="back-to-stations-btn" class="back-button">← Choose Different Station</button>
+                <h2 id="station-title"></h2>
+            </div>
+            <div class="station-drills">
+                <!-- Drills will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
