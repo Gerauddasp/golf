@@ -30,7 +30,36 @@ open docs/index.html
 
 ---
 
-### Athletic Motion Golf ⭐ NEW
+### Me and My Golf ⭐ NEW
+
+- **Videos Processed:** 15 full-length lessons
+- **Channel:** https://www.youtube.com/@meandmygolf
+- **Focus:** Fault diagnosis, practical drills, TPI collaboration
+- **Teaching Style:** Data-validated fixes with launch monitor feedback
+- **Instructors:** Piers Ward, Andy Proudman (PGA Professionals)
+- **Location:** `channels/me-and-my-golf/`
+
+**Content:**
+- **Master Summary:** Complete reference of all 15 videos
+- **Driver System:** Comprehensive driver instruction (setup → finish)
+- **Iron Striking System:** Pure contact and ball-first mechanics
+- **Fault Diagnosis Flowchart:** Symptom → diagnosis → solution quick reference
+- **Practice System:** Range sessions, 30-day programs, drill finder
+- TPI collaboration videos with Dave Phillips (biomechanics)
+- Russell Henley wedge system (tour-level short game)
+- Raw transcripts and detailed summaries available
+
+**Highlights:**
+- TPI-certified instruction with biomechanics insights
+- Launch monitor data throughout (path, face, speed)
+- Real student transformations with before/after numbers
+- Tour player collaborations (Russell Henley, Tommy Fleetwood, Viktor Hovland)
+- Practical fault correction with immediate results
+- 50+ drills organized by fault type
+
+---
+
+### Athletic Motion Golf
 
 - **Videos Processed:** 92 lessons (from last 2 years)
 - **Channel:** https://www.youtube.com/@AthleticMotionGolf
@@ -57,32 +86,42 @@ open docs/index.html
 
 ## 🔄 Channel Comparison
 
-### Andrew Cullen PGA vs Athletic Motion Golf
+### Three Complementary Teaching Approaches
 
-Both channels provide excellent instruction but with complementary approaches:
+Each channel excels in different areas - use them together for complete golf instruction:
 
-| Aspect | Andrew Cullen PGA | Athletic Motion Golf |
-|--------|------------------|---------------------|
-| **Philosophy** | "Not everyone is the same" | "Here's what the data shows" |
-| **Teaching Style** | Feel-based, natural movement | Data-driven, scientific |
-| **Technology** | Minimal, observation-based | 3D motion capture, TrackMan, force plates |
-| **Content Format** | Quick tips, mnemonic devices | Detailed biomechanics breakdowns |
-| **Terminology** | Simple, accessible | Technical, anatomical |
-| **Best For** | Golfers seeking simplicity | Golfers wanting technical understanding |
-| **Strengths** | Practical "how" with feels | Scientific "why" with data |
+| Aspect | Andrew Cullen PGA | Me and My Golf | Athletic Motion Golf |
+|--------|------------------|----------------|---------------------|
+| **Philosophy** | "Not everyone is the same" | "Diagnose then prescribe" | "Here's what the data shows" |
+| **Teaching Style** | Feel-based, natural movement | Fault correction, practical fixes | Data-driven, scientific |
+| **Technology** | Minimal, observation-based | Launch monitor validation | 3D motion capture, force plates |
+| **Content Format** | Quick tips, mnemonic devices | Problem → solution drills | Detailed biomechanics breakdowns |
+| **Terminology** | Simple, accessible | Practical with some tech | Technical, anatomical |
+| **Best For** | On-course quick reference | Fixing specific faults fast | Understanding technical "why" |
+| **Strengths** | Practical "how" with feels | Immediate, measurable results | Scientific "why" with data |
+| **Unique Value** | Mnemonics (G.R.I.P.S., etc.) | TPI + tour player insights | 3D motion capture analysis |
 
-### Using Both Channels Together
+### Using All Three Channels Together
 
-**Recommended Approach:**
-1. **Understand WHY** with Athletic Motion Golf (biomechanical principles)
-2. **Learn HOW** with Andrew Cullen PGA (feel-based execution)
-3. **Combine** technical understanding with practical application
-4. **Result:** Complete golf education from both perspectives
+**The Complete Learning Path:**
 
-**Example:**
-- **AMG teaches:** Why trail arm must lift in backswing (segment-to-segment analysis, 3D data)
-- **Andrew Cullen teaches:** How to feel and execute this naturally (simple cues, natural motion)
-- **Together:** Both understanding and ability to execute
+1. **Diagnose Your Issue** → Me and My Golf (Fault Diagnosis Flowchart)
+2. **Understand Why It Happens** → Athletic Motion Golf (biomechanics)
+3. **Learn How to Fix It** → Me and My Golf (drill progressions)
+4. **Simplify for the Course** → Andrew Cullen PGA (feel cues, mnemonics)
+
+**Example: Fixing a Slice**
+
+- **Me and My Golf:** Launch monitor shows 6° left path, 3° open face → prescribes specific drills
+- **Athletic Motion Golf:** Explains biomechanical reasons (early extension, steep shoulder plane, grip issues)
+- **Andrew Cullen PGA:** Simplifies to "feel the club wrap around body" (G.R.I.P.S. mnemonic)
+- **Result:** You understand the problem, know how to fix it, and have simple feels to maintain it
+
+**When to Use Each Channel:**
+
+- **Struggling with a fault?** Start with **Me and My Golf** (fault diagnosis + immediate fixes)
+- **Want to understand mechanics?** Use **Athletic Motion Golf** (scientific explanations)
+- **Need on-course simplicity?** Reference **Andrew Cullen PGA** (mnemonics, quick tips)
 
 ## 📁 Repository Structure
 
