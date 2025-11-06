@@ -1,0 +1,3 @@
+# Tempo, Tempo, Tempo! - Summary
+
+This swing thought emphasizes maintaining a consistent, smooth rhythm throughout the golf swing rather than moving abruptly between swing phases. It promotes swing fluidity and progressive swing acceleration from address through impact, helping golfers avoid rushed swings that result in damaging deceleration near the ball. Golf swings perform optimally when accelerating progressively toward impact, and this principle helps promote cleaner contact with the ball. This fundamental concept applies universally to every shot, from the drive on hole number 1 to the last putt at the end of the round.

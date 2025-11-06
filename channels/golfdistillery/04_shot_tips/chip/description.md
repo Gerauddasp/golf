@@ -1,0 +1,3 @@
+# Chip Shot - Quick Summary
+
+A chip shot is executed when the ball is on grass close to the green, typically within 100 yards. Golfers use a high-lofted club like a wedge to pop the ball onto the green where it will roll toward the hole. The swing motion is restricted and short, sometimes resembling a putting stroke. Key variations include the chip-in (ball goes directly into hole) and the chip-and-run or bump-and-run (ball hops briefly then rolls a good distance). Chip shots differ from pitch shots (higher trajectory, softer landing) and flop shots (very high with minimal roll). The goal is to get the ball onto the green with minimal swing effort, setting up an easy putt for an up-and-down.

@@ -1,0 +1,3 @@
+# Bowed Left Wrist at Top - Summary
+
+A bowed wrist position occurs when the left hand breaks downward toward the ground at the top of the swing, as if the club were too heavy to hold. This incorrect position causes the club to be open at the top, which rotates back during the downswing into a closed clubface at impact. The uncocking mechanism during the downswing can be overdone with bowed wrists, resulting in hook shots that curve dramatically left for right-handed golfers. The preferred position is a proper hinge where the top of the left hand lines up with the forearm in a straight, neutral line that promotes consistent, straight ball flight.

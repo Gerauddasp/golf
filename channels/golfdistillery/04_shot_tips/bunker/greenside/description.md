@@ -1,0 +1,3 @@
+# Greenside Bunker Shot - Quick Summary
+
+This comprehensive guide teaches the fundamental technique for executing greenside bunker shots by hitting the sand approximately 2 inches behind the ball rather than the ball directly. The setup involves using a sand wedge with its bounce feature, choking down on the grip, opening the clubface before gripping, widening and opening the stance, positioning the ball forward, and digging feet into the sand for stability. The key to success is accelerating through the sand with full commitment and a complete follow-through, as deceleration causes the ball to remain in the bunker, while distance control is achieved by varying the backswing length while maintaining acceleration through impact.

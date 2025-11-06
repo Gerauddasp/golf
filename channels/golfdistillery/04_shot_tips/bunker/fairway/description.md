@@ -1,0 +1,3 @@
+# Fairway Bunker Shot - Summary
+
+Fairway bunker shots require a different approach than greenside bunker shots due to the greater distance to the hole. The key challenge is avoiding hitting the sand first, which robs distance. To execute properly: club up one club to compensate for preventive measures, choke down on the grip to raise the swing arc's bottom, float on top of the sand rather than digging in, position the ball center or slightly back in your stance, and aim to hit the ball's equator for a slightly thin contact. These adjustments help you hit the ball cleanly first rather than fat, sending it the full distance toward your target.

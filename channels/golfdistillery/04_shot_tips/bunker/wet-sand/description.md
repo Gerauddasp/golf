@@ -1,0 +1,3 @@
+# Wet Sand Bunker Shot - Summary
+
+Wet sand bunkers present additional challenges because the sand is compact and heavy rather than fluffy and light. To escape wet sand successfully: use a lob wedge (around 60° loft) instead of a sand wedge for higher loft and less bounce to prevent skipping off the compact surface, aim 1 inch behind the ball instead of the typical 2 inches to clip the ball rather than plow sand, skim the sand surface rather than digging deep to prevent the club from losing momentum, and accelerate aggressively through impact as wet sand is heavy and will rob clubhead speed. Maintain other typical bunker setup elements including gripping down slightly, open clubface, open stance, wide stance, digging feet in, and forward ball position.

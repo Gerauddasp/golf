@@ -1,0 +1,3 @@
+# Cupped Left Wrist at Top - Summary
+
+A cupped wrist position occurs when the hands arc upward toward the sky at the top of the swing, breaking the straight line from hand to forearm. This incorrect position causes the club to be closed at the top, which rotates back during the downswing into an open clubface at impact. The result is clockwise sidespin and slice shots that veer right for right-handed golfers. Golfers should instead focus on proper wrist hinge where the top of the left hand lines up with the forearm and upper arm in a straight, neutral position that promotes straight ball flight without unwanted sidespin.

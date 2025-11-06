@@ -1,0 +1,3 @@
+# Square Clubface Takeaway - Summary
+
+This swing thought focuses on keeping the clubface's leading edge pointed toward the ground (not skyward) when the shaft reaches a parallel position during the takeaway. It promotes straight and penetrating shots by maintaining a square clubface position that naturally returns to square at impact. This technique cures early wrist manipulation, prevents the clubface from rolling open, and eliminates the need for compensatory movements. A square takeaway minimizes sidespin when combined with an appropriate swing path, making it beneficial for most golf shots throughout play.

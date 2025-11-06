@@ -1,0 +1,3 @@
+# Summary
+
+Underclubbing occurs when a golfer selects a club that results in the ball landing short of the target. This page identifies two main categories of causes: lie conditions (elevated greens, strong winds, buried lies in rough, ball type changes, and cold temperatures) and swing errors (primarily fat shots where the clubhead strikes the ground before the ball). Each cause is accompanied by specific fixes, with the primary solution being to "club up" by selecting a longer club to compensate for distance-reducing factors. The guide emphasizes that proper club selection requires experience and judgment to account for environmental and technical factors that reduce shot distance.

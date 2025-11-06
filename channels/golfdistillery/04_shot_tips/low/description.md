@@ -1,0 +1,3 @@
+# Low Shot (Punch/Stinger) - Summary
+
+A low shot (punch/stinger) produces lower-than-normal ball flight, useful under tree branches or in headwinds. Nine-step technique: (1) use longer club, (2) narrow stance, (3) move ball back, (4) grip down, (5) open stance slightly, (6) weight forward, (7) press hands forward at impact, (8) restrain follow-through, (9) expect more roll. These adjustments reduce effective loft and create descending blow for penetrating trajectory. Important caveat: only use when landing area allows for extra roll, not when soft landing required or hazards present between landing and final resting position.

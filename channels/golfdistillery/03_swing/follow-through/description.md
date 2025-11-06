@@ -1,0 +1,3 @@
+# Follow Through - Summary
+
+The follow-through occurs after release and extension, bringing the swing to completion and requiring proper execution despite occurring after ball impact. At finish, hips should be square to the target (not over-rotated or incomplete), and all body weight should rest on the front foot, contrasting with the even distribution at address. A complete follow-through indicates proper acceleration and prevents deceleration or blocking issues, with the ability to hold the finish position in perfect balance until the ball lands serving as a key indicator of swing quality. Failure to complete the follow-through often reveals balance issues that began before impact and affect shot quality.

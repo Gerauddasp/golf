@@ -1,0 +1,3 @@
+# Description
+
+A whiff occurs when a golfer completely misses the ball during a stroke attempt, and it counts as a penalty stroke. The root cause is that the bottom of the swing arc is too high relative to the ball's position. This can happen due to three main reasons: (1) tee height being too low for driver/fairway wood shots, (2) the ball being below your feet on uneven lies, or (3) standing up during impact which lifts the upper body and raises the swing arc. The fixes include proper tee height positioning (ball's equator at clubhead crown level), bending knees more on sidehill lies while maintaining constant knee flex, and keeping spine angle constant through impact to prevent the club from flying over the ball.

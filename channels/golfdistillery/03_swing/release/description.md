@@ -1,0 +1,3 @@
+# Golf Release - Summary
+
+The release occurs after ball impact and before follow-through, requiring proper extension and rotation for optimal ball striking. Key elements include maintaining spine angle to avoid thin shots or slices, keeping arms fully extended as if throwing the club down the target line, and allowing hands to roll naturally from open to square to closed. The club should follow an inside-square-inside path, circling the body rather than traveling straight back and through, with balanced hand rotation preventing both blocked shots (lazy release) and hooks (overly aggressive release).

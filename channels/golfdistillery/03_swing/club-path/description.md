@@ -1,0 +1,3 @@
+# Modify your Swing (Club) Path - Summary
+
+The swing path (club path) defines how the golf club crosses the target line at impact and has three distinct variations. The inside-square-inside path produces straight shots when paired with a square clubface. The outside-in path moves outside initially and crosses inward at impact, promoting left-to-right sidespin and is often called "over the top." The inside-out path stays too far inside and crosses outward at impact, promoting right-to-left spin. Shot shape results from the combination of swing path direction and clubface angle at impact, not path alone.

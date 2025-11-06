@@ -1,0 +1,3 @@
+# Pitch Shot - Quick Summary
+
+A pitch shot is a high-trajectory approach shot that lands softly on the green, typically used from 30-100 yards. Executed with a pitching wedge or higher-lofted club, this shot is ideal when obstacles lie between you and the green or when you need the ball to stop quickly. The pitch shot differs from chips (shorter, lower trajectory) and flops (maximum height, minimal distance). A pitch-and-run variation restricts elevation for windy conditions or hard ground, allowing the ball to land sooner and roll further. Mastering pitch shots provides essential scoring opportunities from short-to-medium range around the green.

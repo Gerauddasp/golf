@@ -1,0 +1,3 @@
+# Long Bunker Shot - Summary
+
+Long bunker shots occur when you're in a greenside bunker far from the pin, requiring extra distance to reach your target. The key to mastering distance control: take the same amount of sand every time regardless of distance (don't vary sand contact), but vary the length of your backswing instead - use a longer backswing for longer shots and practice different swing amplitudes to learn distance control. Critically, accelerate through impact to ensure the aggressive strike generates enough power despite the longer swing. Maintain typical bunker setup elements including sand wedge, gripping down slightly, open clubface, open stance, forward ball position, wide stance, and digging feet in.

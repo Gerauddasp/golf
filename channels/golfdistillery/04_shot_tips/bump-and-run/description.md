@@ -1,0 +1,3 @@
+# Bump and Run Shot - Quick Summary
+
+A bump and run shot (also called chip and run) is executed when the golfer hits the ball to make it hop a short distance before rolling a good distance afterward toward the hole. This shot is particularly useful when standing a short distance from the green with no trouble areas in the ball's trajectory after landing. Understanding air-to-roll ratios for different clubs is essential: a 7-iron produces approximately 20% air and 80% roll, a pitching wedge gives roughly 50-50, while a lob wedge creates about 80% air and 20% roll, allowing golfers to select the right club based on conditions.

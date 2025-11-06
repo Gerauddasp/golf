@@ -1,0 +1,3 @@
+# Golf Swing Extension & Rotation - Summary
+
+Extension and rotation occur immediately after impact, generating significant power that many amateur golfers miss. The club should extend down the target line as if very heavy, straightening the arms away from the body rather than buckling. Maintaining spine angle through this phase prevents early lifting and slice shots, with the chest pointing down at where the ball was. Natural forearm rotation begins at hip level on the downswing and continues through to hip level in the follow-through, with the top hand switching positions to be underneath the bottom hand and the glove badge facing the ground.

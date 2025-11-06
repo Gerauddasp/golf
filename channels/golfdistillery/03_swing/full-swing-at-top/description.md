@@ -1,0 +1,3 @@
+# Full Swing at Top - Summary
+
+A full swing at the top requires the club shaft to reach parallel to the ground (or just shy) while pointing at the target, achieved through proper wrist hinge combined with adequate hip and shoulder rotation. Your back should face the target, indicating complete body turn rather than an all-arms swing. The left wrist must be fully hinged in a flat position aligned with the forearm, avoiding cupping or bowing. The spine angle established at address should remain constant throughout the backswing, and the left arm should stay straight from address to the top for proper positioning and power generation.
