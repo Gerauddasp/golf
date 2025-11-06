@@ -57,44 +57,195 @@ const videoMap = {
 // ===================================
 const golfLexicon = `
     <div id="lexicon" style="background: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 8px;">
-        <h2>📖 Golf Terms Explained</h2>
+        <h2>📖 Golf Terms Explained - Our Systematic Approach</h2>
 
-        <h3>Key Measurements:</h3>
+        <p style="background: #e8f5e9; padding: 15px; border-radius: 8px;">
+            <strong>🎯 The Andrew Cullen Philosophy:</strong><br>
+            "Not everyone is the same" - Find YOUR natural positions within these ranges.
+            This system provides consistency while allowing personal adaptation.
+        </p>
+
+        <h3>🤲 GRIP FUNDAMENTALS</h3>
         <ul>
-            <li><strong>Attack Angle:</strong> The angle at which your club approaches the ball
+            <li><strong>The Knuckles System:</strong>
+                <span class="image-toggle" data-image="knuckles">📷</span>
+                <div class="hidden-image" id="img-knuckles">
+                    <img src="images/grip-knuckles.jpeg" alt="Knuckles counting visualization - showing 2-4 knuckles visible on left hand grip" loading="lazy" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;">
+                </div>
                 <ul>
-                    <li>Positive (+3°) = hitting UP on ball (driver)</li>
-                    <li>Zero (0°) = sweeping level with ground (fairway woods)</li>
-                    <li>Negative (-3°) = hitting DOWN on ball (irons)</li>
-                    <li><em>Check: Look at your divot - before ball = descending, after = correct for irons, no divot = good for woods</em></li>
+                    <li>Look down at your LEFT hand (for right-handed golfers)</li>
+                    <li>Count how many knuckles you can see</li>
+                    <li>2 knuckles = "neutral" (traditional teaching)</li>
+                    <li>3-4 knuckles = "stronger" (Andrew's preference, more natural)</li>
+                    <li><em>Why it varies: Your natural arm hang determines YOUR best grip</em></li>
                 </ul>
             </li>
-            <li><strong>Shaft Lean:</strong> How much the handle leans toward target at impact
+            <li><strong>Pressure Scale (1-10):</strong>
                 <ul>
-                    <li>0° = shaft vertical (straight up and down)</li>
-                    <li>Forward lean = handle ahead of ball by about a hand's width</li>
-                    <li><em>Check: Video yourself from side, pause at impact</em></li>
+                    <li>1 = Butterfly landing on your hand</li>
+                    <li>3 = Holding a bird (won't fly away, won't hurt it)</li>
+                    <li>5 = Firm handshake</li>
+                    <li>7 = Squeezing toothpaste from tube</li>
+                    <li>10 = Crushing a can</li>
+                    <li><strong>Andrew's recommendation: Left 3-4, Right 2-3</strong></li>
                 </ul>
             </li>
-            <li><strong>Choke Down:</strong> Holding the club 2-3cm lower than normal on the grip for more control</li>
-            <li><strong>Compression:</strong> Hitting down on ball to squeeze it against the ground</li>
-            <li><strong>Release:</strong> When your wrists unhinge and club rotates through impact</li>
-            <li><strong>Draw/Fade:</strong> Ball curves right-to-left (draw) or left-to-right (fade) for right-handed players</li>
+            <li><strong>V's Pointing:</strong>
+                <span class="image-toggle" data-image="vs">📷</span>
+                <div class="hidden-image" id="img-vs">
+                    <img src="images/grip-Vs.jpeg" alt="V's pointing visualization - showing V formed between thumb and index finger pointing to right shoulder" loading="lazy" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;">
+                </div>
+                <ul>
+                    <li>The "V" = valley formed between thumb and index finger</li>
+                    <li>Both V's should point to right shoulder/ear area</li>
+                    <li><strong>Why Driver emphasis?</strong> Maximum power requires strongest grip position</li>
+                    <li>Other clubs can use slightly weaker for control</li>
+                </ul>
+            </li>
+            <li><strong>Andrew's Left Hand Method:</strong>
+                <ul>
+                    <li>Club starts at your left side (not in front)</li>
+                    <li>Grab naturally from the side</li>
+                    <li>This creates YOUR natural grip angle</li>
+                    <li>Works for ALL clubs - just adjust strength as needed</li>
+                </ul>
+            </li>
         </ul>
 
-        <h3>Position References:</h3>
+        <h3>🦵 STANCE & POSTURE</h3>
         <ul>
-            <li><strong>"Inside lead heel":</strong> 5-8cm inside your front heel</li>
-            <li><strong>"Center":</strong> Directly between your feet</li>
-            <li><strong>"Forward of center":</strong> 5-10cm toward front foot from center</li>
+            <li><strong>Knee Flex - The Hand Test:</strong>
+                <ul>
+                    <li>Stand naturally, arms hanging</li>
+                    <li>Bend knees until longest finger touches TOP of kneecap</li>
+                    <li>NOT middle of kneecap (too much flex)</li>
+                    <li>This is YOUR proper knee flex for ALL clubs</li>
+                </ul>
+            </li>
+            <li><strong>Club Height at Setup:</strong>
+                <ul>
+                    <li><strong>Driver:</strong> Hands at belt buckle, shaft tilts up</li>
+                    <li><strong>Woods:</strong> Hands just below belt buckle</li>
+                    <li><strong>Hybrids:</strong> Hands at belt buckle level</li>
+                    <li><strong>Irons:</strong> Hands at belt buckle to belly button</li>
+                    <li><strong>Wedges:</strong> Hands slightly lower (more bent over)</li>
+                </ul>
+            </li>
+            <li><strong>Distance from Ball:</strong>
+                <ul>
+                    <li><strong>The Arm Hang Test:</strong> Arms hang naturally with slight reach</li>
+                    <li>Hands should be 1 fist-width from thighs</li>
+                    <li><strong>Eye Level Check:</strong> Can you see your shoelaces? Too close if not</li>
+                    <li>Right arm slightly extended but relaxed</li>
+                </ul>
+            </li>
         </ul>
 
-        <h3>Foot Angles (imagine clock on ground):</h3>
+        <h3>⛳ BALL POSITION</h3>
+        <span class="image-toggle" data-image="ballposition">📷</span>
+        <div class="hidden-image" id="img-ballposition">
+            <img src="images/ball-position.jpeg" alt="Ball position guide for different clubs" loading="lazy" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;">
+        </div>
         <ul>
-            <li><strong>0°:</strong> Pointing at target (12 o'clock)</li>
-            <li><strong>90°:</strong> Perpendicular to target (3 o'clock for right foot)</li>
-            <li><strong>25° open:</strong> Slightly toward target (1 o'clock for left foot)</li>
+            <li><strong>Driver:</strong> Center of stance (middle between feet)</li>
+            <li><strong>Fairway Woods:</strong> Inside left heel (opposite heel)</li>
+            <li><strong>Hybrids:</strong> 2 balls forward of center</li>
+            <li><strong>Long Irons (4-6):</strong> 1 ball forward of center</li>
+            <li><strong>Mid Irons (7-8):</strong> Center of stance</li>
+            <li><strong>Short Irons (9-PW):</strong> Center of stance</li>
+            <li><strong>Wedges (full swing):</strong> Center of stance</li>
+            <li><strong>Chipping:</strong> Back of center (favor back foot)</li>
+            <li><strong>Putting:</strong> Under left eye</li>
         </ul>
+
+        <h3>👟 FEET POSITIONS & ANGLES</h3>
+        <ul>
+            <li><strong>The Jump Test (Find YOUR Natural Angle):</strong>
+                <ul>
+                    <li>Jump straight up and land naturally</li>
+                    <li>Look at your feet - this is YOUR natural stance</li>
+                    <li>Most people land with feet slightly flared (10-15°)</li>
+                    <li>Use this as your base for all shots</li>
+                </ul>
+            </li>
+            <li><strong>Typical Angles:</strong>
+                <ul>
+                    <li><strong>Back foot:</strong> 80-90° (nearly perpendicular)</li>
+                    <li><strong>Front foot:</strong> 20-25° open (toward target)</li>
+                    <li>More flexibility = more flare allowed</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>📐 STANCE WIDTH</h3>
+        <ul>
+            <li><strong>Driver:</strong> Outside of feet at shoulder width</li>
+            <li><strong>Fairway Woods:</strong> Just inside shoulder width</li>
+            <li><strong>Hybrids:</strong> Shoulder width</li>
+            <li><strong>Long Irons:</strong> Slightly inside shoulders</li>
+            <li><strong>Mid Irons:</strong> Hip width to shoulders</li>
+            <li><strong>Short Irons:</strong> Hip width</li>
+            <li><strong>Wedges:</strong> Narrow (inside hip width)</li>
+            <li><strong>Chipping:</strong> Feet close together</li>
+        </ul>
+
+        <h3>🎿 SPINE TILT & WEIGHT</h3>
+        <ul>
+            <li><strong>Spine Tilt Basics:</strong>
+                <ul>
+                    <li>Bend from hips, not waist</li>
+                    <li>Spine straight but angled</li>
+                    <li>Feel like pushing butt back</li>
+                    <li>Same basic posture for ALL clubs</li>
+                </ul>
+            </li>
+            <li><strong>Weight Distribution by Club:</strong>
+                <ul>
+                    <li><strong>Driver:</strong> 55-60% back foot (slight lean away)</li>
+                    <li><strong>Woods:</strong> 50-50 balanced</li>
+                    <li><strong>Hybrids:</strong> 50-50 or 55% front</li>
+                    <li><strong>Irons:</strong> 55% front foot</li>
+                    <li><strong>Wedges:</strong> 55-60% front foot</li>
+                    <li><strong>Chipping:</strong> 60-70% front foot</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>⚡ SWING DYNAMICS</h3>
+        <ul>
+            <li><strong>The Sequence (All Clubs):</strong>
+                <ol>
+                    <li>Backswing: Shoulders turn, arms follow</li>
+                    <li>Transition: Hips start first (lower body leads)</li>
+                    <li>Downswing: Hips → Torso → Arms → Club</li>
+                    <li>Impact: Body positions vary by club</li>
+                    <li>Follow-through: Complete rotation to target</li>
+                </ol>
+            </li>
+            <li><strong>Where to "Aim" (Low Point):</strong>
+                <ul>
+                    <li><strong>Driver:</strong> Hit UP - low point before ball</li>
+                    <li><strong>Woods:</strong> Sweep - low point at ball</li>
+                    <li><strong>Hybrids:</strong> Slightly down - just after ball</li>
+                    <li><strong>Irons:</strong> Down - divot starts at ball</li>
+                    <li><strong>Wedges:</strong> Down - crisp ball-turf contact</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>✅ QUICK REFERENCE CHECKS</h3>
+        <ul>
+            <li><strong>Good Grip:</strong> Can see 2-4 knuckles, pressure 3-4/10</li>
+            <li><strong>Good Setup:</strong> Athletic, balanced, arms hang freely</li>
+            <li><strong>Good Strike:</strong> Solid sound, predictable flight</li>
+            <li><strong>Good Finish:</strong> Balanced, can hold for 3 seconds</li>
+        </ul>
+
+        <p style="background: #fff3cd; padding: 15px; border-radius: 8px; margin-top: 20px;">
+            <strong>💡 Remember:</strong> This system gives you consistency across all clubs.
+            The fundamentals stay the same - only small adjustments change.
+            Pick ONE swing thought per round and commit to it!
+        </p>
     </div>
 `;
 
@@ -103,237 +254,354 @@ const golfLexicon = `
 // ===================================
 const clubContent = {
     driver: `
-        <h2>🚗 DRIVER - Quick Reference</h2>
+        <h2>🚗 DRIVER - Complete Setup System</h2>
         <p><strong>Goal:</strong> Maximum distance with controlled flight</p>
+        <p><a href="#lexicon" style="color: #1976d2;">📖 See Golf Terms Explained for detailed definitions</a></p>
 
-        <h3>Complete Setup:</h3>
+        <h3>🤲 GRIP (The Foundation)</h3>
         <ul>
-            <li><strong>Grip:</strong>
-                <ul>
-                    <li>Stronger grip - see 3-4 knuckles on top hand</li>
-                    <li>Grip pressure: 3 out of 10 (light!)</li>
-                    <li>V's point to right shoulder</li>
-                </ul>
-            </li>
+            <li><strong>Knuckles:</strong> 3-4 visible (stronger grip for power)</li>
+            <li><strong>Pressure:</strong> Left hand 3-4/10, Right hand 2-3/10
+                <br><em>Think: "Holding a bird" in your hands</em></li>
+            <li><strong>V's Pointing:</strong> Both to right shoulder/ear</li>
+            <li><strong>Left Hand Position:</strong> Grab from side naturally (Andrew's method)</li>
+        </ul>
+
+        <h3>🦵 STANCE & POSTURE</h3>
+        <ul>
+            <li><strong>Knee Flex:</strong> Slight - hands hang to top of kneecaps</li>
+            <li><strong>Club Height:</strong> Hands at belt buckle, shaft tilts up slightly</li>
             <li><strong>Distance from Ball:</strong>
-                <ul>
-                    <li>Arms hang naturally</li>
-                    <li>Hands about one fist-width from body</li>
-                    <li>Butt of club points at belt buckle</li>
-                </ul>
-            </li>
-            <li><strong>Ball Position:</strong> Inside lead heel (5-8cm inside front heel)</li>
-            <li><strong>Stance Width:</strong> Outside of feet at shoulder width</li>
-            <li><strong>Weight Distribution:</strong> 55-60% on back foot</li>
+                <br>• Arms hang naturally with slight reach
+                <br>• Right arm extended but relaxed
+                <br>• Can see your shoelaces</li>
+            <li><strong>Ball Position:</strong> Center of stance (middle between feet)</li>
+            <li><strong>Feet Width:</strong> Outside of feet at shoulder width</li>
+            <li><strong>Feet Angles:</strong> Back foot 90°, Front foot 25° open</li>
             <li><strong>Spine Tilt:</strong> Upper body leans slightly away from target</li>
-            <li><strong>Feet Position:</strong>
-                <ul>
-                    <li>Back foot: 90° to target (pointing directly sideways)</li>
-                    <li>Front foot: Open 25° (turned slightly toward target)</li>
-                </ul>
-            </li>
+            <li><strong>Weight Distribution:</strong> 55-60% on back foot</li>
         </ul>
 
-        <h3>ONE Swing Thought (pick only one!):</h3>
+        <h3>⚡ SWING DYNAMICS</h3>
         <ul>
-            <li>"Maintain width at top" - keep arms extended</li>
-            <li>"Hips start downswing" - lower body leads</li>
+            <li><strong>Sequence:</strong>
+                <br>1. Wide backswing (maintain arm extension)
+                <br>2. Hips initiate downswing
+                <br>3. Shoulders/arms follow
+                <br>4. Hit UP on ball (ascending blow)</li>
+            <li><strong>Low Point:</strong> 10-15cm BEFORE ball</li>
+            <li><strong>Key Feel:</strong> Sweeping ball off tee, not hitting down</li>
+        </ul>
+
+        <h3>💭 ONE SWING THOUGHT (Pick ONE only)</h3>
+        <ul>
+            <li>"Keep width at top" - maintain arm extension</li>
+            <li>"Right shoulder stays back" - prevents over-the-top</li>
             <li>"Sweep up through ball" - ascending blow</li>
-            <li>"Finish in balance" - hold for 3 seconds</li>
+            <li>"Soft right hand" - prevents "lobster grip"</li>
+            <li>"Glide then push" - proper sequence</li>
         </ul>
 
-        <h3>Quick Checks:</h3>
+        <h3>✅ QUICK CHECKS</h3>
         <ul>
-            <li>✅ No divot (hitting up)</li>
-            <li>✅ High launch angle</li>
+            <li>✅ Tee still in ground (no divot)</li>
+            <li>✅ High launch, low spin</li>
             <li>✅ Weight finishes 90% on front foot</li>
-            <li>✅ Can hold finish position</li>
+            <li>✅ Can hold finish for 3 seconds</li>
         </ul>
+
+        <p><em>Reference: Videos 1, 3, 26, 28, 29</em></p>
     `,
 
     woods: `
-        <h2>🌲 FAIRWAY WOODS - Quick Reference</h2>
+        <h2>🌲 FAIRWAY WOODS - Complete Setup System</h2>
         <p><strong>Goal:</strong> Consistent contact from fairway or tee</p>
+        <p><a href="#lexicon" style="color: #1976d2;">📖 See Golf Terms Explained for detailed definitions</a></p>
 
-        <h3>Complete Setup:</h3>
+        <h3>🤲 GRIP (The Foundation)</h3>
         <ul>
-            <li><strong>Grip:</strong>
-                <ul>
-                    <li>Neutral grip (2-3 knuckles visible)</li>
-                    <li>Slightly choked down (hold club 1-2cm lower on grip)</li>
-                    <li>Light pressure (3-4 out of 10)</li>
-                </ul>
-            </li>
+            <li><strong>Knuckles:</strong> 2-3 visible (neutral to slight strong)</li>
+            <li><strong>Pressure:</strong> Left hand 3-4/10, Right hand 2-3/10
+                <br><em>Think: "Firm handshake" pressure</em></li>
+            <li><strong>V's Pointing:</strong> Both to right shoulder</li>
+            <li><strong>Grip Down:</strong> Hold club 1-2cm lower for control</li>
+        </ul>
+
+        <h3>🦵 STANCE & POSTURE</h3>
+        <ul>
+            <li><strong>Knee Flex:</strong> Slight - hands hang to top of kneecaps</li>
+            <li><strong>Club Height:</strong> Hands just below belt buckle</li>
             <li><strong>Distance from Ball:</strong>
-                <ul>
-                    <li>Arms hang straight down</li>
-                    <li>Slightly further than irons</li>
-                    <li>Room to swing freely under chin</li>
-                </ul>
-            </li>
-            <li><strong>Ball Position:</strong> Just inside lead heel (2-5cm inside)</li>
+                <br>• Arms hang naturally
+                <br>• Slightly further than irons
+                <br>• Room to swing under chin</li>
+            <li><strong>Ball Position:</strong> Inside left heel (opposite heel)</li>
+            <li><strong>Feet Width:</strong> Just inside shoulder width</li>
+            <li><strong>Feet Angles:</strong> Natural flare from jump test (10-15°)</li>
+            <li><strong>Spine Tilt:</strong> Neutral - not leaning away like driver</li>
             <li><strong>Weight Distribution:</strong> 50-50 balanced</li>
-            <li><strong>Posture:</strong> Same spine angle as driver, less tilt away</li>
         </ul>
 
-        <h3>ONE Swing Thought:</h3>
+        <h3>⚡ SWING DYNAMICS</h3>
         <ul>
-            <li>"Sweep the ground" - no dig, no lift</li>
-            <li>"Stay level" - maintain height through impact</li>
-            <li>"Trust the loft" - let club do the work</li>
+            <li><strong>Sequence:</strong>
+                <br>1. Smooth backswing (not rushed)
+                <br>2. Hips start downswing
+                <br>3. Sweep through impact zone
+                <br>4. Brush grass after ball</li>
+            <li><strong>Low Point:</strong> AT the ball (level sweep)</li>
+            <li><strong>Key Feel:</strong> Brushing grass, not digging</li>
         </ul>
 
-        <h3>Quick Checks:</h3>
+        <h3>💭 ONE SWING THOUGHT (Pick ONE only)</h3>
         <ul>
-            <li>✅ Ball-sized mark on grass (no deep divot)</li>
-            <li>✅ Ball flight medium-high</li>
-            <li>✅ Solid "click" at impact</li>
+            <li>"Sweep the grass" - no dig, no lift</li>
+            <li>"Stay level" - maintain spine angle</li>
+            <li>"Sternum covers ball" - stay centered</li>
+            <li>"Trust the loft" - don't help it up</li>
+            <li>"Smooth tempo" - 1...and...2 count</li>
         </ul>
+
+        <h3>✅ QUICK CHECKS</h3>
+        <ul>
+            <li>✅ Light brush mark on grass (no divot)</li>
+            <li>✅ Ball flight medium-high trajectory</li>
+            <li>✅ Solid "click" sound at impact</li>
+            <li>✅ Consistent carry distance</li>
+        </ul>
+
+        <p><em>Reference: Videos 21, 26</em></p>
     `,
 
     hybrids: `
-        <h2>🔷 HYBRIDS - Quick Reference</h2>
+        <h2>🔷 HYBRIDS - Complete Setup System</h2>
         <p><strong>Goal:</strong> Versatile shots from various lies</p>
+        <p><a href="#lexicon" style="color: #1976d2;">📖 See Golf Terms Explained for detailed definitions</a></p>
 
-        <h3>Complete Setup:</h3>
+        <h3>🤲 GRIP (The Foundation)</h3>
         <ul>
-            <li><strong>Grip:</strong>
-                <ul>
-                    <li>Same as iron grip</li>
-                    <li>Neutral (2-3 knuckles)</li>
-                    <li>Normal pressure (4-5 out of 10)</li>
-                </ul>
-            </li>
+            <li><strong>Knuckles:</strong> 2-3 visible (neutral grip like irons)</li>
+            <li><strong>Pressure:</strong> Left hand 4/10, Right hand 3/10
+                <br><em>Think: Same as your iron grip</em></li>
+            <li><strong>V's Pointing:</strong> Both to right shoulder</li>
+            <li><strong>Left Hand Position:</strong> Standard neutral position</li>
+        </ul>
+
+        <h3>🦵 STANCE & POSTURE</h3>
+        <ul>
+            <li><strong>Knee Flex:</strong> Slight - hands hang to top of kneecaps</li>
+            <li><strong>Club Height:</strong> Hands at belt buckle level</li>
             <li><strong>Distance from Ball:</strong>
-                <ul>
-                    <li>Between iron and wood distance</li>
-                    <li>Arms hang comfortably</li>
-                </ul>
-            </li>
-            <li><strong>Ball Position:</strong> Just forward of center (5cm ahead)</li>
-            <li><strong>Weight:</strong> 50-50 or slight favor to front foot</li>
-            <li><strong>Approach:</strong> Think "iron swing with wood forgiveness"</li>
+                <br>• Between iron and wood distance
+                <br>• Arms hang comfortably
+                <br>• Slight reach feeling</li>
+            <li><strong>Ball Position:</strong> 2 balls forward of center</li>
+            <li><strong>Feet Width:</strong> Shoulder width</li>
+            <li><strong>Feet Angles:</strong> Natural flare (10-15°)</li>
+            <li><strong>Spine Tilt:</strong> Slight forward lean like irons</li>
+            <li><strong>Weight Distribution:</strong> 50-50 or 55% front foot</li>
         </ul>
 
-        <h3>ONE Swing Thought:</h3>
+        <h3>⚡ SWING DYNAMICS</h3>
         <ul>
-            <li>"Sweep with slight descend" - between wood and iron</li>
-            <li>"Trust the design" - club prevents digging</li>
+            <li><strong>Sequence:</strong>
+                <br>1. Iron-like backswing
+                <br>2. Hips initiate downswing
+                <br>3. Slightly descending blow
+                <br>4. Sweep through with speed</li>
+            <li><strong>Low Point:</strong> Just AFTER ball (slight descend)</li>
+            <li><strong>Key Feel:</strong> Iron swing with wood forgiveness</li>
         </ul>
 
-        <h3>Quick Checks:</h3>
+        <h3>💭 ONE SWING THOUGHT (Pick ONE only)</h3>
+        <ul>
+            <li>"Sweep with slight descend" - hybrid sweet spot</li>
+            <li>"Trust the design" - club prevents digging</li>
+            <li>"Iron swing, wood result" - best of both</li>
+            <li>"Ball then ground" - proper sequence</li>
+            <li>"Add speed through impact" - don't hold back</li>
+        </ul>
+
+        <h3>✅ QUICK CHECKS</h3>
         <ul>
             <li>✅ Small divot or brush mark</li>
-            <li>✅ Penetrating ball flight</li>
-            <li>✅ Consistent distance</li>
+            <li>✅ Penetrating ball flight (not ballooning)</li>
+            <li>✅ Consistent distance gaps</li>
+            <li>✅ Works from various lies</li>
         </ul>
+
+        <p><em>Reference: Practice Program notes</em></p>
     `,
 
     irons: `
-        <h2>⚙️ IRONS - Quick Reference</h2>
-        <p><strong>Goal:</strong> Consistent ball-first contact</p>
+        <h2>⚙️ IRONS - Complete Setup System</h2>
+        <p><strong>Goal:</strong> Consistent ball-first contact (THE fundamental)</p>
+        <p><a href="#lexicon" style="color: #1976d2;">📖 See Golf Terms Explained for detailed definitions</a></p>
 
-        <h3>Complete Setup:</h3>
+        <h3>🤲 GRIP (The Foundation)</h3>
         <ul>
-            <li><strong>Grip:</strong>
-                <ul>
-                    <li>Neutral grip (2-3 knuckles visible)</li>
-                    <li>Grip pressure: 4-5 out of 10</li>
-                    <li>Hands work as one unit</li>
-                </ul>
-            </li>
+            <li><strong>Knuckles:</strong> 2-3 visible (neutral grip)</li>
+            <li><strong>Pressure:</strong> Left hand 4/10, Right hand 3/10
+                <br><em>Think: "Firm handshake, not death grip"</em></li>
+            <li><strong>V's Pointing:</strong> Both to right shoulder</li>
+            <li><strong>Left Hand Position:</strong> Grab from side naturally</li>
+        </ul>
+
+        <h3>🦵 STANCE & POSTURE</h3>
+        <ul>
+            <li><strong>Knee Flex:</strong> Slight - hands hang to top of kneecaps</li>
+            <li><strong>Club Height:</strong> Hands at belt buckle to belly button</li>
             <li><strong>Distance from Ball:</strong>
-                <ul>
-                    <li>Arms hang straight down from shoulders</li>
-                    <li>Hands about one fist from thighs</li>
-                    <li>Not reaching, not cramped</li>
-                </ul>
-            </li>
+                <br>• Arms hang straight down
+                <br>• Hands one fist from thighs
+                <br>• Not reaching, not cramped</li>
             <li><strong>Ball Position:</strong>
-                <ul>
-                    <li>Long irons (5-6): 5cm forward of center</li>
-                    <li>Mid irons (7-8): Center of stance</li>
-                    <li>Short irons (9-PW): Center of stance</li>
-                </ul>
-            </li>
-            <li><strong>Weight:</strong> Through middle of feet (not toes!)</li>
-            <li><strong>Posture:</strong>
-                <ul>
-                    <li>Bend from hips, not waist</li>
-                    <li>Knees slightly flexed</li>
-                    <li>Spine straight but tilted</li>
-                </ul>
-            </li>
-            <li><strong>Eyes:</strong> Look 3-4cm ahead of ball (toward target)</li>
+                <br>• Long irons (4-6): 1 ball forward of center
+                <br>• Mid irons (7-8): Center of stance
+                <br>• Short irons (9-PW): Center of stance</li>
+            <li><strong>Feet Width:</strong>
+                <br>• Long irons: Slightly inside shoulders
+                <br>• Mid irons: Hip width to shoulders
+                <br>• Short irons: Hip width</li>
+            <li><strong>Feet Angles:</strong> Natural flare (10-15°)</li>
+            <li><strong>Spine Tilt:</strong> Bend from hips, spine straight</li>
+            <li><strong>Weight Distribution:</strong> 55% front foot</li>
+            <li><strong>⚠️ CRITICAL: Eyes look 3-4cm AHEAD of ball!</strong></li>
         </ul>
 
-        <h3>ONE Swing Thought:</h3>
+        <h3>⚡ SWING DYNAMICS</h3>
         <ul>
-            <li>"Hit down on ball" - ball then ground</li>
-            <li>"Eyes ahead of ball" - promotes proper strike</li>
-            <li>"Chest faces target at finish" - complete rotation</li>
-            <li>"Weight forward" - 80% on front foot at impact</li>
+            <li><strong>Sequence:</strong>
+                <br>1. Turn shoulders, maintain posture
+                <br>2. Hips start downswing (skater push)
+                <br>3. Sternum moves ahead of ball
+                <br>4. Strike ball THEN ground</li>
+            <li><strong>Low Point:</strong> 5-10cm AFTER ball</li>
+            <li><strong>Key Feel:</strong> Compress ball against ground</li>
+            <li><strong>The 3-Axis System:</strong>
+                <br>• X-Axis: Low point at/after ball
+                <br>• Y-Axis: Maintain posture height
+                <br>• Z-Axis: Keep proper distance from body</li>
         </ul>
 
-        <h3>Quick Checks:</h3>
+        <h3>💭 ONE SWING THOUGHT (Pick ONE only)</h3>
         <ul>
-            <li>✅ Divot starts AT ball position</li>
+            <li>"Eyes ahead of ball" - promotes forward strike</li>
+            <li>"Ball then ground" - proper sequence</li>
+            <li>"Chest to target" - complete rotation</li>
+            <li>"Weight forward at impact" - 80% front foot</li>
+            <li>"Skater push off right foot" - proper weight shift</li>
+        </ul>
+
+        <h3>✅ QUICK CHECKS</h3>
+        <ul>
+            <li>✅ Divot starts AT ball position (not before)</li>
             <li>✅ Crisp "compression" sound</li>
-            <li>✅ Ball flight penetrating</li>
-            <li>✅ Consistent distance</li>
+            <li>✅ Penetrating ball flight</li>
+            <li>✅ Consistent distances</li>
+            <li>✅ Belt buckle same distance throughout</li>
         </ul>
+
+        <p><em>Reference: Videos 5, 11, 12, 13</em></p>
     `,
 
     wedges: `
-        <h2>🔪 WEDGES - Quick Reference</h2>
-        <p><strong>Goal:</strong> Precise distance control</p>
+        <h2>🔪 WEDGES & CHIPPING - Complete Setup System</h2>
+        <p><strong>Goal:</strong> Precise distance control & short game mastery</p>
+        <p><a href="#lexicon" style="color: #1976d2;">📖 See Golf Terms Explained for detailed definitions</a></p>
 
-        <h3>Complete Setup:</h3>
+        <h3>FULL WEDGE SHOTS</h3>
+
+        <h4>🤲 GRIP (The Foundation)</h4>
         <ul>
-            <li><strong>Grip:</strong>
-                <ul>
-                    <li>Choked down 2-3cm (hold club lower for control)</li>
-                    <li>Lighter pressure (3-4 out of 10)</li>
-                    <li>Neutral grip</li>
-                </ul>
-            </li>
-            <li><strong>Distance from Ball:</strong>
-                <ul>
-                    <li>Slightly closer than irons</li>
-                    <li>Arms hang naturally</li>
-                </ul>
-            </li>
-            <li><strong>Ball Position:</strong> Center of stance</li>
-            <li><strong>Stance:</strong> Narrower (feet closer together)</li>
-            <li><strong>Weight:</strong> 55% on front foot</li>
+            <li><strong>Knuckles:</strong> 2-3 visible (neutral)</li>
+            <li><strong>Pressure:</strong> Left hand 3-4/10, Right hand 2-3/10
+                <br><em>Think: "Lighter for feel"</em></li>
+            <li><strong>Choke Down:</strong> Hold club 2-3cm lower for control</li>
+            <li><strong>V's Pointing:</strong> Both to right shoulder</li>
         </ul>
 
-        <h3>Distance Control System:</h3>
+        <h4>🦵 STANCE & POSTURE</h4>
         <ul>
-            <li><strong>Full swing:</strong> Your maximum distance (e.g., 90m)</li>
-            <li><strong>3/4 swing:</strong> -10m from full (e.g., 80m)</li>
-            <li><strong>1/2 swing:</strong> -20m from full (e.g., 70m)</li>
+            <li><strong>Knee Flex:</strong> Slight - hands hang to top of kneecaps</li>
+            <li><strong>Club Height:</strong> Hands slightly lower (more bent over)</li>
+            <li><strong>Distance from Ball:</strong>
+                <br>• Slightly closer than irons
+                <br>• Arms hang naturally</li>
+            <li><strong>Ball Position:</strong> Center of stance</li>
+            <li><strong>Feet Width:</strong> Narrow (inside hip width)</li>
+            <li><strong>Feet Angles:</strong> Slightly open stance</li>
+            <li><strong>Spine Tilt:</strong> More bent over than irons</li>
+            <li><strong>Weight Distribution:</strong> 55-60% front foot</li>
+        </ul>
+
+        <h4>⚡ DISTANCE CONTROL SYSTEM</h4>
+        <ul>
+            <li><strong>Clock System:</strong>
+                <br>• 7:30 backswing = 1/4 swing (e.g., 40m)
+                <br>• 9:00 backswing = 1/2 swing (e.g., 60m)
+                <br>• 10:30 backswing = 3/4 swing (e.g., 75m)
+                <br>• Full swing = maximum (e.g., 90m)</li>
             <li><strong>Key:</strong> Same tempo, different backswing length</li>
         </ul>
 
-        <h3>ONE Swing Thought:</h3>
+        <hr style="margin: 20px 0;">
+
+        <h3>CHIPPING TECHNIQUE</h3>
+
+        <h4>🎯 Setup Differences from Full Swing</h4>
         <ul>
-            <li>"Accelerate through ball" - no deceleration</li>
-            <li>"Control with turn size" - not hand speed</li>
-            <li>"Less loft when possible" - PW over SW for consistency</li>
+            <li><strong>Ball Position:</strong> Back of center (favor back foot)</li>
+            <li><strong>Feet Width:</strong> Feet close together</li>
+            <li><strong>Weight:</strong> 60-70% on front foot</li>
+            <li><strong>Hands:</strong> Ahead of ball at address</li>
+            <li><strong>⚠️ SAME POSTURE as full swing!</strong>
+                <br><em>Don't stand taller - maintain athletic position</em></li>
         </ul>
 
-        <h3>Quick Checks:</h3>
+        <h4>⚡ CHIPPING DYNAMICS</h4>
         <ul>
-            <li>✅ Consistent trajectory</li>
-            <li>✅ Predictable distance</li>
-            <li>✅ Clean contact</li>
+            <li><strong>The ONE Rule:</strong> Chest rotation ONLY
+                <br>• Arms stay "stuck to sides"
+                <br>• NO independent hand/wrist action
+                <br>• Body turn controls everything</li>
+            <li><strong>Distance Control:</strong>
+                <br>• 5m chip = tiny chest turn
+                <br>• 10m chip = bigger chest turn
+                <br>• 15m chip = even bigger turn</li>
+            <li><strong>Shoulder Geometry:</strong>
+                <br>• Backswing: Left shoulder DOWN
+                <br>• Through swing: Right shoulder DOWN
+                <br>• Everything 90° to spine</li>
         </ul>
+
+        <h3>💭 ONE SWING THOUGHT (Pick ONE only)</h3>
+        <ul>
+            <li><strong>Full Wedges:</strong>
+                <br>• "Accelerate through" - never decelerate
+                <br>• "Control with turn size" - not hands
+                <br>• "Trust the loft" - don't help it up</li>
+            <li><strong>Chipping:</strong>
+                <br>• "Chest turns the club" - body control
+                <br>• "Arms stay connected" - no flip
+                <br>• "Brush grass forward" - proper contact</li>
+        </ul>
+
+        <h3>✅ QUICK CHECKS</h3>
+        <ul>
+            <li>✅ Consistent trajectory height</li>
+            <li>✅ Predictable carry distances</li>
+            <li>✅ Clean ball-turf contact</li>
+            <li>✅ No chunks or skulls</li>
+        </ul>
+
+        <p><em>Reference: Videos 31, 32, 33, 34, 35</em></p>
     `,
 
     putter: `
         <h2>🎯 PUTTING - Quick Reference</h2>
         <p><strong>Goal:</strong> Make everything inside 3 meters</p>
+        <p><a href="#lexicon" style="color: #1976d2;">📖 See Golf Terms Explained for detailed definitions</a></p>
 
         <h3>Complete Setup:</h3>
         <ul>
@@ -1042,7 +1310,14 @@ if (document.querySelector('.club-button')) {
 
             // Load club content
             const club = button.dataset.club;
-            if (clubContent[club]) {
+            if (club === 'terms') {
+                // Show Golf Terms Explained
+                clubContentArea.innerHTML = golfLexicon + `
+                    <div class="info-message" style="background: #e3f2fd; padding: 20px; margin: 20px 0; border-radius: 8px;">
+                        <p><strong>👆 Select a club above for quick reference</strong></p>
+                        <p>This standardized system ensures consistency across all clubs while allowing for your personal adaptations.</p>
+                    </div>`;
+            } else if (clubContent[club]) {
                 clubContentArea.innerHTML = clubContent[club];
             }
         });
@@ -1103,3 +1378,28 @@ if (document.querySelector('.practice-section')) {
         });
     });
 }
+
+// ===================================
+// IMAGE TOGGLE FUNCTIONALITY
+// ===================================
+document.addEventListener('click', function(e) {
+    // Check if clicked element is image toggle button
+    if (e.target.classList.contains('image-toggle')) {
+        const imageId = 'img-' + e.target.dataset.image;
+        const imageDiv = document.getElementById(imageId);
+
+        if (imageDiv) {
+            // Toggle visibility
+            imageDiv.classList.toggle('visible');
+
+            // Update button text/icon
+            if (imageDiv.classList.contains('visible')) {
+                e.target.textContent = '✕ Hide';
+                e.target.style.background = '#f44336';
+            } else {
+                e.target.textContent = '📷';
+                e.target.style.background = '#4caf50';
+            }
+        }
+    }
+});

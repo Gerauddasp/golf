@@ -420,3 +420,77 @@ footer {
 .mb-1 { margin-bottom: 0.5rem; }
 .mb-2 { margin-bottom: 1rem; }
 .mb-3 { margin-bottom: 1.5rem; }
+
+/* ===================================
+   IMAGE TOGGLE FUNCTIONALITY
+   =================================== */
+.image-toggle {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    background: #4caf50;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+    border: none;
+    vertical-align: middle;
+}
+
+.image-toggle:hover,
+.image-toggle:active {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.hidden-image {
+    display: none;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease-out;
+}
+
+.hidden-image.visible {
+    display: block;
+}
+
+.hidden-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile optimization for image toggle */
+@media (max-width: 600px) {
+    .image-toggle {
+        display: inline-block;
+        margin: 0.5rem 0.5rem 0.5rem 0;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .hidden-image {
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+    }
+}
