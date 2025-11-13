@@ -2,71 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Hub - Andrew Cullen PGA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Practice - Golf Training Hub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
             <a href="index.html" class="back-button">← Home</a>
-            <h1>Practice Hub</h1>
-            <p class="subtitle">Warm-up first, then choose your station</p>
+            <h1>Practice Areas</h1>
+            <p class="subtitle">Choose your practice location</p>
         </header>
 
-        <!-- Warm-up Section -->
-        <section id="warmup-section" class="practice-section">
-            <h2>Step 1: Warm-Up (10 Minutes)</h2>
-            <div class="warmup-content">
-                <!-- Content will be loaded here by JavaScript -->
-            </div>
-            <button id="warmup-done-btn" class="action-button">Done with Warm-Up →</button>
-        </section>
+        <main>
+            <div class="selector-grid">
+                <a href="driving-range.html" class="selector-button">
+                    <span class="icon">🏌️</span>
+                    <span class="label">Driving Range</span>
+                </a>
 
-        <!-- Station Selector -->
-        <section id="station-selector" class="practice-section hidden">
-            <h2>Step 2: Choose Your Station</h2>
-            <nav class="station-grid">
-                <button class="station-button" data-station="driver">
-                    <span class="icon">🚗</span>
-                    <span class="label">Driver</span>
-                </button>
-                <button class="station-button" data-station="irons">
-                    <span class="icon">⚙️</span>
-                    <span class="label">Irons</span>
-                </button>
-                <button class="station-button" data-station="wedges">
-                    <span class="icon">🔪</span>
-                    <span class="label">Wedges</span>
-                </button>
-                <button class="station-button" data-station="chipping">
+                <a href="short-game.html" class="selector-button">
                     <span class="icon">⛳</span>
-                    <span class="label">Chipping</span>
-                </button>
-                <button class="station-button" data-station="putting">
-                    <span class="icon">🎯</span>
-                    <span class="label">Putting</span>
-                </button>
-                <button class="station-button" data-station="bunker">
-                    <span class="icon">🏖️</span>
-                    <span class="label">Bunker</span>
-                </button>
-            </nav>
-            <button id="back-to-warmup-btn" class="secondary-button">← Back to Warm-Up</button>
-        </section>
+                    <span class="label">Short Game Area</span>
+                </a>
 
-        <!-- Station Content -->
-        <section id="station-content" class="practice-section hidden">
-            <div class="station-header">
-                <button id="back-to-stations-btn" class="back-button">← Choose Different Station</button>
-                <h2 id="station-title"></h2>
+                <a href="station-7-putting.html" class="selector-button">
+                    <span class="icon">🎯</span>
+                    <span class="label">Putting Green</span>
+                </a>
             </div>
-            <div class="station-drills">
-                <!-- Drills will be loaded here by JavaScript -->
-            </div>
-        </section>
+        </main>
+
+        <footer>
+            <p>Structured practice from Golf Distillery</p>
+        </footer>
     </div>
 
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
 </body>
 </html>

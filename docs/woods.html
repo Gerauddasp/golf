@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Fairway Woods - Golf Training Hub</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Golf Theme CSS -->
+    <link href="bootstrap-custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- HEADER -->
+        <header class="page-header">
+            <button class="btn-back" onclick="window.location.href='on-course.html'" aria-label="Back to club selection">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="on-course.html">On Course</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Woods</li>
+                </ol>
+            </nav>
+        </header>
+
+        <!-- PAGE TITLE -->
+        <h1 class="page-title">Fairway Woods</h1>
+
+        <!-- QUICK REFERENCE CARD (ALWAYS VISIBLE) -->
+        <div class="quick-ref-card">
+            <div class="quick-ref-title">Quick Reference</div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Ball Position:</span>
+                <span class="quick-ref-value">Slightly forward of center</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Tee Height:</span>
+                <span class="quick-ref-value">Lower than driver (optional)</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Stance:</span>
+                <span class="quick-ref-value">Slightly narrower than driver</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Contact:</span>
+                <span class="quick-ref-value">Sweep through ball</span>
+            </div>
+        </div>
+
+        <!-- SECTION 1: SETUP TIPS -->
+        <h2 class="section-title">Setup Tips</h2>
+        <div class="accordion" id="setupTipsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup1">
+                        Position ball slightly forward of center
+                    </button>
+                </h3>
+                <div id="setup1" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/ball-position.png" alt="Ball position for woods" class="content-image" loading="lazy">
+                        <p>Position the ball slightly forward of center in your stance. For a 3-wood off the tee, place it about one ball width inside your left heel. For a 5-wood or hitting off the deck, move it slightly back (middle to slightly forward).</p>
+                        <p><strong>Key Point:</strong> The ball should align with where the club naturally bottoms out in your swing arc - forward enough for a sweeping motion, but not so far forward that you reach for it.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup2">
+                        Tee lower than driver or hit off deck
+                    </button>
+                </h3>
+                <div id="setup2" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/ball-tee-height.png" alt="Tee height for woods" class="content-image" loading="lazy">
+                        <p>When teeing up a fairway wood, the center of the ball should align with the top edge of the clubface. This is lower than driver tee height because fairway woods have smaller clubfaces.</p>
+                        <p><strong>Off the Deck:</strong> Many golfers find 3-woods challenging off the fairway. The 5-wood's higher loft and shorter shaft make it more forgiving from tight lies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup3">
+                        Use slightly narrower stance than driver
+                    </button>
+                </h3>
+                <div id="setup3" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/stance-width.png" alt="Stance width for fairway woods" class="content-image" loading="lazy">
+                        <p>Your stance should be slightly narrower than your driver stance but wider than your iron stance. Feet should be roughly shoulder-width apart.</p>
+                        <p>A narrower stance (compared to driver) promotes better control while maintaining enough stability for the longer shaft.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup4">
+                        Keep hands even with or slightly ahead of ball
+                    </button>
+                </h3>
+                <div id="setup4" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/hand-position.png" alt="Hand position for fairway woods" class="content-image" loading="lazy">
+                        <p>Unlike irons where hands press forward, with fairway woods your hands should be just slightly ahead of the ball or even with it. This promotes the sweeping motion rather than a descending blow.</p>
+                        <p><strong>Off the Tee:</strong> Hands even with or slightly behind the ball. <strong>Off the Deck:</strong> Hands just slightly ahead to ensure ball-first contact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: SWING KEYS -->
+        <h2 class="section-title">Swing Keys</h2>
+        <div class="accordion" id="swingKeysAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing1">
+                        Sweep through ball - no divot needed
+                    </button>
+                </h3>
+                <div id="swing1" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/sweep-motion.png" alt="Sweeping motion through impact" class="content-image" loading="lazy">
+                        <p>The most important concept for fairway woods is to sweep the ball off the turf rather than taking a divot. Think of "painting a line" with the club rather than chopping down.</p>
+                        <p><strong>Feel:</strong> Imagine brushing the grass rather than digging into it. The clubhead should skim along the ground through impact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing2">
+                        Contact ball first with light scuff mark after
+                    </button>
+                </h3>
+                <div id="swing2" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/contact-point.png" alt="Contact point for ball-first contact" class="content-image" loading="lazy">
+                        <p>When hitting off the fairway (no tee), you must make contact with the ball slightly before the club reaches the bottom of its arc. However, unlike irons, you're not trying to take a divot.</p>
+                        <p><strong>Checkpoint:</strong> You should see minimal ground contact after the ball - perhaps a light scuff mark but no divot.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing3">
+                        Keep head at same height through impact
+                    </button>
+                </h3>
+                <div id="swing3" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/spine-angle.png" alt="Maintaining spine angle through impact" class="content-image" loading="lazy">
+                        <p>Your spine angle (the forward tilt of your upper body) must remain constant throughout the swing. Standing up or dipping down will cause inconsistent contact.</p>
+                        <p><strong>Swing Thought:</strong> "Head stays in the box" - keep your head at the same height from address through impact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing4">
+                        Use 3:1 tempo ratio (3 counts back, 1 down)
+                    </button>
+                </h3>
+                <div id="swing4" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/tempo.png" alt="3:1 swing tempo ratio" class="content-image" loading="lazy">
+                        <p>Fairway woods require rhythm rather than force. A smooth, controlled tempo produces better results than trying to crush the ball.</p>
+                        <p><strong>Ratio:</strong> Many pros use a 3:1 ratio - if your backswing takes 3 counts, your downswing should take 1 count. Focus on smooth acceleration rather than maximum speed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: TOP 5 SWING THOUGHTS -->
+        <h2 class="section-title">Top 5 Swing Thoughts</h2>
+        <div class="accordion" id="swingThoughtsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought1">
+                        "Sweep the Tee"
+                    </button>
+                </h3>
+                <div id="thought1" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> Off the tee or fairway when you're tempted to dig at the ball.</p>
+                        <p>Imagine the clubhead sweeping a tee off the ground rather than chopping down at it. This mental image promotes the shallow, sweeping contact that fairway woods require. Feel like you're "painting a line" through the impact zone rather than hitting down.</p>
+                        <p><strong>Result:</strong> Promotes proper angle of attack and prevents fat or chunked shots.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought2">
+                        Chest finishes facing target, 90% weight on front foot
+                    </button>
+                </h3>
+                <div id="thought2" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> When you're decelerating or not finishing your swing completely.</p>
+                        <p>Think about turning your body THROUGH the ball toward the target, not stopping AT impact. Your chest should finish facing the target, with 90% of your weight on your front foot. This thought prevents deceleration and promotes full release of the club.</p>
+                        <p><strong>Result:</strong> Maximizes distance and ensures solid contact with proper weight transfer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought3">
+                        Swing at 85% for better contact than 100% effort
+                    </button>
+                </h3>
+                <div id="thought3" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> When you're swinging too hard or losing tempo.</p>
+                        <p>Think "smooth" rather than "fast." Fairway woods respond better to tempo than force. Use the 3-1 count: three counts for backswing, one count for downswing. A smooth 85% swing with good contact will go farther than a rushed 100% swing with poor contact.</p>
+                        <p><strong>Result:</strong> Improves consistency and actually increases distance through better contact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought4">
+                        Keep head in imaginary box - no up/down movement
+                    </button>
+                </h3>
+                <div id="thought4" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> When you're topping shots or making inconsistent contact.</p>
+                        <p>Imagine your head is in a box that can't move up or down. Maintain the same spine angle and head height from address through impact. The most common error with fairway woods is standing up during the swing, which lifts the club above the ball.</p>
+                        <p><strong>Result:</strong> Eliminates topped and thin shots by maintaining consistent swing arc.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought5">
+                        Let 13-19° loft launch ball - swing forward not upward
+                    </button>
+                </h3>
+                <div id="thought5" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> When you're trying to help the ball into the air or scooping at impact.</p>
+                        <p>The club has 13-19 degrees of loft built in - more than enough to launch the ball. Don't try to lift or scoop the ball up. Instead, swing through the ball and let the loft do its job. Think "forward" not "upward."</p>
+                        <p><strong>Result:</strong> Prevents topped and thin shots caused by trying to lift the ball artificially.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4: COMMON FIXES -->
+        <h2 class="section-title">Common Fixes</h2>
+        <div class="accordion" id="commonFixesAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix1">
+                        Fix topped shots - maintain head height
+                    </button>
+                </h3>
+                <div id="fix1" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>The club is hitting above the ball's equator, causing a low rolling shot with minimal distance. Common causes include:</p>
+                        <ul>
+                            <li>Standing up during the swing (losing spine angle)</li>
+                            <li>Ball positioned too far back in stance</li>
+                            <li>Trying to "help" the ball up by lifting</li>
+                            <li>Swaying during the backswing</li>
+                        </ul>
+
+                        <h4>Fix</h4>
+                        <img src="images/woods/fix-topping.png" alt="How to fix topped shots" class="content-image" loading="lazy">
+                        <ol>
+                            <li><strong>Keep Your Head in the Box:</strong> Maintain the same head height from address through impact. Imagine your head is pressed against a wall behind you.</li>
+                            <li><strong>Ball Position Check:</strong> Move the ball forward to just inside your left heel for teed shots, or middle-to-forward for fairway shots.</li>
+                            <li><strong>Trust the Loft:</strong> The club has enough loft to get the ball airborne. Don't try to scoop it up.</li>
+                            <li><strong>Lean Right Knee Inward:</strong> This prevents swaying and keeps your swing center stable.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix2">
+                        Fix thin shots - keep spine angle through impact
+                    </button>
+                </h3>
+                <div id="fix2" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>The leading edge contacts the ball below its equator, producing a low, hard shot that rolls excessively. Common causes:</p>
+                        <ul>
+                            <li>Standing up at impact (raising the swing arc)</li>
+                            <li>Ball too far forward in stance</li>
+                            <li>Too much weight on back foot</li>
+                            <li>Flipping/scooping at impact</li>
+                        </ul>
+
+                        <h4>Fix</h4>
+                        <img src="images/woods/fix-thin.png" alt="How to fix thin shots" class="content-image" loading="lazy">
+                        <ol>
+                            <li><strong>Maintain Spine Angle:</strong> Keep your upper body tilted forward through impact.</li>
+                            <li><strong>Adjust Ball Position:</strong> Move the ball back slightly if it's too far forward.</li>
+                            <li><strong>Weight Distribution:</strong> Start with weight evenly distributed, then shift to your front foot on the downswing.</li>
+                            <li><strong>No Early Release:</strong> Keep your wrists hinged longer; don't let the clubhead pass your hands too early.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix3">
+                        Fix inconsistent contact - swing at 80% speed
+                    </button>
+                </h3>
+                <div id="fix3" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Contact varies from shot to shot - sometimes good, sometimes thin, sometimes fat. Common causes:</p>
+                        <ul>
+                            <li>Inconsistent setup (ball position, stance width)</li>
+                            <li>Varying spine angle during swing</li>
+                            <li>Tension in grip or arms</li>
+                            <li>Trying to swing too hard</li>
+                        </ul>
+
+                        <h4>Fix</h4>
+                        <img src="images/woods/fix-inconsistent.png" alt="How to fix inconsistent contact" class="content-image" loading="lazy">
+                        <ol>
+                            <li><strong>Pre-Shot Routine:</strong> Develop a consistent setup process. Same ball position, same stance, every time.</li>
+                            <li><strong>Grip Pressure:</strong> Hold the club like you're holding a bird - firm enough it won't fly away, light enough not to hurt it.</li>
+                            <li><strong>Swing at 80%:</strong> Take a bit off your swing speed. Consistent contact beats maximum speed.</li>
+                            <li><strong>Video Your Swing:</strong> Check if your head height changes from address to impact.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix4">
+                        Gain distance - accelerate through with full weight transfer
+                    </button>
+                </h3>
+                <div id="fix4" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Your fairway woods don't go as far as they should, even with solid contact. Common causes:</p>
+                        <ul>
+                            <li>Decelerating through impact</li>
+                            <li>Poor weight transfer (staying back)</li>
+                            <li>Casting/early release losing lag</li>
+                            <li>Choking down too much on the grip</li>
+                        </ul>
+
+                        <h4>Fix</h4>
+                        <img src="images/woods/fix-distance.png" alt="How to gain more distance" class="content-image" loading="lazy">
+                        <ol>
+                            <li><strong>Accelerate Through Impact:</strong> The club should be speeding up at the ball, not slowing down.</li>
+                            <li><strong>Full Weight Transfer:</strong> By impact, 80-90% of your weight should be on your front foot.</li>
+                            <li><strong>Maintain Lag:</strong> Keep the angle between your lead arm and shaft into the impact zone.</li>
+                            <li><strong>Full Grip:</strong> Hold the club at full length unless you need extra control on a specific shot.</li>
+                            <li><strong>Complete Follow-Through:</strong> Finish with your chest facing the target and weight fully on front foot.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 5: DIFFICULT SITUATIONS -->
+        <h2 class="section-title">Difficult Situations</h2>
+        <div class="accordion" id="difficultSituationsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#difficult1">
+                        Tight lies - ball back, choke down 1 inch, narrow stance
+                    </button>
+                </h3>
+                <div id="difficult1" class="accordion-collapse collapse" data-bs-parent="#difficultSituationsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/tight-lie.png" alt="Fairway wood from tight lie" class="content-image" loading="lazy">
+                        <p><strong>The Challenge:</strong> Very short grass or hard ground offers no margin for error. The club can easily bounce off the ground and blade the ball.</p>
+                        <p><strong>Setup Adjustments:</strong></p>
+                        <ul>
+                            <li>Ball position slightly back (center to just forward)</li>
+                            <li>Choke down 1 inch on the grip for better control</li>
+                            <li>Narrow your stance slightly</li>
+                            <li>More weight on front foot (60/40)</li>
+                        </ul>
+                        <p><strong>Swing Adjustments:</strong></p>
+                        <ul>
+                            <li>Shorter, more controlled backswing</li>
+                            <li>Feel like you're "pinching" the ball off the turf</li>
+                            <li>Quiet lower body - less lateral movement</li>
+                            <li>Accept that you may need to club down (use 5-wood instead of 3-wood)</li>
+                        </ul>
+                        <p><strong>Smart Play:</strong> If the lie is questionable, consider hitting a long iron or hybrid instead. They're more forgiving from tight lies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#difficult2">
+                        Light rough - swing aggressively, expect lower flight + more roll
+                    </button>
+                </h3>
+                <div id="difficult2" class="accordion-collapse collapse" data-bs-parent="#difficultSituationsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/light-rough.png" alt="Fairway wood from light rough" class="content-image" loading="lazy">
+                        <p><strong>The Challenge:</strong> Grass between the club and ball reduces spin and control, but fairway woods can still be effective.</p>
+                        <p><strong>Setup Adjustments:</strong></p>
+                        <ul>
+                            <li>Standard ball position (slightly forward)</li>
+                            <li>Normal stance width</li>
+                            <li>Grip at normal position</li>
+                        </ul>
+                        <p><strong>Swing Adjustments:</strong></p>
+                        <ul>
+                            <li>Swing slightly more aggressively to power through grass</li>
+                            <li>Expect the ball to fly lower with less spin</li>
+                            <li>Plan for more roll on landing</li>
+                            <li>Commit fully to the shot - no deceleration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#difficult3">
+                        Heavy rough - use 5-wood, open face, consider hybrid instead
+                    </button>
+                </h3>
+                <div id="difficult3" class="accordion-collapse collapse" data-bs-parent="#difficultSituationsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/heavy-rough.png" alt="Fairway wood from heavy rough" class="content-image" loading="lazy">
+                        <p><strong>Reality Check:</strong> Low-percentage shot. Switch to hybrid or iron for safety.</p>
+                        <p><strong>If ball is sitting up and you must try:</strong> 5-wood/7-wood, open face, ball center, steep swing, firm grip. Accept reduced distance.</p>
+                        <p><strong>Smart play:</strong> Hybrid or 6-iron back to fairway beats heroball.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#difficult4">
+                        Fairway bunker - ball centered, dig feet in, quiet lower body
+                    </button>
+                </h3>
+                <div id="difficult4" class="accordion-collapse collapse" data-bs-parent="#difficultSituationsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/fairway-bunker.png" alt="Fairway wood from fairway bunker" class="content-image" loading="lazy">
+                        <p><strong>Check lip height first!</strong> Can you clear it? If not, use shorter club.</p>
+                        <p><strong>Setup:</strong> Dig feet in, choke down, ball center, quiet lower body.</p>
+                        <p><strong>Key:</strong> Catch ball FIRST before sand. Smooth tempo.</p>
+                        <p><strong>When in doubt:</strong> Shorter club guarantees escape.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#difficult5">
+                        Uphill lie - take extra club, aim right for draw tendency
+                    </button>
+                </h3>
+                <div id="difficult5" class="accordion-collapse collapse" data-bs-parent="#difficultSituationsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/uphill-lie.png" alt="Fairway wood from uphill lie" class="content-image" loading="lazy">
+                        <p><strong>The Challenge:</strong> The slope adds loft and promotes a draw. Easy to hit fat or come up short.</p>
+                        <p><strong>Setup Adjustments:</strong></p>
+                        <ul>
+                            <li>Tilt your spine to match the slope (shoulders parallel to ground)</li>
+                            <li>More weight on downhill foot (right foot for right-handers)</li>
+                            <li>Ball position: slightly forward of normal</li>
+                        </ul>
+                        <p><strong>Swing Adjustments:</strong></p>
+                        <ul>
+                            <li>Swing along the slope, not straight into it</li>
+                            <li>Allow for a draw/hook ball flight</li>
+                            <li>Take one more club (ball will fly higher, shorter)</li>
+                            <li>Finish with more weight on uphill foot</li>
+                        </ul>
+                        <p><strong>Aim:</strong> Start the ball right of target to compensate for the draw/hook tendency.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#difficult6">
+                        Downhill lie - use 5 or 7-wood, aim left for fade tendency
+                    </button>
+                </h3>
+                <div id="difficult6" class="accordion-collapse collapse" data-bs-parent="#difficultSituationsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/downhill-lie.png" alt="Fairway wood from downhill lie" class="content-image" loading="lazy">
+                        <p><strong>The Challenge:</strong> The slope reduces loft and promotes a fade. Difficult to get the ball airborne. Easy to thin or blade.</p>
+                        <p><strong>Setup Adjustments:</strong></p>
+                        <ul>
+                            <li>Tilt your spine to match the slope</li>
+                            <li>More weight on downhill foot (left foot for right-handers)</li>
+                            <li>Ball position: back of center</li>
+                            <li>Use a more lofted wood (5-wood or 7-wood instead of 3-wood)</li>
+                        </ul>
+                        <p><strong>Swing Adjustments:</strong></p>
+                        <ul>
+                            <li>Swing down the slope</li>
+                            <li>Expect a lower ball flight</li>
+                            <li>Allow for fade/slice tendency</li>
+                            <li>Accept that distance will be reduced</li>
+                            <li>Don't try to help the ball up</li>
+                        </ul>
+                        <p><strong>Aim:</strong> Start the ball left of target to compensate for the fade/slice tendency.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#difficult7">
+                        Ball above feet - choke down, aim right for hook tendency
+                    </button>
+                </h3>
+                <div id="difficult7" class="accordion-collapse collapse" data-bs-parent="#difficultSituationsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/ball-above-feet.png" alt="Fairway wood with ball above feet" class="content-image" loading="lazy">
+                        <p><strong>The Challenge:</strong> The slope flattens your swing plane, promoting hooks. Easier to make solid contact but harder to control direction.</p>
+                        <p><strong>Setup Adjustments:</strong></p>
+                        <ul>
+                            <li>Choke down on grip (ball is closer to you)</li>
+                            <li>Stand more upright (less bend at waist)</li>
+                            <li>Aim right of target (ball will hook)</li>
+                            <li>Ball position: normal</li>
+                        </ul>
+                        <p><strong>Swing Adjustments:</strong></p>
+                        <ul>
+                            <li>Make a more around/flat swing</li>
+                            <li>Expect a draw/hook</li>
+                            <li>Control distance - easy to hit this farther</li>
+                            <li>Stay balanced - don't fall toward the ball</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#difficult8">
+                        Ball below feet - grip full, widen stance, aim left for slice
+                    </button>
+                </h3>
+                <div id="difficult8" class="accordion-collapse collapse" data-bs-parent="#difficultSituationsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/ball-below-feet.png" alt="Fairway wood with ball below feet" class="content-image" loading="lazy">
+                        <p><strong>The Challenge:</strong> The most difficult sidehill lie. The slope steepens your swing plane and promotes slices. Very easy to top or miss entirely.</p>
+                        <p><strong>Setup Adjustments:</strong></p>
+                        <ul>
+                            <li>Grip at full length (need all the length you can get)</li>
+                            <li>Bend more at waist and knees</li>
+                            <li>Widen stance for better balance</li>
+                            <li>Aim left of target (ball will slice)</li>
+                            <li>Ball position: center</li>
+                        </ul>
+                        <p><strong>Swing Adjustments:</strong></p>
+                        <ul>
+                            <li>Make a more upright swing</li>
+                            <li>Expect a fade/slice</li>
+                            <li>Swing easier - balance is critical</li>
+                            <li>Stay down through the shot (common error: standing up)</li>
+                        </ul>
+                        <p><strong>Smart Play:</strong> This is a very difficult shot with a fairway wood. Consider a shorter, more controllable club like a hybrid or long iron.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 6: SHOT SHAPING -->
+        <h2 class="section-title">Shot Shaping</h2>
+        <div class="accordion" id="shotShapingAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shape1">
+                        Draw - aim right, close stance, swing inside-out
+                    </button>
+                </h3>
+                <div id="shape1" class="accordion-collapse collapse" data-bs-parent="#shotShapingAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/draw-flight.png" alt="Draw ball flight pattern" class="content-image" loading="lazy">
+                        <p><strong>What is a Draw:</strong> A controlled right-to-left ball flight (for right-handed golfers) that starts right of target and curves back to the target.</p>
+                        <p><strong>When to Use:</strong></p>
+                        <ul>
+                            <li>Extra distance (draws roll more than fades)</li>
+                            <li>Curving around obstacles on the left</li>
+                            <li>Into a left-to-right wind</li>
+                            <li>On dogleg-left holes</li>
+                        </ul>
+                        <p><strong>Setup for Draw:</strong></p>
+                        <ol>
+                            <li><strong>Aim Clubface:</strong> Point the clubface slightly right of your target (where you want the ball to start)</li>
+                            <li><strong>Close Your Stance:</strong> Rotate your body alignment right of the clubface aim</li>
+                            <li><strong>Ball Position:</strong> Standard or slightly back of normal</li>
+                            <li><strong>Grip:</strong> Can use a slightly stronger grip (left hand more on top)</li>
+                        </ol>
+                        <p><strong>Swing Keys:</strong></p>
+                        <ul>
+                            <li>Swing along your body line (to the right)</li>
+                            <li>Don't manipulate the clubface - let your setup create the shape</li>
+                            <li>Inside-to-out swing path relative to target line</li>
+                            <li>Release the club freely through impact</li>
+                        </ul>
+                        <p><strong>Expect:</strong> Ball starts right, curves back left, flies lower, rolls more upon landing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shape2">
+                        Fade - aim left, open stance, swing outside-in
+                    </button>
+                </h3>
+                <div id="shape2" class="accordion-collapse collapse" data-bs-parent="#shotShapingAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/fade-flight.png" alt="Fade ball flight pattern" class="content-image" loading="lazy">
+                        <p><strong>What is a Fade:</strong> A controlled left-to-right ball flight (for right-handed golfers) that starts left of target and curves back to the target.</p>
+                        <p><strong>When to Use:</strong></p>
+                        <ul>
+                            <li>Extra control (fades land softer)</li>
+                            <li>Curving around obstacles on the right</li>
+                            <li>Into a right-to-left wind</li>
+                            <li>On dogleg-right holes</li>
+                            <li>To hold greens better</li>
+                        </ul>
+                        <p><strong>Setup for Fade:</strong></p>
+                        <ol>
+                            <li><strong>Aim Clubface:</strong> Point the clubface slightly left of your target (where you want the ball to start)</li>
+                            <li><strong>Open Your Stance:</strong> Rotate your body alignment left of the clubface aim</li>
+                            <li><strong>Ball Position:</strong> Slightly forward in your stance</li>
+                            <li><strong>Grip:</strong> Can use a slightly weaker grip (left hand more on side)</li>
+                        </ol>
+                        <p><strong>Swing Keys:</strong></p>
+                        <ul>
+                            <li>Swing along your body line (to the left)</li>
+                            <li>Outside-to-in swing path relative to target line</li>
+                            <li>Hold the release slightly through impact</li>
+                            <li>Feel like you're "cutting across" the ball</li>
+                        </ul>
+                        <p><strong>Expect:</strong> Ball starts left, curves back right, flies higher, lands softer with less roll.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shape3">
+                        Punch shot - ball back, choke down, 3/4 swing with low finish
+                    </button>
+                </h3>
+                <div id="shape3" class="accordion-collapse collapse" data-bs-parent="#shotShapingAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/punch-shot.png" alt="Low punch shot trajectory" class="content-image" loading="lazy">
+                        <p><strong>What is a Punch Shot:</strong> A low-trajectory shot that stays under the wind or obstacles. Sometimes called a "stinger" when hit with woods.</p>
+                        <p><strong>When to Use:</strong></p>
+                        <ul>
+                            <li>Strong headwinds</li>
+                            <li>Under tree branches</li>
+                            <li>When you need maximum roll</li>
+                            <li>When accuracy is more important than distance</li>
+                        </ul>
+                        <p><strong>Setup for Punch:</strong></p>
+                        <ol>
+                            <li><strong>Club Selection:</strong> Take more club (use 5-wood instead of 3-wood to offset lower flight)</li>
+                            <li><strong>Ball Position:</strong> Back of center (toward right foot)</li>
+                            <li><strong>Stance:</strong> Narrower than normal for better control</li>
+                            <li><strong>Weight:</strong> 60% on front foot, maintain through swing</li>
+                            <li><strong>Hands:</strong> Press forward (ahead of ball)</li>
+                            <li><strong>Grip:</strong> Choke down 1-2 inches</li>
+                        </ol>
+                        <p><strong>Swing Keys:</strong></p>
+                        <ul>
+                            <li>Three-quarter backswing length</li>
+                            <li>Hands stay ahead of clubhead through impact</li>
+                            <li>Abbreviated follow-through (hold the finish low)</li>
+                            <li>Feel like you're "trapping" the ball</li>
+                            <li>Quiet lower body - mostly arms swing</li>
+                        </ul>
+                        <p><strong>Expect:</strong> Ball flies low (half normal height), less spin, significant roll. You'll lose some distance in the air but gain it on the ground.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shape4">
+                        High shot - ball forward, weight back (55%), stay behind ball
+                    </button>
+                </h3>
+                <div id="shape4" class="accordion-collapse collapse" data-bs-parent="#shotShapingAccordion">
+                    <div class="accordion-body">
+                        <img src="images/woods/high-shot.png" alt="High shot trajectory" class="content-image" loading="lazy">
+                        <p><strong>What is a High Shot:</strong> An elevated trajectory to carry over obstacles or hold a green.</p>
+                        <p><strong>When to Use:</strong></p>
+                        <ul>
+                            <li>Over trees or hazards</li>
+                            <li>Into a strong tailwind</li>
+                            <li>To a firm or elevated green (need it to land soft)</li>
+                            <li>From thick rough (need height to carry it)</li>
+                        </ul>
+                        <p><strong>Setup for High Shot:</strong></p>
+                        <ol>
+                            <li><strong>Club Selection:</strong> Use more lofted wood (5-wood or 7-wood)</li>
+                            <li><strong>Ball Position:</strong> Forward in stance (off left heel)</li>
+                            <li><strong>Stance:</strong> Normal width or slightly wider</li>
+                            <li><strong>Weight:</strong> More on back foot at address (55% back)</li>
+                            <li><strong>Hands:</strong> Even with or slightly behind ball</li>
+                            <li><strong>Tilt:</strong> Spine tilts away from target slightly (right shoulder lower)</li>
+                        </ol>
+                        <p><strong>Swing Keys:</strong></p>
+                        <ul>
+                            <li>Full backswing</li>
+                            <li>Stay behind the ball through impact</li>
+                            <li>Sweep upward through impact zone</li>
+                            <li>High, full finish</li>
+                            <li>Let your weight stay back slightly longer</li>
+                        </ul>
+                        <p><strong>Expect:</strong> Ball launches high, carries farther in air, lands soft with minimal roll. You may sacrifice some total distance for the higher flight.</p>
+                        <p><strong>Caution:</strong> This is an advanced shot. It's easy to thin or top the ball when trying to hit it higher. Practice this before attempting on the course.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p><strong>Content from Golf Distillery</strong><br>
+            Mobile-optimized for on-course reference</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Wedges - Full Swing - Golf Training Hub</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Golf Theme CSS -->
+    <link href="bootstrap-custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- HEADER -->
+        <header class="page-header">
+            <button class="btn-back" onclick="window.location.href='on-course.html'" aria-label="Back to club selection">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="on-course.html">On Course</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Wedges (Full Swing)</li>
+                </ol>
+            </nav>
+        </header>
+
+        <!-- PAGE TITLE -->
+        <h1 class="page-title">Wedges - Full Swing</h1>
+
+        <!-- QUICK REFERENCE CARD (ALWAYS VISIBLE) -->
+        <div class="quick-ref-card">
+            <div class="quick-ref-title">Full Swing Wedges at a Glance</div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Pitching Wedge:</span>
+                <span class="quick-ref-value">100-120 yards</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Gap Wedge:</span>
+                <span class="quick-ref-value">85-105 yards</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Sand Wedge:</span>
+                <span class="quick-ref-value">70-90 yards</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Lob Wedge:</span>
+                <span class="quick-ref-value">50-70 yards</span>
+            </div>
+        </div>
+
+        <!-- SECTION 1: SETUP TIPS -->
+        <h2 class="section-title">Setup Tips</h2>
+        <div class="accordion" id="setupTipsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup1">
+                        Use narrow stance for better control and feel
+                    </button>
+                </h3>
+                <div id="setup1" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/setup-narrow-stance.png" alt="Narrow stance for wedges" class="content-image" loading="lazy">
+                        <p>Keep your feet closer together than with full irons—shoulder-width maximum. This narrower base promotes better feel and control for shorter shots while maintaining balance.</p>
+                        <p>For chip shots, stance can be even narrower (6-8 inches between feet) to encourage a putting-like motion with minimal lower body movement.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup2">
+                        Position ball center to back for most shots
+                    </button>
+                </h3>
+                <div id="setup2" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/setup-ball-position.png" alt="Ball position variations" class="content-image" loading="lazy">
+                        <p><strong>Standard shots:</strong> Center to slightly back of center promotes descending strike for crisp contact and proper spin.</p>
+                        <p><strong>Chip shots:</strong> Back of center in stance with hands well ahead creates low, running trajectory.</p>
+                        <p><strong>Flop shots:</strong> Forward in stance (off front heel) with open face produces maximum height and soft landing.</p>
+                        <p><strong>Pitch shots:</strong> Just back of center maintains versatility for various trajectories.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup3">
+                        Keep 60% weight on front foot throughout swing
+                    </button>
+                </h3>
+                <div id="setup3" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/setup-weight-forward.png" alt="Forward weight distribution" class="content-image" loading="lazy">
+                        <p>Set 60% of your weight on your front foot at address and maintain this distribution throughout the swing. This forward bias promotes the descending blow necessary for ball-first contact and proper spin generation.</p>
+                        <p>For chip shots, increase to 70-80% forward to ensure clean contact with minimal ground interaction. Never shift weight backward during wedge shots—this causes fat or thin contact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup4">
+                        Position hands ahead of ball with shaft lean
+                    </button>
+                </h3>
+                <div id="setup4" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/setup-hands-forward.png" alt="Forward hand position" class="content-image" loading="lazy">
+                        <p>Position your hands slightly ahead of the ball at address, creating visible shaft lean toward the target. This setup pre-sets the impact position you want to achieve and delofts the club slightly for optimal trajectory control.</p>
+                        <p>Maintain this forward hand position through impact—never let hands lag behind the ball. Think "hands lead the clubhead" throughout the entire motion.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup5">
+                        Choke down 1-2 inches for better control
+                    </button>
+                </h3>
+                <div id="setup5" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/setup-choke-down.png" alt="Choking down on wedges" class="content-image" loading="lazy">
+                        <p><strong>Choke down:</strong> Grip 1-2 inches down from the top of the club for enhanced control on delicate shots. This effectively shortens the club and increases feel.</p>
+                        <p><strong>Grip pressure:</strong> Maintain light to moderate pressure (5-6 out of 10) to preserve feel and touch. Avoid death grip which kills distance control.</p>
+                        <p><strong>For bunker shots:</strong> Choke down and use slightly firmer grip to prevent club twisting in sand.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup6">
+                        Open stance for chips, pitches, and bunkers
+                    </button>
+                </h3>
+                <div id="setup6" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/setup-open-stance.png" alt="Open stance setup" class="content-image" loading="lazy">
+                        <p>For pitch shots, chips, and bunker play, open your stance by pulling your front foot back from the target line. This setup provides better visibility of the target line and naturally promotes an outside-to-in path that's ideal for high, soft shots.</p>
+                        <p>Align your feet and body left of target (for right-handed golfers) while keeping the clubface aimed at the target. The more you need to open the face, the more you should open your stance to compensate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: SWING KEYS -->
+        <h2 class="section-title">Swing Keys</h2>
+        <div class="accordion" id="swingKeysAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing1">
+                        Strike down on ball for compression and spin
+                    </button>
+                </h3>
+                <div id="swing1" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/swing-descending-blow.png" alt="Descending angle of attack" class="content-image" loading="lazy">
+                        <p>Strike down and through the ball with a descending angle of attack. The club should contact the ball first, then brush the turf after impact, taking a shallow divot that starts after the ball position.</p>
+                        <p>This descending motion compresses the ball against the clubface, creating maximum spin and control. Never try to "help" the ball up—trust the loft of the club to create height.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing2">
+                        Keep hands ahead of clubhead through impact
+                    </button>
+                </h3>
+                <div id="swing2" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/swing-hands-lead-impact.png" alt="Hands leading at impact" class="content-image" loading="lazy">
+                        <p>Your hands must be ahead of the clubhead at impact, just as they were at address. This forward shaft lean ensures crisp contact, proper trajectory, and maximum spin generation.</p>
+                        <p>Feel like you're "trapping" or "pinching" the ball between the clubface and the ground. Avoid flipping your wrists or trying to scoop the ball—this creates inconsistent contact and poor distance control.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing3">
+                        Rotate body through impact - chest faces target
+                    </button>
+                </h3>
+                <div id="swing3" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/swing-rotation-through.png" alt="Body rotation through impact" class="content-image" loading="lazy">
+                        <p>Even on short wedge shots, continue rotating your body through impact. Your chest should turn toward the target with your belt buckle facing left of target at finish (for right-handed golfers).</p>
+                        <p>This rotation prevents getting "stuck" with hands-only manipulation. For chips, this is minimal shoulder rocking; for full wedges, it's a complete turn through the ball.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing4">
+                        Trust the loft - don't try to help ball up
+                    </button>
+                </h3>
+                <div id="swing4" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/swing-trust-loft.png" alt="Trusting club loft" class="content-image" loading="lazy">
+                        <p>Resist the temptation to help the ball into the air by scooping or flipping at impact. The loft on your wedges (48°-60°) is designed to launch the ball high when you strike down on it properly.</p>
+                        <p>Think "down means up"—the more you strike down on the ball with descending contact, the higher it will fly. Any attempt to lift the ball usually results in thin or fat contact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing5">
+                        Accelerate through impact - never decelerate
+                    </button>
+                </h3>
+                <div id="swing5" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/swing-acceleration.png" alt="Accelerating through impact" class="content-image" loading="lazy">
+                        <p>The club must be accelerating through impact, regardless of shot length. Even on delicate 10-yard chips, maintain smooth acceleration—just with a shorter backswing.</p>
+                        <p>Control distance through backswing length, NOT by slowing down through the ball. Deceleration causes fat shots, thin contact, and unpredictable distances. Commit to every shot with confident acceleration.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing6">
+                        Maintain same tempo for all distances
+                    </button>
+                </h3>
+                <div id="swing6" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/swing-consistent-tempo.png" alt="Consistent swing tempo" class="content-image" loading="lazy">
+                        <p>Maintain the same smooth tempo whether hitting a 30-yard pitch or a 100-yard full wedge. Vary distance through swing length (1/4, 1/2, 3/4, full), not by swinging harder or softer.</p>
+                        <p>Think of your tempo as a metronome that never changes speed. This consistency is the foundation of reliable distance control and allows you to develop precise yardage gaps between clubs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: TOP 5 SWING THOUGHTS -->
+        <h2 class="section-title">Top 5 Swing Thoughts</h2>
+        <div class="accordion" id="swingThoughtsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought1">
+                        Trap ball between clubface and ground
+                    </button>
+                </h3>
+                <div id="thought1" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>What it means:</strong> Strike down on the ball to compress it against the turf, pinching it between clubface and ground.</p>
+                        <p><strong>When to use:</strong> Full swing wedges and pitch shots when you need crisp contact and maximum spin. Especially helpful when struggling with thin contact or lack of backspin.</p>
+                        <p><strong>The feel:</strong> Imagine squeezing the ball at impact rather than sweeping it. You should take a divot that starts after the ball position, indicating you've compressed the ball first.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought2">
+                        Swing through impact zone with acceleration
+                    </button>
+                </h3>
+                <div id="thought2" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>What it means:</strong> Focus your attention on swinging through impact zone with acceleration, not on making contact with the ball itself.</p>
+                        <p><strong>When to use:</strong> Essential for all wedge shots, especially when you tend to decelerate or quit on shots. Prevents "stabbing" at the ball.</p>
+                        <p><strong>The feel:</strong> Think of the ball as simply an obstacle in the path of your swing. Your goal is to swing the club past the ball position with speed, and the ball just happens to be in the way.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought3">
+                        Keep head down through impact - don't peek
+                    </button>
+                </h3>
+                <div id="thought3" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>What it means:</strong> Maintain your head position and eye focus on the ball through impact and into follow-through. Don't peek at the result prematurely.</p>
+                        <p><strong>When to use:</strong> Critical for chip shots and short game where precise contact is essential. Use when topping or thinning wedge shots due to lifting head early.</p>
+                        <p><strong>The feel:</strong> See where the ball was resting even after it's gone. Your head should remain down until your shoulders' rotation naturally brings it up to face the target.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought4">
+                        Maintain spine angle - don't stand up early
+                    </button>
+                </h3>
+                <div id="thought4" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>What it means:</strong> Maintain your spine angle and athletic posture from address through impact. Don't raise your body up or straighten your legs prematurely.</p>
+                        <p><strong>When to use:</strong> Full wedge shots and pitch shots where maintaining consistent contact point is crucial. Especially when experiencing inconsistent strike or thin contact.</p>
+                        <p><strong>The feel:</strong> Stay in your athletic position throughout the swing. Your belt buckle should maintain roughly the same height relative to the ground from address through impact. Only after impact should your body naturally rise into the finish.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought5">
+                        Smooth tempo beats power every time
+                    </button>
+                </h3>
+                <div id="thought5" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>What it means:</strong> Prioritize smooth, consistent rhythm over power or mechanical perfection. Same tempo whether hitting 30 yards or 100 yards.</p>
+                        <p><strong>When to use:</strong> All wedge shots, but especially crucial for distance control. When feeling rushed or tense. When struggling with inconsistent distances despite good mechanics.</p>
+                        <p><strong>The feel:</strong> Smooth and unhurried swing regardless of distance needed. Count rhythm internally ("one-two-three") or use phrase like "low and slow" for takeaway. Control distance through swing length while maintaining constant tempo.</p>
+                        <p><strong>Remember:</strong> Great wedge players distinguish themselves through tempo consistency, not swing speed. Smooth is long, smooth is accurate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4: COMMON FIXES -->
+        <h2 class="section-title">Common Fixes</h2>
+        <div class="accordion" id="commonFixesAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix1">
+                        Fix thin shots: Weight forward, strike down
+                    </button>
+                </h3>
+                <div id="fix1" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Leading edge strikes ball at or above equator due to: (1) trying to help ball up by flipping wrists, (2) weight shifting backward during downswing, (3) standing up through impact, or (4) ball position too far forward.</p>
+                        <h4>Fix</h4>
+                        <img src="images/wedges/error-thin-shots.png" alt="Fix for thin contact" class="content-image" loading="lazy">
+                        <p><strong>Step 1:</strong> Set weight 60-70% forward at address and keep it there throughout swing.</p>
+                        <p><strong>Step 2:</strong> Position ball center or slightly back of center in stance.</p>
+                        <p><strong>Step 3:</strong> Hands ahead at address and maintain this lead through impact—no flipping.</p>
+                        <p><strong>Step 4:</strong> Keep head steady and maintain spine angle—don't stand up to watch shot early.</p>
+                        <p><strong>Practice drill:</strong> Place towel 2 inches behind ball. Make contact with ball without touching towel to groove descending strike.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix2">
+                        Fix fat shots: Ball first, hands lead
+                    </button>
+                </h3>
+                <div id="fix2" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Club contacts ground before ball due to: (1) weight hanging back on rear foot, (2) releasing club too early (casting), (3) ball position too far forward, (4) trying to scoop ball up, or (5) collapsing through impact.</p>
+                        <h4>Fix</h4>
+                        <img src="images/wedges/error-fat-shots.png" alt="Fix for fat contact" class="content-image" loading="lazy">
+                        <p><strong>Step 1:</strong> Start with 70% weight on front foot and maintain forward pressure throughout swing.</p>
+                        <p><strong>Step 2:</strong> Move ball back to center of stance for better contact point control.</p>
+                        <p><strong>Step 3:</strong> Feel hands leading clubhead through entire downswing and impact zone.</p>
+                        <p><strong>Step 4:</strong> Focus on hitting the ball first, then brush turf after—divot starts after ball position.</p>
+                        <p><strong>Practice drill:</strong> Draw line in grass at ball position. Focus on contacting ball before line, with divot starting after line.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix3">
+                        Fix distance control: Consistent tempo, track yardages
+                    </button>
+                </h3>
+                <div id="fix3" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Variable distances with same club due to: (1) inconsistent tempo—swinging faster or slower, (2) varying contact quality (fat/thin), (3) changing swing length without awareness, or (4) deceleration through impact on some swings.</p>
+                        <h4>Fix</h4>
+                        <img src="images/wedges/error-distance-control.png" alt="Fix for distance control" class="content-image" loading="lazy">
+                        <p><strong>Step 1:</strong> Establish consistent tempo—count "1-2" for backswing, "3" for downswing on every shot.</p>
+                        <p><strong>Step 2:</strong> Practice specific swing lengths: 1/4 (hands to hip), 1/2 (hands to chest), 3/4 (hands to shoulder), full (complete turn).</p>
+                        <p><strong>Step 3:</strong> Always accelerate through ball—control distance with backswing length, not by slowing down.</p>
+                        <p><strong>Step 4:</strong> Track your yardages: Record distance for each wedge at each swing length (1/4, 1/2, 3/4, full).</p>
+                        <p><strong>Practice drill:</strong> Hit 10 balls with 1/2 swing focusing only on tempo consistency. Note average distance. Repeat with 3/4 swing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix4">
+                        Fix trajectory: Adjust ball position and club selection
+                    </button>
+                </h3>
+                <div id="fix4" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Ball flies too high or too low due to: (1) incorrect ball position affecting launch, (2) improper shaft lean at impact, (3) flipping wrists adding dynamic loft, (4) scooping motion rather than descending strike, or (5) using wrong club for desired trajectory.</p>
+                        <h4>Fix</h4>
+                        <img src="images/wedges/error-trajectory.png" alt="Fix for trajectory control" class="content-image" loading="lazy">
+                        <p><strong>For lower trajectory:</strong></p>
+                        <ul>
+                            <li>Ball position back in stance (just back of center)</li>
+                            <li>Hands well ahead at address and impact</li>
+                            <li>Weight more forward (70/30 split)</li>
+                            <li>Choose less-lofted wedge (PW or GW instead of SW/LW)</li>
+                        </ul>
+                        <p><strong>For higher trajectory:</strong></p>
+                        <ul>
+                            <li>Ball position slightly forward of center</li>
+                            <li>Hands just slightly ahead (less shaft lean)</li>
+                            <li>Weight more centered (55/45 split)</li>
+                            <li>Choose high-lofted club (LW 60° for maximum height)</li>
+                        </ul>
+                        <p><strong>Key principle:</strong> Never manipulate loft through wrist flip. Control trajectory through setup position and club selection while maintaining proper ball-first contact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 5: DISTANCE CONTROL -->
+        <h2 class="section-title">Distance Control</h2>
+        <div class="accordion" id="fullSwingAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#full1">
+                        Use 1/4, 1/2, 3/4, full swing lengths
+                    </button>
+                </h3>
+                <div id="full1" class="accordion-collapse collapse" data-bs-parent="#fullSwingAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/distance-control-system.png" alt="Wedge distance control" class="content-image" loading="lazy">
+                        <p>Control distance through swing length while maintaining consistent tempo and acceleration:</p>
+                        <ul>
+                            <li><strong>Full swing (100%):</strong> Complete backswing, full shoulder turn, maximum distance for each wedge</li>
+                            <li><strong>3/4 swing (75%):</strong> Three-quarter backswing (hands to shoulder height), full follow-through</li>
+                            <li><strong>1/2 swing (50%):</strong> Half backswing (hands to chest height), matching follow-through</li>
+                            <li><strong>1/4 swing (25%):</strong> Short backswing (hands to hip height) for delicate shots</li>
+                        </ul>
+                        <p><strong>Critical:</strong> Maintain same tempo and acceleration at all swing lengths. Never decelerate to shorten distance—use shorter backswing instead.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#full2">
+                        Choose club based on loft: PW to LW
+                    </button>
+                </h3>
+                <div id="full2" class="accordion-collapse collapse" data-bs-parent="#fullSwingAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/distance-club-lofts.png" alt="Wedge loft comparison" class="content-image" loading="lazy">
+                        <p><strong>PW (Pitching Wedge) - 44-48°:</strong></p>
+                        <ul>
+                            <li>Longest distance wedge in bag (typically 100-130 yards)</li>
+                            <li>Lower trajectory with more roll after landing</li>
+                            <li>Most versatile for full shots and longer approaches</li>
+                        </ul>
+                        <p><strong>GW (Gap Wedge) - 50-52°:</strong></p>
+                        <ul>
+                            <li>Fills distance gap between PW and SW (typically 80-105 yards)</li>
+                            <li>Medium trajectory and roll</li>
+                            <li>Excellent for controlled full swings</li>
+                        </ul>
+                        <p><strong>SW (Sand Wedge) - 54-56°:</strong></p>
+                        <ul>
+                            <li>Designed for bunker play with added bounce (typically 60-85 yards full)</li>
+                            <li>High trajectory with moderate roll</li>
+                            <li>Standard for greenside bunker shots</li>
+                        </ul>
+                        <p><strong>LW (Lob Wedge) - 58-60°:</strong></p>
+                        <ul>
+                            <li>Highest loft, shortest distance (typically 50-75 yards full)</li>
+                            <li>Maximum height with minimal roll</li>
+                            <li>Best for delicate shots, flops, and tight pins</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#full3">
+                        Control height with ball position and loft
+                    </button>
+                </h3>
+                <div id="full3" class="accordion-collapse collapse" data-bs-parent="#fullSwingAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/distance-trajectory-control.png" alt="Controlling wedge trajectory" class="content-image" loading="lazy">
+                        <p><strong>For HIGHER trajectory:</strong></p>
+                        <ul>
+                            <li>Ball position slightly forward of center</li>
+                            <li>Open clubface slightly at address</li>
+                            <li>Weight more centered (55/45 front foot bias)</li>
+                            <li>Shallower angle of attack</li>
+                            <li>Choose higher-lofted club (SW or LW)</li>
+                        </ul>
+                        <p><strong>For LOWER trajectory:</strong></p>
+                        <ul>
+                            <li>Ball position back in stance (just back of center)</li>
+                            <li>Hands well ahead at address</li>
+                            <li>Weight forward (70/30 split)</li>
+                            <li>Steeper angle of attack</li>
+                            <li>Choose lower-lofted wedge (PW or GW)</li>
+                        </ul>
+                        <p><strong>When to adjust:</strong> Into wind (lower), soft greens (higher), firm greens (lower for release), over obstacles (higher), under trees (lower).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#full4">
+                        Practice and track your exact distances
+                    </button>
+                </h3>
+                <div id="full4" class="accordion-collapse collapse" data-bs-parent="#fullSwingAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/distance-yardage-chart.png" alt="Personal wedge yardage chart" class="content-image" loading="lazy">
+                        <p>Create a personal distance matrix for each wedge at each swing length. This eliminates guesswork and builds confidence:</p>
+                        <p><strong>Sample Distance Matrix:</strong></p>
+                        <table>
+                            <tr>
+                                <th>Club</th>
+                                <th>Full</th>
+                                <th>3/4</th>
+                                <th>1/2</th>
+                            </tr>
+                            <tr>
+                                <td><strong>PW</strong></td>
+                                <td>120y</td>
+                                <td>100y</td>
+                                <td>80y</td>
+                            </tr>
+                            <tr>
+                                <td><strong>GW</strong></td>
+                                <td>105y</td>
+                                <td>85y</td>
+                                <td>65y</td>
+                            </tr>
+                            <tr>
+                                <td><strong>SW</strong></td>
+                                <td>85y</td>
+                                <td>70y</td>
+                                <td>50y</td>
+                            </tr>
+                            <tr>
+                                <td><strong>LW</strong></td>
+                                <td>70y</td>
+                                <td>55y</td>
+                                <td>40y</td>
+                            </tr>
+                        </table>
+                        <p><strong>How to build your chart:</strong> At practice range, hit 10 balls with each club at each swing length. Eliminate highest and lowest, average the middle 8. Update seasonally as conditions change.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p><strong>Content from Golf Distillery</strong><br>
+            Mobile-optimized for on-course reference<br>
+            <em>Bootstrap 5.3 Proof of Concept</em></p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

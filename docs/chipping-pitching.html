@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Chipping & Pitching - Golf Training Hub</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Golf Theme CSS -->
+    <link href="bootstrap-custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- HEADER -->
+        <header class="page-header">
+            <button class="btn-back" onclick="window.location.href='on-course.html'" aria-label="Back to club selection">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="on-course.html">On Course</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Chipping & Pitching</li>
+                </ol>
+            </nav>
+        </header>
+
+        <!-- PAGE TITLE -->
+        <h1 class="page-title">Chipping & Pitching</h1>
+
+        <!-- QUICK REFERENCE CARD (ALWAYS VISIBLE) -->
+        <div class="quick-ref-card">
+            <div class="quick-ref-title">Short Game at a Glance</div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Chip:</span>
+                <span class="quick-ref-value">Low trajectory, more roll</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Pitch:</span>
+                <span class="quick-ref-value">Higher trajectory, less roll</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Flop:</span>
+                <span class="quick-ref-value">Very high, minimal roll</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Club Selection:</span>
+                <span class="quick-ref-value">Varies by distance to hole</span>
+            </div>
+        </div>
+
+        <!-- SECTION 1: PITCH SHOTS -->
+        <h2 class="section-title">Pitch Shots (40-80 Yards)</h2>
+        <div class="accordion" id="pitchShotsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pitch1">
+                        Pitch shot: More air than roll (20-50 yards)
+                    </button>
+                </h3>
+                <div id="pitch1" class="accordion-collapse collapse" data-bs-parent="#pitchShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/pitch-definition.png" alt="Pitch shot characteristics" class="content-image" loading="lazy">
+                        <p>A pitch shot uses a high-lofted club to hit the ball high with a soft landing. It's characterized by high trajectory and quick stopping upon landing on the green.</p>
+                        <p><strong>When to use:</strong> Approaching green from 30-100 yards, obstacles (bunkers, rough, water) between you and green, pin close to your side with limited landing area, need ball to stop quickly, softer greens that allow aggressive approach.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pitch2">
+                        Setup: Narrow stance, open slightly, weight forward
+                    </button>
+                </h3>
+                <div id="pitch2" class="accordion-collapse collapse" data-bs-parent="#pitchShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/pitch-setup.png" alt="Pitch shot setup" class="content-image" loading="lazy">
+                        <p><strong>Stance:</strong> Narrower than full swing, feet closer together for better feel</p>
+                        <p><strong>Ball Position:</strong> Center to slightly back of center</p>
+                        <p><strong>Weight:</strong> 60% on front foot at address, maintain throughout</p>
+                        <p><strong>Hands:</strong> Slightly ahead of ball for proper shaft lean</p>
+                        <p><strong>Open Stance:</strong> Pull front foot back slightly for better visibility and natural out-to-in path</p>
+                        <p><strong>Grip:</strong> Choke down 1-2 inches for enhanced control</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pitch3">
+                        Vary distance with swing length, not speed
+                    </button>
+                </h3>
+                <div id="pitch3" class="accordion-collapse collapse" data-bs-parent="#pitchShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/pitch-distances.png" alt="Pitch shot distance ranges" class="content-image" loading="lazy">
+                        <p><strong>20-40 Yards (1/4 Swing):</strong></p>
+                        <ul>
+                            <li>Lob wedge or sand wedge</li>
+                            <li>Short backswing (hands to hip height), smooth tempo</li>
+                            <li>Maximum control and soft landing</li>
+                        </ul>
+                        <p><strong>40-60 Yards (1/2 Swing):</strong></p>
+                        <ul>
+                            <li>Sand wedge or lob wedge</li>
+                            <li>Half swing (hands to chest) with full acceleration</li>
+                            <li>High trajectory with quick stop</li>
+                        </ul>
+                        <p><strong>60-80 Yards (3/4 Swing):</strong></p>
+                        <ul>
+                            <li>Gap wedge or 3/4 pitching wedge</li>
+                            <li>Focus on landing spot, not flag</li>
+                            <li>Consider wind and green firmness</li>
+                        </ul>
+                        <p><strong>Key principle:</strong> Control distance through backswing length while maintaining consistent tempo and acceleration through impact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pitch4">
+                        Pick specific landing spot, visualize ball flight
+                    </button>
+                </h3>
+                <div id="pitch4" class="accordion-collapse collapse" data-bs-parent="#pitchShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/pitch-landing-spot.png" alt="Landing spot visualization" class="content-image" loading="lazy">
+                        <p>Pick a specific landing spot on the green, NOT the hole itself. This is the most critical mental shift for pitch shot success.</p>
+                        <p><strong>Process:</strong></p>
+                        <ul>
+                            <li>Visualize ball trajectory from landing spot to hole</li>
+                            <li>Account for slope (uphill/downhill/breaking)</li>
+                            <li>Consider green firmness (soft = land closer, firm = land shorter)</li>
+                            <li>Aim for spot that leaves margin for error</li>
+                            <li>Commit fully to landing spot distance, not hole distance</li>
+                        </ul>
+                        <p><strong>Rule of thumb:</strong> On average-speed greens, ball typically rolls 1/3 of carry distance after landing from standard pitch shot.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pitch5">
+                        Use pitch and run for safer approach
+                    </button>
+                </h3>
+                <div id="pitch5" class="accordion-collapse collapse" data-bs-parent="#pitchShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/pitch-and-run.png" alt="Pitch and run technique" class="content-image" loading="lazy">
+                        <p><strong>When to use:</strong> Very windy conditions (high trajectory difficult to control), hard ground surfaces (ball bounces and rolls more), when rolling ball to pin provides more control than aerial approach.</p>
+                        <p><strong>Setup adjustments:</strong></p>
+                        <ul>
+                            <li>Ball slightly back of center in stance</li>
+                            <li>Hands forward, creating more shaft lean</li>
+                            <li>Weight favoring front foot (65/35 split)</li>
+                            <li>Choose less-lofted club (gap wedge or even pitching wedge)</li>
+                        </ul>
+                        <p><strong>Execution:</strong> Same swing as standard pitch but delofted setup produces lower flight with more roll. Ball lands with less spin and releases toward hole.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: CHIP SHOTS -->
+        <h2 class="section-title">Chip Shots</h2>
+        <div class="accordion" id="chipShotsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chip1">
+                        Chip shot: More roll than air (under 20 yards)
+                    </button>
+                </h3>
+                <div id="chip1" class="accordion-collapse collapse" data-bs-parent="#chipShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/chip-definition.png" alt="Chip shot characteristics" class="content-image" loading="lazy">
+                        <p>Executed when ball is on grass close to green. Uses high-lofted club to pop ball onto green where it rolls toward hole. Swing motion resembles a putt with loft.</p>
+                        <p><strong>Key characteristics:</strong> Minimal air time, maximum roll, simple putting-like stroke, high success rate when executed properly.</p>
+                        <p><strong>When to use:</strong> Ball just off green on fairway or first cut, no obstacles between ball and green, plenty of green to work with, firm/fast conditions favor rolling approach.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chip2">
+                        Setup: Ball back, hands forward, 70% weight left
+                    </button>
+                </h3>
+                <div id="chip2" class="accordion-collapse collapse" data-bs-parent="#chipShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/chip-setup.png" alt="Chip shot setup" class="content-image" loading="lazy">
+                        <p><strong>Narrow Stance:</strong> Feet very close together (6-8 inches apart) for stability and feel</p>
+                        <p><strong>Weight Forward:</strong> 70-80% on front foot—critical for clean contact</p>
+                        <p><strong>Hands Forward:</strong> Well ahead of ball throughout entire stroke</p>
+                        <p><strong>Ball Position:</strong> Back of center in stance (near back foot)</p>
+                        <p><strong>Choke Down:</strong> Grip down on club significantly for maximum control</p>
+                        <p><strong>Shaft Lean:</strong> Visible forward lean creates descending strike</p>
+                        <p><strong>Arms form "Y":</strong> Hands, arms, and shaft form letter Y at address—maintain this throughout stroke</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chip3">
+                        Bump and run: Use putting stroke with loft
+                    </button>
+                </h3>
+                <div id="chip3" class="accordion-collapse collapse" data-bs-parent="#chipShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/chip-bump-and-run.png" alt="Bump and run technique" class="content-image" loading="lazy">
+                        <p>Low hop followed by extended rolling—the safest short game shot around the green.</p>
+                        <p><strong>Best conditions:</strong></p>
+                        <ul>
+                            <li>No obstacles between ball and green</li>
+                            <li>Plenty of green to work with</li>
+                            <li>Green slopes toward hole</li>
+                            <li>Firm and fast conditions</li>
+                            <li>Downwind (helps ball roll out)</li>
+                        </ul>
+                        <p><strong>Execution:</strong> Use putting stroke with lofted club. Minimal wrist action, quiet hands, shoulder rocking motion controls distance. Ball pops onto green with one hop then rolls like a putt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chip4">
+                        Match club to air-to-roll ratio needed
+                    </button>
+                </h3>
+                <div id="chip4" class="accordion-collapse collapse" data-bs-parent="#chipShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/chip-air-roll-ratios.png" alt="Chip shot air to roll ratios" class="content-image" loading="lazy">
+                        <p><strong>7-Iron or 8-Iron (20% air / 80% roll):</strong></p>
+                        <ul>
+                            <li>Land marker at 1/4 to 1/5 of total distance to hole</li>
+                            <li>Maximum roll with minimal flight</li>
+                            <li>Safest option when path is completely clear</li>
+                            <li>Easiest club to control—like a long putt</li>
+                        </ul>
+                        <p><strong>Pitching Wedge (50% air / 50% roll):</strong></p>
+                        <ul>
+                            <li>Land marker at halfway distance to hole</li>
+                            <li>Balanced flight and roll</li>
+                            <li>Most versatile option for various green speeds</li>
+                            <li>Good starting point if unsure which club to use</li>
+                        </ul>
+                        <p><strong>Sand or Lob Wedge (80% air / 20% roll):</strong></p>
+                        <ul>
+                            <li>Land marker at 75-80% of total distance</li>
+                            <li>More flight with minimal roll</li>
+                            <li>When you need to carry fringe or small obstacle</li>
+                            <li>Pin is close to your side of green</li>
+                        </ul>
+                        <p><strong>Selection strategy:</strong> When in doubt, use less loft. Lower-running chips have higher margin for error than high-flying wedge chips.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chip5">
+                        Firm wrists, shoulder rock like putting
+                    </button>
+                </h3>
+                <div id="chip5" class="accordion-collapse collapse" data-bs-parent="#chipShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/chip-stroke-mechanics.png" alt="Chip shot stroke mechanics" class="content-image" loading="lazy">
+                        <p><strong>Quiet Hands:</strong> Minimal to zero wrist action—maintain firm wrists like putting stroke</p>
+                        <p><strong>Shoulder Rotation:</strong> Rock shoulders to control distance, not hands or wrists</p>
+                        <p><strong>Steady Head:</strong> Keep head perfectly still throughout entire motion—watch where ball was</p>
+                        <p><strong>Accelerate Through:</strong> Never decelerate into impact—smooth acceleration essential</p>
+                        <p><strong>Low Follow-Through:</strong> Keep hands ahead throughout, club stays low to ground</p>
+                        <p><strong>Weight Stays Forward:</strong> Never shift weight backward—maintain 70-80% on front foot start to finish</p>
+                        <p><strong>Think "bigger putting stroke":</strong> If it helps, imagine you're putting with a lofted club. Same tempo, same stroke, same confidence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chip6">
+                        Fix skulled chips: 70% weight forward, firm wrists
+                    </button>
+                </h3>
+                <div id="chip6" class="accordion-collapse collapse" data-bs-parent="#chipShotsAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Leading edge strikes center or top of ball on chip shots, sending ball racing across green due to: (1) trying to help ball up, (2) looking up too early, (3) standing up through impact, or (4) hands falling behind clubhead.</p>
+                        <h4>Fix</h4>
+                        <img src="images/wedges/error-skulled-chips.png" alt="Fix for skulled chips" class="content-image" loading="lazy">
+                        <p><strong>Step 1:</strong> Set up with 70-80% weight on front foot—this is critical for chips.</p>
+                        <p><strong>Step 2:</strong> Position ball back in stance and hands well ahead.</p>
+                        <p><strong>Step 3:</strong> Keep wrists firm—think "putting motion with lofted club," no wrist hinge.</p>
+                        <p><strong>Step 4:</strong> Keep head down until well after impact—see where ball was sitting.</p>
+                        <p><strong>Step 5:</strong> Maintain same spine angle from setup through finish—no standing up.</p>
+                        <p><strong>Practice drill:</strong> Place coin 1 inch in front of ball. After hitting chip, coin should still be there (you didn't hit ground before ball).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: FLOP SHOTS -->
+        <h2 class="section-title">Flop Shots</h2>
+        <div class="accordion" id="flopShotsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flop1">
+                        Flop shot: Use only when obstacle demands it
+                    </button>
+                </h3>
+                <div id="flop1" class="accordion-collapse collapse" data-bs-parent="#flopShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/flop-situations.png" alt="When to use flop shots" class="content-image" loading="lazy">
+                        <p>Hit ball very high over very short distance with minimal roll after landing. <strong>This is a high-risk shot—use only when necessary.</strong></p>
+                        <p><strong>Ideal situations:</strong></p>
+                        <ul>
+                            <li>Standing near green with bunker or water between ball and pin</li>
+                            <li>Green speeds are particularly fast (ball won't stop with standard chip)</li>
+                            <li>Pin is close to your side with very little green to work with</li>
+                            <li>Need ball to stop almost immediately after landing</li>
+                            <li>Good lie in fluffy grass (easiest conditions for flop)</li>
+                        </ul>
+                        <p><strong>When NOT to use:</strong> Tight lies (high risk of skulling), into wind (can't control trajectory), cold weather (club bounces unpredictably), when safer alternative exists.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flop2">
+                        Setup: Wide open face, ball forward, open stance
+                    </button>
+                </h3>
+                <div id="flop2" class="accordion-collapse collapse" data-bs-parent="#flopShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/flop-setup.png" alt="Flop shot setup" class="content-image" loading="lazy">
+                        <p><strong>CRITICAL ORDER: Open clubface BEFORE taking grip</strong></p>
+                        <ol>
+                            <li>Set club down with face square to target</li>
+                            <li>Rotate clubface open 20-30 degrees (face points right of target for right-handed golfer)</li>
+                            <li>NOW take your grip—this prevents face squaring at impact</li>
+                            <li>Open your stance wide (feet well outside shoulders)</li>
+                            <li>Position ball forward in stance (off front heel)</li>
+                            <li>Can move weight slightly back (45/55) for fluffy lies</li>
+                            <li>Aim body left of target—clubface aims at target</li>
+                        </ol>
+                        <p><strong>Why this order matters:</strong> If you take normal grip THEN open face, your hands will naturally square the face at impact, defeating the purpose.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flop3">
+                        Full swing with acceleration under ball
+                    </button>
+                </h3>
+                <div id="flop3" class="accordion-collapse collapse" data-bs-parent="#flopShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/flop-swing.png" alt="Flop shot swing technique" class="content-image" loading="lazy">
+                        <p><strong>Full Swing Required:</strong> Counter-intuitively, you need significant swing speed to create maximum height over short distance. This is NOT a delicate chip—it's an aggressive motion.</p>
+                        <p><strong>Swing Along Body Line:</strong> Do NOT swing at target. Swing along your body alignment (which is left of target). The open face will direct ball toward target.</p>
+                        <p><strong>Slide Clubface Under Ball:</strong> Let the loft and bounce do the work. Feel like you're sliding the club under the ball, using the bounce to skim through grass.</p>
+                        <p><strong>Accelerate Aggressively:</strong> Commit fully to fast acceleration. Tentative swings lead to disaster (either chunk it or blade it).</p>
+                        <p><strong>High Follow-Through:</strong> Complete the swing fully with high finish. Hands should finish above shoulder height.</p>
+                        <p><strong>Mental commitment:</strong> This shot requires 100% commitment. Any doubt or deceleration causes failure. If you're not fully committed, choose different shot.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flop4">
+                        High risk - only use when necessary
+                    </button>
+                </h3>
+                <div id="flop4" class="accordion-collapse collapse" data-bs-parent="#flopShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/flop-risks.png" alt="Flop shot risk management" class="content-image" loading="lazy">
+                        <p><strong>HIGH RISK SHOT - Consider alternatives first:</strong></p>
+                        <ul>
+                            <li><strong>Thin contact:</strong> Sends ball racing across green (or worse)</li>
+                            <li><strong>Fat contact:</strong> Leaves ball well short, possibly still in trouble</li>
+                            <li><strong>Requires perfect execution:</strong> Small margin for error</li>
+                            <li>Ask yourself: "Can I bump-and-run around the obstacle instead?"</li>
+                        </ul>
+                        <p><strong>Best conditions for flop shot success:</strong></p>
+                        <ul>
+                            <li>Good to fluffy lie in light rough or fairway grass</li>
+                            <li>Soft, receptive landing area (green holds shots)</li>
+                            <li>Warm weather (cold affects club bounce behavior)</li>
+                            <li>Downwind or no wind (wind makes trajectory unpredictable)</li>
+                            <li>You've practiced this shot extensively</li>
+                        </ul>
+                        <p><strong>Worst conditions for flop:</strong> Tight lies, hardpan, cold weather, into wind, elevated green (already get height), when nervous or uncommitted.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4: SPECIAL CIRCUMSTANCES -->
+        <h2 class="section-title">Special Circumstances</h2>
+        <div class="accordion" id="specialCircumstancesAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#special1">
+                        Tight lies: Ball back, hands forward, no flip
+                    </button>
+                </h3>
+                <div id="special1" class="accordion-collapse collapse" data-bs-parent="#specialCircumstancesAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/lie-tight.png" alt="Wedge play from tight lies" class="content-image" loading="lazy">
+                        <p><strong>Challenge:</strong> Very little grass cushion under ball—high risk of blading if club bounces off hard ground</p>
+                        <p><strong>Smart Strategy:</strong> Consider bump-and-run with less-lofted club (8-iron) rather than lofted wedge—much safer option with higher success rate</p>
+                        <p><strong>If Wedge Required - Adjustments:</strong></p>
+                        <ul>
+                            <li>Ball position center or slightly back of center</li>
+                            <li>Hands well ahead at address and maintain through impact</li>
+                            <li>Weight significantly forward (70/30 split minimum)</li>
+                            <li>Use pitching wedge (least bounce) rather than sand/lob wedge</li>
+                            <li>Quiet hands, shoulder rotation—no wrist manipulation</li>
+                            <li>Descending blow absolutely essential—pick ball clean</li>
+                            <li>Don't try to take divot—skim turf surface</li>
+                        </ul>
+                        <p><strong>What to Avoid:</strong> High-bounce wedges (sand wedge) that will skip off hard ground into ball causing skull. Avoid trying to help ball up—trust descending strike.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#special2">
+                        Heavy rough: Steep swing, close face, punch out
+                    </button>
+                </h3>
+                <div id="special2" class="accordion-collapse collapse" data-bs-parent="#specialCircumstancesAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/lie-heavy-rough.png" alt="Wedge play from heavy rough" class="content-image" loading="lazy">
+                        <p><strong>Challenge:</strong> Thick grass between clubface and ball eliminates backspin—creates unpredictable "flier" effect where ball comes out hot with minimal spin</p>
+                        <p><strong>Adjustments:</strong></p>
+                        <ul>
+                            <li>Open clubface at address to prevent twisting through heavy grass</li>
+                            <li>Steeper angle of attack to minimize grass contact</li>
+                            <li>More aggressive swing—grass will slow club significantly</li>
+                            <li>Firm grip pressure to prevent club twisting at impact</li>
+                            <li>Consider sand wedge over lob wedge (more mass cuts through grass better)</li>
+                        </ul>
+                        <p><strong>Expect Different Ball Flight:</strong></p>
+                        <ul>
+                            <li>Ball will launch lower than normal</li>
+                            <li>Significantly less backspin—ball will roll more after landing</li>
+                            <li>Aim short of target to account for extra roll</li>
+                            <li>May travel 10-20 yards farther than expected from same swing</li>
+                        </ul>
+                        <p><strong>Club Selection:</strong> Use one less club than normal distance (example: if you'd normally hit sand wedge, consider gap wedge instead) to account for flier effect.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#special3">
+                        Fluffy rough: Beware flyers, club down, control spin
+                    </button>
+                </h3>
+                <div id="special3" class="accordion-collapse collapse" data-bs-parent="#specialCircumstancesAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/lie-fluffy-rough.png" alt="Wedge play from fluffy rough" class="content-image" loading="lazy">
+                        <p><strong>Challenge:</strong> Ball sitting up on top of grass—easy to slide club completely under ball without making solid contact (leads to thin or topped shots)</p>
+                        <p><strong>The Good News:</strong> This is actually good lie for certain shots—excellent for flop shot if situation calls for it. Ball sitting up allows you to get under it easily.</p>
+                        <p><strong>Adjustments:</strong></p>
+                        <ul>
+                            <li>Can be aggressive with highly lofted clubs (lob wedge works well)</li>
+                            <li>Focus on hitting ball's equator or slightly below center</li>
+                            <li>Don't try to dig—let club slide through grass naturally</li>
+                            <li>Accept that ball will fly with little spin (flier lie)</li>
+                            <li>May need to use one less club than normal (PW instead of GW)</li>
+                        </ul>
+                        <p><strong>Expect Different Results:</strong></p>
+                        <ul>
+                            <li>Ball will launch easily with high trajectory</li>
+                            <li>Reduced spin means ball will release more on landing</li>
+                            <li>Typically travels farther than same swing from fairway</li>
+                            <li>Aim short and allow for 5-15 yards extra roll</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#special4">
+                        Tall grass/fescue: Accept limited control, get out
+                    </button>
+                </h3>
+                <div id="special4" class="accordion-collapse collapse" data-bs-parent="#specialCircumstancesAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/lie-tall-grass.png" alt="Wedge play from tall grass" class="content-image" loading="lazy">
+                        <p><strong>Challenge:</strong> Very long, thick grass wraps around hosel and shaft, causing severe distance loss and unpredictable results. This is penalty-level rough.</p>
+                        <p><strong>Primary Strategy - GET OUT:</strong></p>
+                        <ul>
+                            <li><strong>Goal is escape, not perfection</strong>—don't be hero</li>
+                            <li>Advance ball back to fairway or safe area</li>
+                            <li>Forget about reaching green if lie is terrible</li>
+                            <li>Accept you'll lose a stroke—minimize total damage</li>
+                        </ul>
+                        <p><strong>Technical Execution:</strong></p>
+                        <ul>
+                            <li>Use sand wedge or gap wedge (blade cuts through better than lob wedge)</li>
+                            <li>Very steep angle of attack—chop down into grass</li>
+                            <li><strong>Extremely firm grip</strong>—grass will violently twist club</li>
+                            <li>Short, powerful swing rather than long smooth swing</li>
+                            <li>Aim well left of target (for right-handers)—grass closes face dramatically</li>
+                        </ul>
+                        <p><strong>Realistic Expectations:</strong> May only advance ball 30-50 yards even with full effort. Distance control impossible. Direction unpredictable. Sometimes sideways or backward is smartest play.</p>
+                        <p><strong>Mental Approach:</strong> This is damage control, not shot-making. Take your medicine, get back in play, move on. Trying for hero shot often leads to double penalty.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#special5">
+                        Hardpan: Ball back, sweep don't dig, chip/bump run
+                    </button>
+                </h3>
+                <div id="special5" class="accordion-collapse collapse" data-bs-parent="#specialCircumstancesAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/lie-hardpan.png" alt="Wedge play from hardpan" class="content-image" loading="lazy">
+                        <p><strong>Challenge:</strong> Rock-hard ground with zero give—club bounces easily off surface into ball causing skulls. No margin for error. One of golf's most intimidating lies.</p>
+                        <p><strong>Safest Strategy (Highly Recommended):</strong> Use bump-and-run with 8 or 9-iron rather than wedge. Lower-lofted club with less bounce = much higher success rate.</p>
+                        <p><strong>If Wedge Absolutely Required - Adjustments:</strong></p>
+                        <ul>
+                            <li>Use <strong>pitching wedge only</strong> (least bounce of wedges)—never sand or lob wedge</li>
+                            <li>Ball position well back in stance (back of center)</li>
+                            <li>Hands significantly ahead at address</li>
+                            <li>Weight very forward (80/20 split minimum)</li>
+                            <li>Extremely steep angle of attack</li>
+                            <li>Pick ball absolutely clean—don't attempt to take divot</li>
+                            <li>Think "trap the ball" against hard surface</li>
+                        </ul>
+                        <p><strong>Expect Different Results:</strong></p>
+                        <ul>
+                            <li>Ball will launch with low trajectory</li>
+                            <li>Significant roll after landing (plan for this)</li>
+                            <li>Very little spin generation possible</li>
+                            <li>May need to aim short and use slope/firmness to reach target</li>
+                        </ul>
+                        <p><strong>What to Absolutely Avoid:</strong> Lob wedge or sand wedge from hardpan—excessive bounce will skip club into ball's equator causing skull that races across green. This is recipe for disaster.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p><strong>Content from Golf Distillery</strong><br>
+            Mobile-optimized for on-course reference<br>
+            <em>Bootstrap 5.3 Proof of Concept</em></p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

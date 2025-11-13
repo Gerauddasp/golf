@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Driver - Golf Training Hub (Bootstrap)</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Golf Theme CSS -->
+    <link href="bootstrap-custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- HEADER -->
+        <header class="page-header">
+            <button class="btn-back" onclick="window.location.href='on-course.html'" aria-label="Back to club selection">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="on-course.html">On Course</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Driver</li>
+                </ol>
+            </nav>
+        </header>
+
+        <!-- PAGE TITLE -->
+        <h1 class="page-title">Driver</h1>
+
+        <!-- QUICK REFERENCE CARD (ALWAYS VISIBLE) -->
+        <div class="quick-ref-card">
+            <div class="quick-ref-title">Quick Reference</div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Ball Position:</span>
+                <span class="quick-ref-value">Forward (off left heel)</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Tee Height:</span>
+                <span class="quick-ref-value">Center at crown</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Stance:</span>
+                <span class="quick-ref-value">Wide (2-6" beyond shoulders)</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Weight:</span>
+                <span class="quick-ref-value">60/40 back foot</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Spine Tilt:</span>
+                <span class="quick-ref-value">Away from target</span>
+            </div>
+        </div>
+
+        <!-- SECTION 1: SETUP TIPS -->
+        <h2 class="section-title">Setup Tips</h2>
+        <div class="accordion" id="setupTipsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup1">
+                        Position ball off left heel
+                    </button>
+                </h3>
+                <div id="setup1" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/driver/ball-position-forward.png" alt="Ball positioned forward off left heel" class="content-image" loading="lazy">
+                        <p>Position the ball off your left heel (for right-handed golfers). This forward position is essential for the driver because it allows you to catch the ball on the upswing, maximizing carry distance and optimal launch angle.</p>
+                        <p><strong>Why it works:</strong> The forward position increases loft and enables contact after the swing's lowest point, creating an ascending blow that launches the ball high and far.</p>
+                        <p><strong>Setup method:</strong> Place the ball first, then position your left foot closer to it and your right foot farther away. The ball should be aligned with or even forward of your left heel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup2">
+                        Tee ball center at crown level
+                    </button>
+                </h3>
+                <div id="setup2" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/driver/ball-tee-height.png" alt="Tee height with ball center at crown" class="content-image" loading="lazy">
+                        <p>Tee the ball so that the center (equator) of the ball aligns with the top of the driver's crown when the club rests on the ground. This is the optimal height for most golfers.</p>
+                        <p><strong>Too high:</strong> Striking high on the clubface produces sky shots or excessively high drives that lose distance. Ball marks well above the sweet spot indicate this problem.</p>
+                        <p><strong>Too low:</strong> Striking low on the clubface produces drives that fly too low and don't maximize carry distance. The ball won't achieve optimal trajectory.</p>
+                        <p><strong>Pro tip:</strong> Use impact spray or decals on your clubface to check where you're making contact. Adjust tee height until you're consistently hitting the sweet spot.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup3">
+                        Set stance 2-6 inches wider than shoulders
+                    </button>
+                </h3>
+                <div id="setup3" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/driver/feet-stance-wide.png" alt="Wide stance for driver setup" class="content-image" loading="lazy">
+                        <p>Position your feet wider than shoulder-width apart - typically 2-6 inches beyond your shoulders on each side. This wide base is standard for driver setup.</p>
+                        <p><strong>Benefits:</strong> Provides maximum stability for the aggressive swing required with a driver. Lower center of gravity helps resist swaying and maintains balance through the powerful rotation.</p>
+                        <p><strong>Important:</strong> Despite the wide base, focus on rotating rather than sliding. The wide stance should provide a stable platform for rotation, not encourage lateral movement.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup4">
+                        Distribute weight 60/40 on back foot
+                    </button>
+                </h3>
+                <div id="setup4" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/driver/weight-back.png" alt="60/40 weight distribution" class="content-image" loading="lazy">
+                        <p>At address, distribute your weight 60% on your back foot and 40% on your front foot. This setup helps you hit up on the ball rather than down.</p>
+                        <p><strong>Why it matters:</strong> With the ball positioned forward, your body naturally tilts back slightly. This spine angle tilt is essential for the ascending blow that maximizes driver distance.</p>
+                        <p><strong>Warning:</strong> Don't overdo it. Too much weight back leads to excessively high drives that balloon and lose distance. Maintain the subtle 60/40 distribution.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup5">
+                        Tilt spine away from target at address
+                    </button>
+                </h3>
+                <div id="setup5" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/driver/address-spine.png" alt="Spine angle tilted away from target" class="content-image" loading="lazy">
+                        <p>Your spine should tilt away from the target at address. With proper forward ball positioning and the shaft pointing toward your left hip, your upper body naturally tilts back somewhat.</p>
+                        <p><strong>Pattern:</strong> Maintain a straight spine pattern (not C-shaped or S-shaped). This allows comfortable rotation while supporting the ascending blow needed with a driver.</p>
+                        <p><strong>Result:</strong> This spine angle tilt characterizes the driver address position and promotes hitting up on the ball rather than down, which is essential for maximum distance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup6">
+                        Hold club like holding a bird
+                    </button>
+                </h3>
+                <div id="setup6" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/driver/grip-like-holding-bird.png" alt="Light grip pressure - hold like holding a bird" class="content-image" loading="lazy">
+                        <p>Maintain light to moderate grip pressure - firm enough to control the club but relaxed enough to allow a free, fast swing through impact.</p>
+                        <p><strong>Common mistake:</strong> Gripping too tightly restricts the natural release of the club through impact, leaving the clubface open and causing slices.</p>
+                        <p><strong>Think:</strong> Hold the club like you're holding a bird - firm enough that it won't fly away, but gentle enough not to hurt it. This allows maximum clubhead speed and proper release.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup7">
+                        Position hands level with or behind ball
+                    </button>
+                </h3>
+                <div id="setup7" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/driver/shaft-lean-negative.png" alt="Hands level with or behind ball" class="content-image" loading="lazy">
+                        <p>With the driver, your hands should be level with or slightly behind the ball at address, creating neutral or negative shaft lean. This is opposite to iron shots where hands are forward.</p>
+                        <p><strong>Effect:</strong> This hand position promotes hitting up on the ball and a whipping motion of the wrists, maximizing launch angle and distance.</p>
+                        <p><strong>Visual check:</strong> The shaft should point toward your left hip or even slightly behind it, with the shaft angle opening upward rather than leaning forward.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: SWING KEYS -->
+        <h2 class="section-title">Swing Keys</h2>
+        <div class="accordion" id="swingKeysAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing1">
+                        Sweep, Don't Dig
+                    </button>
+                </h3>
+                <div id="swing1" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Sweeping motion with driver" class="content-image placeholder-image" loading="lazy">
+                        <p>The driver swing is a sweeping motion, not a downward strike. Unlike irons where you take a divot, the driver should brush the tee or swing cleanly through without hitting the ground.</p>
+                        <p><strong>Key difference:</strong> With irons, you hit down on the ball. With the driver, you hit up on the ball or sweep through level. Never take a divot with your driver.</p>
+                        <p><strong>Check:</strong> After your drive, the tee should either stay in the ground or pop forward. If you're taking divots or the tee flies backward, your swing arc is too steep.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing2">
+                        Hit Up on the Ball (Ascending Blow)
+                    </button>
+                </h3>
+                <div id="swing2" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Ascending blow impact" class="content-image placeholder-image" loading="lazy">
+                        <p>The ideal driver contact occurs as the club is moving upward through the ball. This ascending blow maximizes launch angle and reduces spin for optimal carry and roll.</p>
+                        <p><strong>Setup enables this:</strong> Ball forward, weight back, spine tilted away - all these setup elements work together to create the ascending strike path.</p>
+                        <p><strong>Feel:</strong> Think of launching the ball upward and outward. Modern driver design is optimized for this ascending attack angle, producing maximum distance when you hit up 2-5 degrees.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing3">
+                        Swing hard but not too hard
+                    </button>
+                </h3>
+                <div id="swing3" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Smooth tempo swing" class="content-image placeholder-image" loading="lazy">
+                        <p>Resist the urge to swing as hard as possible. A smooth, controlled tempo produces more consistent contact and better overall distance than an overly aggressive swing.</p>
+                        <p><strong>Remember:</strong> Clubhead speed comes from proper mechanics and timing, not effort. Trying to "kill it" usually leads to loss of balance and poor contact.</p>
+                        <p><strong>Swing thought:</strong> "Swing hard, but not too hard." Commit to an aggressive swing through the ball, but maintain control and balance throughout.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing4">
+                        Rotate belt buckle to target at finish
+                    </button>
+                </h3>
+                <div id="swing4" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Full body rotation finish" class="content-image placeholder-image" loading="lazy">
+                        <p>Complete your rotation through the ball. Your belt buckle should face the target at the finish, indicating full weight transfer and proper rotation.</p>
+                        <p><strong>Despite wide stance:</strong> Even with the wider base, focus on rotating your body rather than sliding laterally. The width provides stability, not restriction.</p>
+                        <p><strong>Finish position:</strong> Hold your swing high at the finish with your belt buckle and elbows pointing at the target, demonstrating complete rotation and balance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing5">
+                        Keep spine angle constant through impact
+                    </button>
+                </h3>
+                <div id="swing5" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Maintaining spine angle through impact" class="content-image placeholder-image" loading="lazy">
+                        <p>Keep your spine angle constant through impact. Don't stand up or change your posture as you swing through the ball.</p>
+                        <p><strong>Common error:</strong> Rising up through impact (early extension) causes thin or topped shots. It also reduces power by breaking the connection between body and club.</p>
+                        <p><strong>Feel:</strong> Maintain the forward tilt you established at address all the way through impact. Your head can move, but your spine angle should stay consistent.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing6">
+                        Hit Through the Ball
+                    </button>
+                </h3>
+                <div id="swing6" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Hitting through the ball" class="content-image placeholder-image" loading="lazy">
+                        <p>Focus on swinging through the ball rather than at it. The ball is simply something in the way of your swing path.</p>
+                        <p><strong>Mindset:</strong> Think of impact as happening in the middle of your swing, not at the end. There should be as much swing after impact as before it.</p>
+                        <p><strong>Result:</strong> This thought promotes acceleration through impact and prevents deceleration, which is crucial for maximizing clubhead speed and distance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing7">
+                        Keep eyes on ball through impact
+                    </button>
+                </h3>
+                <div id="swing7" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Keeping head down through impact" class="content-image placeholder-image" loading="lazy">
+                        <p>Maintain head position through impact rather than lifting prematurely. Early head movement disrupts your swing plane and leads to poor contact.</p>
+                        <p><strong>Better thought:</strong> Rather than "keep your head down," think "keep your eyes on the ball through impact." Your head can rotate with your body, but don't lift up early to see where the ball went.</p>
+                        <p><strong>Practice:</strong> Hold your finish and let the ball flight bring your head up naturally, rather than peeking early.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: TOP 5 SWING THOUGHTS -->
+        <h2 class="section-title">Top 5 Swing Thoughts</h2>
+        <div class="accordion" id="swingThoughtsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought1">
+                        "Hit Through the Ball"
+                    </button>
+                </h3>
+                <div id="thought1" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> When you're decelerating through impact or hitting at the ball instead of through it.</p>
+                        <p><strong>Why it works:</strong> Promotes acceleration through impact and prevents the common mistake of treating impact as the end of the swing. The ball is simply in the way of your swing path.</p>
+                        <p><strong>Feel:</strong> Impact happens in the middle of your swing motion, with equal commitment before and after the ball.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought2">
+                        "Belt Buckle to Target"
+                    </button>
+                </h3>
+                <div id="thought2" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> When you're not completing your rotation or finishing with weight on back foot.</p>
+                        <p><strong>Why it works:</strong> Ensures complete weight transfer and full body rotation. Your belt buckle facing the target at finish confirms proper rotation through the ball.</p>
+                        <p><strong>Check:</strong> At finish, belt buckle and chest should face target with weight fully on front foot.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought3">
+                        "Sweep the Tee"
+                    </button>
+                </h3>
+                <div id="thought3" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> When you're hitting down on the driver or taking divots with your driver swings.</p>
+                        <p><strong>Why it works:</strong> Promotes the sweeping, level-to-ascending motion needed for optimal driver contact. The driver swing should brush the tee, not dig into the ground.</p>
+                        <p><strong>Visual:</strong> Imagine sweeping a penny off a table - smooth and level, not a chopping motion.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought4">
+                        "Swing Hard, Don't Try to Kill It"
+                    </button>
+                </h3>
+                <div id="thought4" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> When you're over-swinging, losing balance, or making poor contact from trying too hard.</p>
+                        <p><strong>Why it works:</strong> Balances the need for power with the requirement for control. Commit to an aggressive swing but maintain your balance and tempo throughout.</p>
+                        <p><strong>Goal:</strong> 85% power with 100% control beats 100% power with 50% control every time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought5">
+                        "Don't Stand Up"
+                    </button>
+                </h3>
+                <div id="thought5" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> When you're hitting thin or topped shots, or losing power through impact.</p>
+                        <p><strong>Why it works:</strong> Maintains the spine angle and posture you established at address. Standing up (early extension) moves the club away from the ball and causes mishits.</p>
+                        <p><strong>Feel:</strong> Keep the same bend in your spine from address through impact. Your head can move, but your posture angle stays constant.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4: COMMON FIXES -->
+        <h2 class="section-title">Common Fixes</h2>
+        <div class="accordion" id="commonFixesAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix1">
+                        Fixing a Slice
+                    </button>
+                </h3>
+                <div id="fix1" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Ball starts left and curves aggressively right due to outside-in club path with an open clubface.</p>
+                        <h4>Fix</h4>
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Slice fix demonstration" class="content-image placeholder-image" loading="lazy">
+                        <p><strong>1. Square Your Stance:</strong> An open stance (feet aligned left) causes slices. Position your feet parallel to the target line, not pointing left.</p>
+                        <p><strong>2. Strengthen Your Grip:</strong> A weak grip leaves the clubface open. Rotate both hands so you can see 2-3 knuckles on your left hand at address. This helps the face close naturally through impact.</p>
+                        <p><strong>3. Fix Club Path:</strong> Take the club back square rather than outside. Avoid the "over the top" move where your hands push away from your body at the start of the downswing.</p>
+                        <h4>Additional Causes:</h4>
+                        <ul>
+                            <li><strong>Excessive grip pressure:</strong> Gripping too tight restricts release</li>
+                            <li><strong>Cupped left wrist:</strong> Keep wrist flat at top of backswing</li>
+                            <li><strong>Heel strikes:</strong> Create gear effect that adds slice spin</li>
+                            <li><strong>Weak release:</strong> Right hand must rotate over left through impact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix2">
+                        Fixing a Hook
+                    </button>
+                </h3>
+                <div id="fix2" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Ball starts right and curves aggressively left due to inside-out path with a closed clubface.</p>
+                        <h4>Fix</h4>
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Hook fix demonstration" class="content-image placeholder-image" loading="lazy">
+                        <p><strong>1. Square Your Stance:</strong> A closed stance (feet aligned right) promotes hooks. Adjust to a square stance with feet parallel to the target line.</p>
+                        <p><strong>2. Weaken Your Grip:</strong> A too-strong grip (seeing 4+ knuckles) closes the face. Rotate hands to show fewer knuckles - aim for 2 knuckles for a neutral grip.</p>
+                        <p><strong>3. Fix Swing Path:</strong> Excessive inside-out path causes hooks. Ensure square takeaway with shaft pointing at or slightly left of target when parallel to ground.</p>
+                        <h4>Additional Causes:</h4>
+                        <ul>
+                            <li><strong>Closed clubface at takeaway:</strong> Keep clubface square during takeaway</li>
+                            <li><strong>Bowed left wrist:</strong> Keep wrist flat at top, not bowed forward</li>
+                            <li><strong>Laid off shaft:</strong> Point shaft toward target at top, not behind you</li>
+                            <li><strong>Toe contact:</strong> Hitting ball on toe imparts hook spin - stand closer</li>
+                            <li><strong>Aggressive hand release:</strong> Control release to prevent excessive rotation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix3">
+                        Fixing High Drives (Too High)
+                    </button>
+                </h3>
+                <div id="fix3" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Ball flies too high, losing distance and severely affected by headwinds. May be ballooning or sky-ing.</p>
+                        <h4>Fix</h4>
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: High drive fix" class="content-image placeholder-image" loading="lazy">
+                        <p><strong>1. Strike Location Too High:</strong> Hitting above the sweet spot sends ball higher. Use impact spray to check contact. Lower your tee height and ensure you're not taking divots with the driver.</p>
+                        <p><strong>2. Too Much Loft:</strong> Driver loft of 12+ degrees may be too much. Check if your driver has adjustable loft settings and try lowering to 10 degrees or less.</p>
+                        <p><strong>3. Shaft Too Flexible:</strong> Flexible shafts produce higher ball flight. If using senior, light, or ladies flex, consider moving to regular or stiff depending on your swing speed.</p>
+                        <p><strong>4. Ball Position Too Far Forward:</strong> While ball should be forward, too far forward adds excessive loft. Ensure ball is at left heel, not beyond it.</p>
+                        <p><strong>5. Weight Too Far Back:</strong> Excessive weight on back foot adds loft. Maintain 60/40 split, don't overdo the back weight.</p>
+                        <p><strong>6. Scooping at Impact:</strong> Flicking wrists at impact adds loft. Avoid scooping motion - hands should lead, not flip under.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix4">
+                        Fixing Low Drives (Too Low)
+                    </button>
+                </h3>
+                <div id="fix4" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Ball flies too low, not achieving optimal trajectory. While some prefer low flight, higher trajectory actually produces greater total distance (carry + roll).</p>
+                        <h4>Fix</h4>
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Low drive fix" class="content-image placeholder-image" loading="lazy">
+                        <p><strong>1. Strike Location Too Low:</strong> Hitting below sweet spot produces lower flight. May indicate topping or thin contact. Use impact spray to diagnose. Try raising tee height slightly.</p>
+                        <p><strong>2. Not Enough Loft:</strong> Driver with 8.5 degrees or less may be too little loft for your swing speed. Slower swing speeds benefit from more loft (10-13 degrees). Get fitted.</p>
+                        <p><strong>3. Shaft Too Stiff:</strong> Stiff or extra-stiff shafts produce lower ball flight. If your swing speed doesn't match the shaft stiffness, consider regular flex instead.</p>
+                        <p><strong>4. Ball Position Too Far Back:</strong> Ball back in stance de-lofts the club and creates descending blow. Move ball forward to your left heel instep.</p>
+                        <p><strong>5. Spine Not Tilted:</strong> Setting up with straight upper body creates descending arc. With ball forward, your spine should tilt back away from target. Don't position weight too far forward.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix5">
+                        Fixing Inconsistent Contact
+                    </button>
+                </h3>
+                <div id="fix5" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Contact point varies from shot to shot - sometimes heel, sometimes toe, sometimes high or low on the face.</p>
+                        <h4>Fix</h4>
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Inconsistent contact fix" class="content-image placeholder-image" loading="lazy">
+                        <p><strong>Swaying Instead of Rotating:</strong> Lateral movement changes distance from ball. Focus on rotating around your spine rather than sliding side-to-side. Wide stance should promote rotation, not sway.</p>
+                        <p><strong>Standing Up Through Impact:</strong> Early extension changes swing arc. Maintain spine angle through impact - don't stand up or straighten as you swing through.</p>
+                        <p><strong>Inconsistent Setup:</strong> Setup varies from swing to swing. Develop consistent pre-shot routine. Check ball position, stance width, spine tilt, and grip every time.</p>
+                        <p><strong>Trying Too Hard:</strong> Over-swinging destroys consistency. Focus on smooth tempo and balance rather than maximum power. "Swing hard but not too hard."</p>
+                        <p><strong>Use Impact Spray:</strong> Spray or tape on clubface reveals patterns. Adjust setup and swing based on where you're making contact. Aim for center strikes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix6">
+                        Fixing Loss of Distance
+                    </button>
+                </h3>
+                <div id="fix6" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Driver isn't going as far as it should or distance has decreased over time.</p>
+                        <h4>Fix</h4>
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Distance loss fix" class="content-image placeholder-image" loading="lazy">
+                        <p><strong>Poor Strike Location:</strong> Off-center hits lose significant distance. Use impact spray to verify sweet spot contact. Adjust setup until you're consistently hitting center of face.</p>
+                        <p><strong>Sub-Optimal Launch:</strong> Ball flying too low or too high loses distance. Optimal is high launch with low spin. Check strike location, loft, and ascending blow mechanics.</p>
+                        <p><strong>Incorrect Equipment:</strong> Wrong loft, shaft flex, or shaft weight for your swing speed. Get properly fitted - driver fitting can add 20+ yards instantly.</p>
+                        <p><strong>Decelerating Through Impact:</strong> Slowing down before impact kills distance. Focus on accelerating through the ball with full finish. "Hit through, not at."</p>
+                        <p><strong>Not Hitting Up:</strong> Descending blow with driver reduces distance. Check setup: ball forward, weight back, spine tilted away. Should catch ball on upswing.</p>
+                        <p><strong>Grip Too Tight:</strong> Tension reduces clubhead speed. Relax grip pressure to allow free, fast release through impact.</p>
+                        <p><strong>No Body Rotation:</strong> All-arms swing lacks power. Engage hips and shoulders - complete rotation with belt buckle facing target at finish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 5: SPECIAL SHOTS -->
+        <h2 class="section-title">Special Shots</h2>
+        <div class="accordion" id="specialShotsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#special1">
+                        Hit draw: Close stance, swing inside-out
+                    </button>
+                </h3>
+                <div id="special1" class="accordion-collapse collapse" data-bs-parent="#specialShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Draw shot trajectory" class="content-image placeholder-image" loading="lazy">
+                        <p><strong>What it is:</strong> A controlled shot that starts right of target and curves back left (for right-handed golfers), finishing at the target.</p>
+                        <h4>When to Use:</h4>
+                        <ul>
+                            <li>Working with your natural ball flight tendency</li>
+                            <li>Curving around obstacles (trees, hazards)</li>
+                            <li>Controlling ball in wind</li>
+                            <li>Approaching green from specific angle</li>
+                        </ul>
+                        <h4>How to Execute:</h4>
+                        <p><strong>1. Open Clubface Slightly Right:</strong> Aim clubface just right of target. Ball needs to start right before curving left.</p>
+                        <p><strong>2. Close Your Stance:</strong> Rotate feet right until stance line crosses clubface line. Body should point right of clubface.</p>
+                        <p><strong>3. Swing Inside-Out:</strong> Swing along your body line (feet line). Don't compensate - swing to the right of target.</p>
+                        <p><strong>4. Expect Lower Flight & More Roll:</strong> Draw spins the ball and the closed clubface reduces loft. Ball will fly lower and roll more after landing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#special2">
+                        Hit fade: Open stance, swing outside-in
+                    </button>
+                </h3>
+                <div id="special2" class="accordion-collapse collapse" data-bs-parent="#specialShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Fade shot trajectory" class="content-image placeholder-image" loading="lazy">
+                        <p><strong>What it is:</strong> A controlled shot that starts left of target and curves back right (for right-handed golfers), finishing at the target.</p>
+                        <h4>When to Use:</h4>
+                        <ul>
+                            <li>Working with your natural ball flight tendency</li>
+                            <li>Curving around obstacles</li>
+                            <li>Controlling ball in wind</li>
+                            <li>Wanting softer landing with less roll</li>
+                        </ul>
+                        <h4>How to Execute:</h4>
+                        <p><strong>1. Close Clubface Slightly Left:</strong> Aim clubface just left of target. Ball needs to start left before curving right.</p>
+                        <p><strong>2. Open Your Stance:</strong> Rotate feet left until stance line crosses clubface line. Body should point left of clubface.</p>
+                        <p><strong>3. Swing Outside-In:</strong> Swing along your body line (feet line). Don't compensate - swing to the left of target.</p>
+                        <p><strong>4. Expect Higher Flight & Less Roll:</strong> Open clubface increases loft. Ball will fly higher and stop more quickly after landing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#special3">
+                        Hit stinger: Ball back, weight forward, low finish
+                    </button>
+                </h3>
+                <div id="special3" class="accordion-collapse collapse" data-bs-parent="#specialShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: Low stinger shot" class="content-image placeholder-image" loading="lazy">
+                        <p><strong>What it is:</strong> A low, penetrating shot that stays under wind and obstacles. Also called a punch shot.</p>
+                        <h4>When to Use:</h4>
+                        <ul>
+                            <li>Keeping ball under tree branches</li>
+                            <li>Strong headwind conditions</li>
+                            <li>Need control over distance</li>
+                        </ul>
+                        <h4>How to Execute:</h4>
+                        <p><strong>1. Club Up:</strong> Use longer club than normal (3-wood instead of driver, or even long iron for more control).</p>
+                        <p><strong>2. Narrow Stance:</strong> Narrower stance helps control power and make more compact swing.</p>
+                        <p><strong>3. Ball Back in Stance:</strong> Position ball toward back foot. Reduces loft and encourages steeper angle of attack.</p>
+                        <p><strong>4. Grip Down:</strong> Choke down 1-2 inches for more control and compact swing.</p>
+                        <p><strong>5. Weight Forward:</strong> More weight on front foot. Keep it there throughout swing for penetrating flight.</p>
+                        <p><strong>6. Hands Forward at Impact:</strong> Press hands ahead of ball through impact. Further delofts club and ensures descending blow.</p>
+                        <p><strong>7. Restrain Follow Through:</strong> Shorter, more compact follow through. Keep hands low through finish to maintain low flight.</p>
+                        <p><strong>8. Expect More Roll:</strong> Ball will run significantly after landing due to low trajectory and reduced backspin.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#special4">
+                        Hit high drive: Tee higher, ball forward, sweep up
+                    </button>
+                </h3>
+                <div id="special4" class="accordion-collapse collapse" data-bs-parent="#specialShotsAccordion">
+                    <div class="accordion-body">
+                        <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=Image+Coming+Soon" alt="Placeholder: High drive shot" class="content-image placeholder-image" loading="lazy">
+                        <p><strong>What it is:</strong> A drive that launches higher than normal to clear obstacles or maximize carry with tailwind.</p>
+                        <h4>When to Use:</h4>
+                        <ul>
+                            <li>Clearing tall obstacles (trees, etc.)</li>
+                            <li>Playing into tailwind for maximum distance</li>
+                            <li>Soft landing area where roll isn't needed</li>
+                        </ul>
+                        <h4>How to Execute:</h4>
+                        <p><strong>Tee Higher:</strong> Tee ball higher than normal - top of driver crown or even higher.</p>
+                        <p><strong>Ball More Forward:</strong> Position ball even more forward than standard - off or beyond left heel.</p>
+                        <p><strong>More Weight Back:</strong> Increase back foot weight slightly beyond standard 60/40 split. Exaggerate spine tilt away from target.</p>
+                        <p><strong>Sweep Upward:</strong> Emphasize hitting up on ball with ascending blow. Feel like you're launching ball into sky.</p>
+                        <p><strong>Full Extension:</strong> Complete your swing with high finish. Don't restrain - let club release fully.</p>
+                        <p><strong>Result:</strong> Ball launches high with maximum carry. Will land softly with less roll than normal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p><strong>Content from Golf Distillery</strong><br>
+            Mobile-optimized for on-course reference<br>
+            <em>Bootstrap 5.3 Proof of Concept</em></p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

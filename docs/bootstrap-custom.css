@@ -1,0 +1,365 @@
+/* ========================================
+   GOLF TRAINING HUB - BOOTSTRAP CUSTOMIZATIONS
+   Bootstrap 5.3 + Golf Theme
+   ======================================== */
+
+/* ===== CSS VARIABLES ===== */
+:root {
+    /* Golf Theme Colors */
+    --golf-dark: #1a3d2e;
+    --golf-medium: #2d5f4a;
+    --golf-light: #4a9071;
+    --golf-bg: #f5f5f5;
+
+    /* Override Bootstrap Variables */
+    --bs-primary: #2d5f4a;
+    --bs-primary-rgb: 45, 95, 74;
+    --bs-body-color: #000000;
+    --bs-body-bg: #ffffff;
+    --bs-border-color: #d1d5db;
+}
+
+/* ===== BODY & CONTAINER ===== */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--bs-body-color);
+}
+
+.main-container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* ===== AUTO-NUMBERING FOR ACCORDIONS ===== */
+.accordion {
+    counter-reset: accordion-counter;
+    --bs-accordion-border-width: 0;
+    --bs-accordion-bg: transparent;
+}
+
+.accordion-item {
+    margin-bottom: 0.75rem;
+    border: none !important;
+    background: transparent;
+}
+
+.accordion-button {
+    counter-increment: accordion-counter;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: transparent !important;
+    color: var(--bs-body-color) !important;
+    box-shadow: none !important;
+    border-radius: 6px !important;
+}
+
+.accordion-button::before {
+    content: counter(accordion-counter) ". ";
+    margin-right: 0.5rem;
+    font-weight: 600;
+    color: var(--golf-dark);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--golf-bg) !important;
+    color: var(--bs-body-color) !important;
+}
+
+.accordion-button:hover {
+    background-color: var(--golf-bg) !important;
+}
+
+.accordion-button::after {
+    width: 14px;
+    height: 14px;
+    background-size: 14px;
+    opacity: 0.4;
+}
+
+.accordion-button:not(.collapsed)::after {
+    opacity: 1;
+}
+
+.accordion-body {
+    padding: 1rem 1.25rem 1.25rem;
+    background-color: #ffffff;
+}
+
+/* ===== QUICK REFERENCE CARD ===== */
+.quick-ref-card {
+    background: var(--golf-medium);
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin: 0 1rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quick-ref-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.quick-ref-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 1rem;
+}
+
+.quick-ref-item:last-child {
+    border-bottom: none;
+}
+
+.quick-ref-label {
+    font-weight: 600;
+}
+
+.quick-ref-value {
+    font-weight: 400;
+    text-align: right;
+}
+
+/* ===== SESSION GOAL CARD (for practice stations) ===== */
+.session-goal {
+    background: #3b82f6;
+    color: #ffffff;
+    padding: 1.25rem;
+    border-radius: 12px;
+    margin: 0 1rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== QUICK FIXES SECTION ===== */
+.quick-fixes {
+    background: #fff8e1;
+    border: 3px solid #f59e0b;
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin: 2rem 1rem;
+}
+
+.quick-fixes-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--golf-dark);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quick-fixes-title::before {
+    content: "⚠️";
+    font-size: 1.5rem;
+}
+
+/* ===== CONTENT IMAGES ===== */
+.content-image {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.content-image:hover {
+    transform: scale(1.02);
+}
+
+.placeholder-image {
+    background-color: #f0f0f0;
+    border: 2px dashed #f59e0b;
+    opacity: 0.8;
+}
+
+/* ===== SECTION TITLES ===== */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--golf-dark);
+    margin: 2rem 1rem 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--golf-medium);
+}
+
+/* ===== HEADER & NAVIGATION ===== */
+.page-header {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    border-bottom: 2px solid #d1d5db;
+    z-index: 100;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-back {
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-back svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--golf-dark);
+    stroke-width: 3;
+}
+
+.btn-back:active {
+    transform: scale(0.95);
+}
+
+/* ===== BREADCRUMBS ===== */
+.breadcrumb {
+    margin-bottom: 0;
+    background: transparent;
+    padding: 0;
+    font-size: 0.875rem;
+}
+
+.breadcrumb-item a {
+    color: var(--golf-medium);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb-item.active {
+    color: #6b7280;
+}
+
+/* ===== HOME PAGE BUTTONS ===== */
+.main-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    background: #ffffff;
+    border: 3px solid #d1d5db;
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--bs-body-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    min-height: 200px;
+}
+
+.main-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: var(--golf-medium);
+    color: var(--bs-body-color);
+}
+
+.main-button .icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.main-button .label {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--golf-dark);
+    margin-bottom: 0.5rem;
+}
+
+.main-button .description {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+/* ===== SELECTOR BUTTONS (clubs, areas, stations) ===== */
+.selector-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+    background: #ffffff;
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--bs-body-color);
+    transition: all 0.2s;
+    min-height: 100px;
+    text-align: center;
+}
+
+.selector-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: var(--golf-medium);
+    color: var(--bs-body-color);
+}
+
+.selector-button .icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.selector-button .label {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--golf-dark);
+    line-height: 1.3;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 3rem 1rem 1rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+    border-top: 1px solid #d1d5db;
+    margin-top: 3rem;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .main-button {
+        padding: 2rem 1.5rem;
+    }
+
+    .main-button .label {
+        font-size: 1.5rem;
+    }
+
+    .selector-button {
+        padding: 1rem 0.75rem;
+        min-height: 80px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-button {
+        flex: 1;
+    }
+}

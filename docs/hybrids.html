@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Hybrids - Golf Training Hub</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Golf Theme CSS -->
+    <link href="bootstrap-custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- HEADER -->
+        <header class="page-header">
+            <button class="btn-back" onclick="window.location.href='on-course.html'" aria-label="Back to club selection">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="on-course.html">On Course</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Hybrids</li>
+                </ol>
+            </nav>
+        </header>
+
+        <!-- PAGE TITLE -->
+        <h1 class="page-title">Hybrids</h1>
+
+        <!-- QUICK REFERENCE CARD (ALWAYS VISIBLE) -->
+        <div class="quick-ref-card">
+            <div class="quick-ref-title">Quick Reference</div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Ball Position:</span>
+                <span class="quick-ref-value">Middle to slightly forward</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Setup:</span>
+                <span class="quick-ref-value">Between woods and irons</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Strength:</span>
+                <span class="quick-ref-value">Easier from rough</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Use:</span>
+                <span class="quick-ref-value">Replace long irons</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Key Feel:</span>
+                <span class="quick-ref-value">Sweep with intent to bruise ground</span>
+            </div>
+        </div>
+
+        <!-- SECTION 1: SETUP TIPS -->
+        <h2 class="section-title">Setup Tips</h2>
+        <div class="accordion" id="setupTipsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup1">
+                        Position ball forward of center in stance
+                    </button>
+                </h3>
+                <div id="setup1" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/hybrids/ball-position-center.png" alt="Hybrid ball position" class="content-image" loading="lazy">
+                        <p>Position the ball just forward of center in your stance - approximately under your left pec or ear. This is more forward than an iron but not as far forward as a driver or fairway wood.</p>
+                        <p><strong>Why:</strong> This position allows for a slightly descending blow while still catching the ball on the upswing portion of the arc, maximizing the hybrid's low center of gravity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup2">
+                        Use shoulder-width stance for stability
+                    </button>
+                </h3>
+                <div id="setup2" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/hybrids/feet-stance-normal.png" alt="Hybrid stance width" class="content-image" loading="lazy">
+                        <p>Use a shoulder-width stance or slightly wider for stability. The hybrid requires a balanced setup that's between the narrower iron stance and wider wood stance.</p>
+                        <p>This moderate stance width allows for good rotation while maintaining balance throughout the swing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup3">
+                        Maintain spine angle with sternum behind ball
+                    </button>
+                </h3>
+                <div id="setup3" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/hybrids/posture-setup.png" alt="Hybrid posture setup" class="content-image" loading="lazy">
+                        <p>Maintain good spine angle with a slight tilt back from the ball. Your sternum should be positioned just behind the ball at address, not directly over it as with irons.</p>
+                        <p><strong>Key checkpoint:</strong> Keep your knee flex athletic and comfortable. Avoid standing too tall or crouching too low.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup4">
+                        Keep hands slightly ahead with gentle shaft lean
+                    </button>
+                </h3>
+                <div id="setup4" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/hybrids/hand-position-forward.png" alt="Hand position at address with forward shaft lean" class="content-image" loading="lazy">
+                        <p>Hands should be slightly ahead of the ball with a touch of forward shaft lean - but not as much as with irons. This promotes clean contact while utilizing the hybrid's design.</p>
+                        <p><strong>Weight distribution:</strong> Even weight between feet or slight favor (55/45) to your lead leg.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: SWING KEYS -->
+        <h2 class="section-title">Swing Keys</h2>
+        <div class="accordion" id="swingKeysAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing1">
+                        Swing like an iron with descending blow
+                    </button>
+                </h3>
+                <div id="swing1" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/hybrids/swing-like-iron.png" alt="Hybrid swing with descending blow like an iron" class="content-image" loading="lazy">
+                        <p><strong>Most important concept:</strong> Swing your hybrid like an iron with a descending blow, not like sweeping a fairway wood. The wide sole design prevents digging even with a downward strike.</p>
+                        <p><em>Think:</em> Ball-then-ground contact, not sweep-and-pick.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing2">
+                        Strike ball first, then brush the ground
+                    </button>
+                </h3>
+                <div id="swing2" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/hybrids/ball-first-contact.png" alt="Ball-first contact with hands ahead at impact" class="content-image" loading="lazy">
+                        <p>Aim to make contact with the ball first, then brush the ground. You should feel like you're taking a small divot (though the sole often prevents an actual divot).</p>
+                        <p><strong>Feel to remember:</strong> "Sweep with intent to bruise the ground" - you're not digging, but you're not purely sweeping either.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing3">
+                        Complete rotation with chest facing target
+                    </button>
+                </h3>
+                <div id="swing3" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/hybrids/follow-through-complete.png" alt="Complete follow through with chest facing target" class="content-image" loading="lazy">
+                        <p>Complete your follow-through with your chest rotating toward the target and your weight fully on your front foot. A full finish indicates proper weight transfer and commitment through the shot.</p>
+                        <p><strong>Checkpoint:</strong> Belt buckle facing target, back foot on toe, balanced finish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: TOP 5 SWING THOUGHTS -->
+        <h2 class="section-title">Top 5 Swing Thoughts</h2>
+        <div class="accordion" id="swingThoughtsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought1">
+                        "Swing Like an Iron"
+                    </button>
+                </h3>
+                <div id="thought1" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> Any time you're uncertain about your approach with a hybrid.</p>
+                        <p>This is your foundational thought. Despite looking like a wood, treat it like an iron in your swing mechanics. Descending blow, ball-first contact, slightly forward shaft lean. The hybrid's design will do the rest.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought2">
+                        "Ball First, Ground Second"
+                    </button>
+                </h3>
+                <div id="thought2" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> When you're hitting thin or fat shots.</p>
+                        <p>Simple contact sequence reminder. Focus on striking the ball before the club touches the ground. This mental cue prevents scooping and promotes a descending strike that produces crisp contact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought3">
+                        "Trust the Sole"
+                    </button>
+                </h3>
+                <div id="thought3" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> From rough, tight lies, or when you're being tentative.</p>
+                        <p>The wide, rounded sole is designed to glide through grass and turf without digging. Don't baby the club - accelerate through impact with confidence. The club's engineering will prevent chunking even with an aggressive swing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought4">
+                        "Chest Rotates to Target"
+                    </button>
+                </h3>
+                <div id="thought4" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> When you're leaving shots short or not finishing your swing.</p>
+                        <p>Focus on rotating your chest fully through to face the target at finish. This ensures proper weight transfer, full extension, and maximum distance. A complete turn generates the speed needed to maximize the hybrid's potential.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought5">
+                        "It's Your Rescue Club"
+                    </button>
+                </h3>
+                <div id="thought5" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>When to use:</strong> In trouble situations - rough, tight lies, long approaches.</p>
+                        <p>Mental confidence booster. The hybrid exists to make difficult situations easier. When in doubt from 180-220 yards or from rough, grab the hybrid with confidence. It's more forgiving than a long iron and safer than a fairway wood.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4: COMMON FIXES -->
+        <h2 class="section-title">Common Fixes</h2>
+        <div class="accordion" id="commonFixesAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix1">
+                        Fix thin shots: Keep sternum ahead at impact
+                    </button>
+                </h3>
+                <div id="fix1" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Treating the hybrid like a fairway wood with too much sweep, or trying to "help" the ball into the air by flipping your wrists.</p>
+
+                        <h4>Fix</h4>
+                        <img src="images/hybrids/thin.png" alt="Fix for thin shots" class="content-image" loading="lazy">
+                        <ul>
+                            <li>Remember: Descending blow, like an iron</li>
+                            <li>Keep sternum ahead of ball at impact</li>
+                            <li>Feel like you're hitting down and through the ball</li>
+                            <li>Practice drill: Place towel 4 inches behind ball - don't hit it</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix2">
+                        Fix fat shots: Transfer weight to front foot
+                    </button>
+                </h3>
+                <div id="fix2" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Weight staying on back foot, or trying to scoop/lift the ball. Early release of wrists before impact.</p>
+
+                        <h4>Fix</h4>
+                        <img src="images/hybrids/fix-fat-shots.png" alt="Fix for fat shots with proper weight transfer" class="content-image" loading="lazy">
+                        <ul>
+                            <li>Check ball position - not too far forward</li>
+                            <li>Ensure weight transfers to front foot through impact</li>
+                            <li>Keep hands ahead of clubhead until after impact</li>
+                            <li>Focus on chest/sternum moving forward through swing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix3">
+                        Fix inconsistent contact: Commit to iron-like swing
+                    </button>
+                </h3>
+                <div id="fix3" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Confusion about whether to swing like iron or wood. Uncertain setup positions.</p>
+
+                        <h4>Fix</h4>
+                        <img src="images/hybrids/fix-inconsistent-contact.png" alt="Fix for inconsistent contact with proper release" class="content-image" loading="lazy">
+                        <ul>
+                            <li>Commit to ONE approach: iron-like descending strike</li>
+                            <li>Simplify swing thought to: "Ball first, ground second"</li>
+                            <li>Check setup fundamentals every time (use B.L.E.N.D.):
+                                <ul>
+                                    <li><strong>B</strong>all forward (of center)</li>
+                                    <li><strong>L</strong>ike iron swing</li>
+                                    <li><strong>E</strong>ven weight</li>
+                                    <li><strong>N</strong>o scoop</li>
+                                    <li><strong>D</strong>escending blow</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 5: WHEN TO USE -->
+        <h2 class="section-title">When to Use</h2>
+        <div class="accordion" id="whenToUseAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#when1">
+                        Use for long approaches (180-220 yards)
+                    </button>
+                </h3>
+                <div id="when1" class="accordion-collapse collapse" data-bs-parent="#whenToUseAccordion">
+                    <div class="accordion-body">
+                        <img src="images/hybrids/long-approach-shot.png" alt="Long approach shot to elevated green" class="content-image" loading="lazy">
+                        <p>Hybrids excel at long approach shots from 180-220 yards where long irons would be difficult. The lower center of gravity helps get the ball airborne more easily than a 3 or 4-iron.</p>
+                        <p>The higher launch angle with a steeper descent helps hold greens better than long irons.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#when2">
+                        Choose hybrid for rescue shots from rough
+                    </button>
+                </h3>
+                <div id="when2" class="accordion-collapse collapse" data-bs-parent="#whenToUseAccordion">
+                    <div class="accordion-body">
+                        <img src="images/hybrids/playing-from-rough.png" alt="Playing from rough with hybrid rescue club" class="content-image" loading="lazy">
+                        <p><strong>This is the hybrid's superpower.</strong> The rounded sole and low center of gravity make hybrids far more forgiving from light to moderate rough than long irons or fairway woods.</p>
+                        <p>The club glides through grass rather than getting caught, making it your go-to rescue club when you miss the fairway.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#when3">
+                        Play from tight lies safer than woods
+                    </button>
+                </h3>
+                <div id="when3" class="accordion-collapse collapse" data-bs-parent="#whenToUseAccordion">
+                    <div class="accordion-body">
+                        <img src="images/hybrids/tight-lies.png" alt="Playing from tight lies with hybrid" class="content-image" loading="lazy">
+                        <p>When the ball is sitting down on firm fairway with little grass underneath, hybrids are safer than fairway woods. The smaller clubhead and iron-like swing make solid contact more achievable.</p>
+                        <p>The forgiving sole design prevents the club from bouncing into the ball.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#when4">
+                        Hit off tee for accuracy on tight holes
+                    </button>
+                </h3>
+                <div id="when4" class="accordion-collapse collapse" data-bs-parent="#whenToUseAccordion">
+                    <div class="accordion-body">
+                        <img src="images/hybrids/hybrid-off-tee.png" alt="Hybrid off the tee for accuracy" class="content-image" loading="lazy">
+                        <p>On tight driving holes where accuracy is paramount, a hybrid offers excellent control while still providing good distance - typically 10-20 yards less than driver but far more consistent.</p>
+                        <p>Perfect for narrow fairways, doglegs, or when driver has been unreliable.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#when5">
+                        Execute low punch shots under branches
+                    </button>
+                </h3>
+                <div id="when5" class="accordion-collapse collapse" data-bs-parent="#whenToUseAccordion">
+                    <div class="accordion-body">
+                        <img src="images/hybrids/punch-shot-low.png" alt="Hybrid punch shot under branches" class="content-image" loading="lazy">
+                        <p>Need to keep it low under tree branches? Hybrids make excellent punch shot clubs. Ball back in stance, hands forward, abbreviated follow-through.</p>
+                        <p>The versatile loft allows for controlled, penetrating flight while still achieving good distance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p><strong>Content from Golf Distillery</strong><br>
+            Mobile-optimized for on-course reference<br>
+            <em>Bootstrap 5.3</em></p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

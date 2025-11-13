@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Bunker Play - Golf Training Hub</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Golf Theme CSS -->
+    <link href="bootstrap-custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- HEADER -->
+        <header class="page-header">
+            <button class="btn-back" onclick="window.location.href='on-course.html'" aria-label="Back to club selection">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="on-course.html">On Course</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Bunker Play</li>
+                </ol>
+            </nav>
+        </header>
+
+        <!-- PAGE TITLE -->
+        <h1 class="page-title">Bunker Play</h1>
+
+        <!-- QUICK REFERENCE CARD (ALWAYS VISIBLE) -->
+        <div class="quick-ref-card">
+            <div class="quick-ref-title">Bunker Basics at a Glance</div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Setup:</span>
+                <span class="quick-ref-value">Open stance, open face</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Ball Position:</span>
+                <span class="quick-ref-value">Forward in stance</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Entry Point:</span>
+                <span class="quick-ref-value">1-2 inches behind ball</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Follow Through:</span>
+                <span class="quick-ref-value">Full finish, accelerate</span>
+            </div>
+        </div>
+
+        <!-- SECTION: BUNKER PLAY - ALL 9 SITUATIONS -->
+        <h2 class="section-title">All Bunker Situations</h2>
+        <div class="accordion" id="bunkerPlayAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bunker1">
+                        Standard Greenside Bunker
+                    </button>
+                </h3>
+                <div id="bunker1" class="accordion-collapse collapse" data-bs-parent="#bunkerPlayAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/bunker-shot-setup.png" alt="Regular bunker shot setup" class="content-image" loading="lazy">
+                        <p><strong>Objective:</strong> Strike sand 2 inches behind ball, splash ball onto green with sand</p>
+                        <p><strong>Club:</strong> Sand wedge (56°) with bounce on trailing edge</p>
+                        <p><strong>Setup:</strong></p>
+                        <ul>
+                            <li>Choke down 1-2 inches for better control</li>
+                            <li>Open clubface BEFORE gripping (adds loft, engages bounce)</li>
+                            <li>Widen stance (shoulder-width or wider) for stability</li>
+                            <li>Open stance (feet/body left of target, clubface at target)</li>
+                            <li>Ball forward in stance (off front foot)</li>
+                            <li>Dig feet into sand for stability and firmness feedback</li>
+                        </ul>
+                        <p><strong>Execution:</strong></p>
+                        <ul>
+                            <li>Aim to hit sand 2 inches (about two fingers) behind ball</li>
+                            <li>Divot size roughly an American dollar bill</li>
+                            <li><strong>ACCELERATE through sand</strong>—never decelerate</li>
+                            <li>Complete follow-through fully with high finish</li>
+                            <li>Think "splash" not "dig"—skim bounce through sand</li>
+                        </ul>
+                        <p><strong>Distance Control:</strong> Vary backswing length while maintaining aggressive acceleration through impact</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bunker2">
+                        Fried Egg Lie (Ball Sitting Down)
+                    </button>
+                </h3>
+                <div id="bunker2" class="accordion-collapse collapse" data-bs-parent="#bunkerPlayAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/bunker-shot-plugged-lie.png" alt="Plugged lie bunker shot" class="content-image" loading="lazy">
+                        <p><strong>Key Difficulty:</strong> Ball sits significantly lower in sand than normal—partially buried</p>
+                        <p><strong>Major Adjustments:</strong></p>
+                        <ul>
+                            <li><strong>Square clubface</strong> to target (NOT open)—allows club to dig deep into sand</li>
+                            <li><strong>Tighten grip</strong> more than usual—sand resistance is heavy, prevents club twisting</li>
+                            <li><strong>Aim 3 inches behind ball</strong> (not 2)—need to dig under buried ball</li>
+                            <li><strong>Steeper angle of attack</strong>—feel like you're chopping down into sand</li>
+                            <li><strong>Full aggressive swing</strong> with maximum acceleration</li>
+                        </ul>
+                        <p><strong>Execution:</strong></p>
+                        <ul>
+                            <li>Full backswing and attempt full follow-through</li>
+                            <li>Sand resistance may prevent full follow-through (that's acceptable)</li>
+                            <li>Key is to ACCELERATE into impact zone—club may bury in sand after</li>
+                            <li>Ball will pop out low and run significantly</li>
+                        </ul>
+                        <p><strong>Expect More Roll:</strong> Ball won't check or spin back—aim short of pin if possible. Consider this essentially a "blast out" shot focused on escape.</p>
+                        <p><strong>Keep Other Elements:</strong> Sand wedge, choke down, open stance, wide stance, ball forward, dig feet in</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bunker3">
+                        Upslope Bunker Shot
+                    </button>
+                </h3>
+                <div id="bunker3" class="accordion-collapse collapse" data-bs-parent="#bunkerPlayAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/bunker-upslope.png" alt="Upslope bunker shot" class="content-image" loading="lazy">
+                        <p><strong>Key Difficulties:</strong> Maintaining balance on slope, risk of club digging too deep, ball naturally flies higher with more backspin and rolls less</p>
+                        <p><strong>Setup Adjustments:</strong></p>
+                        <ul>
+                            <li><strong>Widen stance extra</strong> for balance on slope—stability is critical</li>
+                            <li>Position bottom foot down slope until comfortable and stable</li>
+                            <li><strong>Tilt body so spine perpendicular to slope</strong>—not to horizon</li>
+                            <li>This matches your normal setup relative to sand surface</li>
+                            <li>Prevents digging club too deep into upslope</li>
+                        </ul>
+                        <p><strong>Swing Adjustments:</strong></p>
+                        <ul>
+                            <li><strong>Quiet lower body</strong>—minimize leg involvement</li>
+                            <li>All-arms swing for balance—don't try to rotate much</li>
+                            <li>Lower body acts primarily as stable support platform</li>
+                            <li>Maintain balance throughout—don't fall backward down slope</li>
+                        </ul>
+                        <p><strong>Ball Flight Expectations:</strong> Launches higher than normal bunker shot, rolls significantly less. Aim closer to flag (be more aggressive with distance) to compensate for reduced roll.</p>
+                        <p><strong>Keep Other Standard Elements:</strong> Sand wedge, choke down, open clubface, open stance, ball forward, aim 2 inches behind, accelerate through</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bunker4">
+                        Downslope Bunker Shot
+                    </button>
+                </h3>
+                <div id="bunker4" class="accordion-collapse collapse" data-bs-parent="#bunkerPlayAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/bunker-downslope.png" alt="Downslope bunker shot" class="content-image" loading="lazy">
+                        <p><strong>Key Difficulties:</strong> Maintaining balance, high risk of blading/skulling ball, ball flies lower and rolls significantly more—one of golf's toughest shots</p>
+                        <p><strong>Setup Adjustments:</strong></p>
+                        <ul>
+                            <li><strong>Widen stance significantly</strong> for stability on severe slope</li>
+                            <li><strong>Tilt body forward until spine perpendicular to slope</strong>—not to horizon</li>
+                            <li>If slope too severe, tilt as far forward as comfortable</li>
+                            <li>This prevents club approaching ball from side (which causes skulls)</li>
+                            <li>Accept this will feel awkward—maintaining balance is priority</li>
+                        </ul>
+                        <p><strong>Club Selection:</strong></p>
+                        <ul>
+                            <li><strong>Use lob wedge (60°)</strong> instead of sand wedge</li>
+                            <li>Your tilted body position reduces effective loft of club</li>
+                            <li>Need extra loft to compensate and achieve reasonable trajectory</li>
+                        </ul>
+                        <p><strong>Check Clearance:</strong> Make practice swings without touching sand—ensure right knee doesn't interfere with swing path on severe downslopes</p>
+                        <p><strong>Ball Flight Expectations:</strong> Flies lower trajectory and rolls more than standard bunker shot. Ensure opposite bunker lip is low enough to clear. May need to aim away from flag toward safer area if downslope is severe.</p>
+                        <p><strong>Keep Other Elements:</strong> Choke down, open clubface, open stance, ball forward, aim 2 inches behind, accelerate (critical on downslope)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bunker5">
+                        Fairway Bunker
+                    </button>
+                </h3>
+                <div id="bunker5" class="accordion-collapse collapse" data-bs-parent="#bunkerPlayAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/bunker-fairway.png" alt="Fairway bunker technique" class="content-image" loading="lazy">
+                        <p><strong>Key Challenge:</strong> Need distance—hitting sand first robs considerable yardage (can't blast from 150+ yards)</p>
+                        <p><strong>COMPLETELY DIFFERENT from Greenside Bunkers:</strong></p>
+                        <ul>
+                            <li><strong>Goal: Hit BALL first, not sand</strong>—opposite of greenside technique</li>
+                            <li>This is fundamentally different approach requiring opposite mindset</li>
+                        </ul>
+                        <p><strong>Club Selection Strategy:</strong></p>
+                        <ul>
+                            <li><strong>Use one more club</strong> than distance normally requires</li>
+                            <li>Example: 6-iron distance? Use 5-iron instead</li>
+                            <li>Accounts for preventive measures below that may reduce distance slightly</li>
+                            <li><strong>CRITICAL: Ensure club can clear lip</strong>—if not enough loft to clear, lay up with more lofted club. Getting out safely is priority.</li>
+                        </ul>
+                        <p><strong>Setup to Avoid Fat Contact:</strong></p>
+                        <ul>
+                            <li><strong>Choke down significantly</strong> (grip in middle of club, not top)—promotes higher bottom of swing arc</li>
+                            <li><strong>DON'T dig feet in</strong> (opposite of greenside)—float on top of sand instead to maintain original club length</li>
+                            <li><strong>Ball center or slightly back</strong> in stance—not forward as normal for long iron/wood</li>
+                            <li>Weight slightly forward (55/45) for ball-first contact</li>
+                        </ul>
+                        <p><strong>Swing Execution:</strong></p>
+                        <ul>
+                            <li><strong>Aim to hit equator of ball</strong> (slightly thin contact acceptable)—NOT perfect center contact</li>
+                            <li>Better slightly thin than fat from fairway bunker</li>
+                            <li>Leading edge may brush sand slightly after ball (acceptable)</li>
+                            <li>Smooth tempo—don't try to force extra distance</li>
+                            <li>Quiet lower body—minimize leg action for stability</li>
+                        </ul>
+                        <p><strong>What NOT to Do:</strong> Don't use greenside bunker technique (open stance, open face, aim behind ball)—you need distance and ball-first contact, not height and soft landing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bunker6">
+                        Wet Sand
+                    </button>
+                </h3>
+                <div id="bunker6" class="accordion-collapse collapse" data-bs-parent="#bunkerPlayAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/bunker-wet-sand.png" alt="Wet sand bunker technique" class="content-image" loading="lazy">
+                        <p><strong>Key Difficulty:</strong> Sand is compact and heavy (not fluffy)—bounces off surface differently</p>
+                        <p><strong>Adjustments from Regular Shot:</strong></p>
+                        <ul>
+                            <li><strong>Use lob wedge (60°)</strong> instead of sand wedge—need more loft, less bounce</li>
+                            <li>More loft helps achieve high trajectory from compact surface</li>
+                            <li>Less bounce prevents club skipping/bouncing off hard sand into ball</li>
+                            <li><strong>Aim 1 inch behind ball</strong> (not 2 inches)—objective is to clip ball up, not plow through heavy sand</li>
+                            <li>Skim sand surface rather than digging deep</li>
+                        </ul>
+                        <p><strong>Critical to Accelerate:</strong> Wet sand is significantly heavier than dry—tentative swing leaves ball in bunker. Commit to aggressive acceleration.</p>
+                        <p><strong>Keep Other Elements:</strong> Open stance, wide stance, ball forward, dig feet in, open face</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bunker7">
+                        Long Bunker Shots (20+ yards)
+                    </button>
+                </h3>
+                <div id="bunker7" class="accordion-collapse collapse" data-bs-parent="#bunkerPlayAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/bunker-long-shot.png" alt="Long bunker shot technique" class="content-image" loading="lazy">
+                        <p><strong>Key Challenge:</strong> Need to cover significant distance from sand—requires different approach to distance control</p>
+                        <p><strong>Distance Control Method:</strong></p>
+                        <ul>
+                            <li><strong>Use SAME amount of sand every time</strong>—still aim 2 inches behind ball</li>
+                            <li>Don't try to vary sand amount—too risky (results in thin or fat contact)</li>
+                            <li><strong>Vary backswing length instead</strong> to control distance</li>
+                            <li>Longer backswing = more clubhead speed = longer shot</li>
+                            <li>Must practice different swing lengths to learn your distances</li>
+                        </ul>
+                        <p><strong>Critical Technique Points:</strong></p>
+                        <ul>
+                            <li><strong>Accelerate through impact</strong> even with longer backswing</li>
+                            <li>Risk of deceleration increases with longer swing—resist this temptation</li>
+                            <li>Must maintain aggressive strike despite increased swing length</li>
+                            <li>Long, complete follow-through with acceleration throughout</li>
+                            <li>Same 2 inches behind ball—consistency is key</li>
+                        </ul>
+                        <p><strong>Keep Standard Setup:</strong> Sand wedge, choke down, open clubface, open stance, ball forward, widen stance, dig feet in deeply</p>
+                        <p><strong>Practice drill:</strong> Learn your distances—hit shots with 1/2 swing, 3/4 swing, full swing from bunker to see how far each travels</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bunker8">
+                        Short Bunker Shots (under 10 yards)
+                    </button>
+                </h3>
+                <div id="bunker8" class="accordion-collapse collapse" data-bs-parent="#bunkerPlayAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/bunker-short-shot.png" alt="Short bunker shot technique" class="content-image" loading="lazy">
+                        <p><strong>Key Challenge:</strong> Delicate touch needed for very short distance—requires finesse while maintaining acceleration</p>
+                        <p><strong>Distance Control:</strong></p>
+                        <ul>
+                            <li><strong>Shorter backswing</strong>—half swing or less depending on exact distance</li>
+                            <li><strong>STILL accelerate through</strong>—never decelerate (this is critical!)</li>
+                            <li>Same 2 inches behind ball—don't try to get closer</li>
+                            <li>Follow-through should match backswing length for rhythm</li>
+                            <li>Think "smooth and soft" not "slow and tentative"</li>
+                        </ul>
+                        <p><strong>Face Angle Management:</strong></p>
+                        <ul>
+                            <li>Can open face MORE than standard for extra loft and quick stop</li>
+                            <li>More open face = ball flies higher and stops faster on landing</li>
+                            <li>Ball will have less forward momentum after landing</li>
+                            <li>Practice extensively to develop feel for this delicate shot</li>
+                        </ul>
+                        <p><strong>Mental Approach:</strong> This is one of golf's most delicate shots. Requires confidence to accelerate with short swing. Any deceleration or tension causes failure (either chunk or blade).</p>
+                        <p><strong>Keep All Standard Elements:</strong> Sand wedge or lob wedge, choke down, open clubface (possibly extra open), open stance, wide stance, ball forward, dig feet in, accelerate smoothly</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bunker9">
+                        Buried in Face (Worst Case)
+                    </button>
+                </h3>
+                <div id="bunker9" class="accordion-collapse collapse" data-bs-parent="#bunkerPlayAccordion">
+                    <div class="accordion-body">
+                        <img src="images/wedges/bunker-face-buried.png" alt="Buried lie in bunker face" class="content-image" loading="lazy">
+                        <p><strong>Key Challenge:</strong> Ball buried in upward slope of bunker face—combination of plugged lie difficulty plus upslope challenges. This is one of golf's most difficult situations.</p>
+                        <p><strong>Realistic Expectations:</strong> Primary goal is to get ball out of bunker and back in play—not necessarily on green. Accept that par may not be realistic from this lie.</p>
+                        <p><strong>Setup Adjustments:</strong></p>
+                        <ul>
+                            <li>Combine plugged lie technique with upslope adjustments</li>
+                            <li><strong>Square or slightly closed face</strong>—need to dig into slope</li>
+                            <li>Extra wide stance for stability on slope</li>
+                            <li>Tilt spine perpendicular to slope</li>
+                            <li><strong>Very firm grip</strong>—club will want to twist in heavy sand</li>
+                            <li>Aim 3-4 inches behind ball—need to excavate from face</li>
+                        </ul>
+                        <p><strong>Execution:</strong></p>
+                        <ul>
+                            <li>Very steep angle of attack—feel like chopping down into slope</li>
+                            <li>Full, aggressive swing with maximum acceleration</li>
+                            <li>Accept that club will bury in sand—commit to digging ball out</li>
+                            <li>Ball will pop out relatively low despite upslope</li>
+                            <li>May not have much control over direction or distance</li>
+                        </ul>
+                        <p><strong>Strategy:</strong> If lie is particularly severe against face, consider playing sideways or backward to safe area rather than attempting heroic shot toward green. Sometimes discretion is better part of valor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMMON BUNKER FIXES -->
+        <h2 class="section-title">Common Bunker Fixes</h2>
+        <div class="accordion" id="bunkerFixesAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix1">
+                        Fix: Ball stays in bunker - Accelerate harder
+                    </button>
+                </h3>
+                <div id="fix1" class="accordion-collapse collapse" data-bs-parent="#bunkerFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <p>Ball doesn't escape bunker due to: (1) decelerating through sand from fear, (2) hitting too far behind ball (more than 2-3 inches), (3) not following through, or (4) tentative swing with insufficient speed.</p>
+                        <h4>Fix</h4>
+                        <img src="images/wedges/error-bunker-escape.png" alt="Fix for bunker shots staying in sand" class="content-image" loading="lazy">
+                        <p><strong>Step 1:</strong> Commit to aggressive acceleration—sand is heavy and requires speed. No tentative swings.</p>
+                        <p><strong>Step 2:</strong> Aim to enter sand 2 inches behind ball, not 4-5 inches. Closer entry point = more energy transferred to ball.</p>
+                        <p><strong>Step 3:</strong> Make full backswing (3/4 to full) to generate necessary clubhead speed.</p>
+                        <p><strong>Step 4:</strong> Focus on completing follow-through—hands should finish high above shoulder, facing target.</p>
+                        <p><strong>Step 5:</strong> Open clubface at address to use bounce properly—closed face digs too deep.</p>
+                        <p><strong>Mental cue:</strong> Think "splash" not "dig." Imagine splashing sand and ball onto green together with aggressive motion. Trust that acceleration solves most bunker problems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p><strong>Content from Golf Distillery</strong><br>
+            Mobile-optimized for on-course reference<br>
+            <em>Bootstrap 5.3 Proof of Concept</em></p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Irons - Golf Training Hub</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Golf Theme CSS -->
+    <link href="bootstrap-custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- HEADER -->
+        <header class="page-header">
+            <button class="btn-back" onclick="window.location.href='on-course.html'" aria-label="Back to club selection">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="on-course.html">On Course</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Irons</li>
+                </ol>
+            </nav>
+        </header>
+
+        <!-- PAGE TITLE -->
+        <h1 class="page-title">Irons</h1>
+
+        <!-- QUICK REFERENCE CARD (ALWAYS VISIBLE) -->
+        <div class="quick-ref-card">
+            <div class="quick-ref-title">Quick Reference</div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Ball Position:</span>
+                <span class="quick-ref-value">Center of stance</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Hands:</span>
+                <span class="quick-ref-value">Slightly forward</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Contact:</span>
+                <span class="quick-ref-value">Ball first, divot after</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Weight:</span>
+                <span class="quick-ref-value">Slight forward bias</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Shaft Lean:</span>
+                <span class="quick-ref-value">Forward at impact</span>
+            </div>
+        </div>
+
+        <!-- SECTION 1: SETUP TIPS -->
+        <h2 class="section-title">Setup Tips</h2>
+        <div class="accordion" id="setupTipsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup1">
+                        Position ball center, move forward for long irons
+                    </button>
+                </h3>
+                <div id="setup1" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/ball-position.png" alt="Iron ball position by club" class="content-image" loading="lazy">
+                        <p><strong>General rule:</strong> Position the ball in the center of your stance for middle irons (6-7 iron), moving it slightly back for short irons and slightly forward for long irons.</p>
+                        <ul>
+                            <li><strong>Short Irons (8-PW):</strong> Center to slightly back of center</li>
+                            <li><strong>Mid Irons (5-7):</strong> Center of stance</li>
+                            <li><strong>Long Irons (3-4):</strong> Slightly forward of center</li>
+                        </ul>
+                        <p><em>Note:</em> Some instructors advocate for keeping the ball in a consistent forward position (off left heel) for all clubs. Experiment to find what produces the most consistent ball-first contact for you.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup2">
+                        Set feet shoulder-width apart for stability
+                    </button>
+                </h3>
+                <div id="setup2" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/stance-width.png" alt="Normal stance width for irons" class="content-image" loading="lazy">
+                        <p><strong>Normal stance:</strong> Feet positioned shoulder-width apart for mid-irons. This provides the optimal balance between stability and rotation.</p>
+                        <ul>
+                            <li><strong>Long irons:</strong> Slightly wider than shoulder-width for more stability</li>
+                            <li><strong>Short irons:</strong> Slightly narrower for easier rotation and control</li>
+                        </ul>
+                        <p><strong>Quick test:</strong> Jump slightly off the ground - where your feet naturally land is close to your ideal stance width.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup3">
+                        Hands forward for positive shaft lean
+                    </button>
+                </h3>
+                <div id="setup3" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/shaft-lean-positive.png" alt="Positive shaft lean at address" class="content-image" loading="lazy">
+                        <p><strong>Positive shaft lean:</strong> Your hands should be ahead of the ball at address, creating a forward lean of the shaft toward the target. This promotes:</p>
+                        <ul>
+                            <li>Hitting down on the ball (compressing it)</li>
+                            <li>Ball-first contact before ground</li>
+                            <li>Pure flight and optimal trajectory</li>
+                            <li>Proper divot after the ball</li>
+                        </ul>
+                        <p><strong>Important:</strong> This forward shaft lean is standard among professional golfers and essential for pure iron play.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup4">
+                        Even weight or slight forward bias at setup
+                    </button>
+                </h3>
+                <div id="setup4" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <p><strong>At address:</strong> Weight should be distributed evenly between both feet, or with a slight bias (55/45) toward the front foot.</p>
+                        <p><strong>During swing:</strong> Transfer weight to back foot during backswing, then shift strongly to front foot through impact and follow-through.</p>
+                        <p><strong>Common error:</strong> Too much weight on back foot promotes thin shots; too much on front foot can cause pulls.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup5">
+                        Light grip like holding a bird
+                    </button>
+                </h3>
+                <div id="setup5" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/grip-like-holding-a-bird.png" alt="Grip like holding a bird" class="content-image" loading="lazy">
+                        <p><strong>Grip like holding a bird:</strong> Apply just enough pressure to hold the club securely, but not so much that you'd harm a small bird.</p>
+                        <p><strong>Benefits of light grip pressure:</strong></p>
+                        <ul>
+                            <li>Reduces tension in forearms and shoulders</li>
+                            <li>Increases feel and touch</li>
+                            <li>Promotes natural clubface release</li>
+                            <li>Prevents excessive grip wear and calluses</li>
+                        </ul>
+                        <p><strong>Key:</strong> Maintain constant pressure throughout the swing - avoid tightening during takeaway or impact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setup6">
+                        Bend from hips, maintain spine angle through swing
+                    </button>
+                </h3>
+                <div id="setup6" class="accordion-collapse collapse" data-bs-parent="#setupTipsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/impact-spine.png" alt="Maintaining spine angle through impact" class="content-image" loading="lazy">
+                        <p><strong>Setup:</strong></p>
+                        <ul>
+                            <li>Bend forward from the hips (not the waist)</li>
+                            <li>Keep your back relatively straight</li>
+                            <li>Allow knees to flex moderately</li>
+                            <li>Let arms hang naturally from shoulders</li>
+                            <li>Right shoulder lower than left (for right-handed golfers)</li>
+                        </ul>
+                        <p><strong>Critical:</strong> Maintain this spine angle throughout the swing from address through impact. Rising up or dipping down causes inconsistent contact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: SWING KEYS -->
+        <h2 class="section-title">Swing Keys</h2>
+        <div class="accordion" id="swingKeysAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing1">
+                        Strike ball before ground, divot after
+                    </button>
+                </h3>
+                <div id="swing1" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/impact-hands.png" alt="Hands ahead at impact" class="content-image" loading="lazy">
+                        <p><strong>The Golden Rule of Iron Play:</strong> The club must strike the ball before the ground. This is achieved through a descending blow that compresses the ball against the turf.</p>
+                        <p><strong>How to achieve it:</strong></p>
+                        <ul>
+                            <li>Hands ahead of ball at address</li>
+                            <li>Maintain forward shaft lean through impact</li>
+                            <li>Keep head steady (not swaying or lifting)</li>
+                            <li>Weight shifting to front foot through impact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing2">
+                        Hit down on ball, not up like driver
+                    </button>
+                </h3>
+                <div id="swing2" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/impact-hitup-hitdown.png" alt="Hit down on irons vs up on driver" class="content-image" loading="lazy">
+                        <p><strong>With irons, hit DOWN on the ball:</strong> Unlike the driver (where you sweep upward), irons require a descending strike.</p>
+                        <p>The club should be traveling downward when it contacts the ball, continuing into the ground after ball contact to create a divot.</p>
+                        <p><strong>Key mental image:</strong> "Trap the ball" against the turf - compress it between the clubface and ground.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing3">
+                        Create shallow divot starting after ball position
+                    </button>
+                </h3>
+                <div id="swing3" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <p><strong>Proper sequence:</strong> Ball contact → Ground contact → Divot</p>
+                        <p>Your divot should begin at or slightly in front of where the ball was positioned. If your divot is behind the ball, you're hitting fat shots.</p>
+                        <p><strong>Divot characteristics:</strong></p>
+                        <ul>
+                            <li>Starts after the ball position</li>
+                            <li>Points toward the target</li>
+                            <li>Shallow and consistent depth</li>
+                            <li>Not excessively deep (you're not digging for treasure)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing4">
+                        Trap ball against turf for solid contact
+                    </button>
+                </h3>
+                <div id="swing4" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/impact_trap-the-ball-288x288.png" alt="Trap the ball for compression" class="content-image" loading="lazy">
+                        <p><strong>Ball compression = Distance + Control:</strong> Proper compression creates optimal launch conditions and spin.</p>
+                        <p><strong>How compression happens:</strong></p>
+                        <ul>
+                            <li>Descending blow drives ball into ground</li>
+                            <li>Ball momentarily flattens against clubface</li>
+                            <li>Grooves create backspin</li>
+                            <li>Ball launches with optimal trajectory and spin</li>
+                        </ul>
+                        <p><strong>Feel:</strong> Solid contact feels effortless and produces a distinct "click" sound rather than a "thud."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing5">
+                        Keep head steady, don't stand up at impact
+                    </button>
+                </h3>
+                <div id="swing5" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/impact_dont-stand-up-288x288.png" alt="Don't stand up at impact" class="content-image" loading="lazy">
+                        <p><strong>Set it and forget it:</strong> The spine angle established at address must remain constant through impact.</p>
+                        <p><strong>Common errors:</strong></p>
+                        <ul>
+                            <li><strong>Standing up (early extension):</strong> Raises the swing arc, causes thin/topped shots</li>
+                            <li><strong>Dipping down:</strong> Lowers swing arc, causes fat shots</li>
+                            <li><strong>Swaying laterally:</strong> Moves swing arc location, causes inconsistent contact</li>
+                        </ul>
+                        <p><strong>Practice drill:</strong> Imagine your head is against a wall behind you - keep it there from top of backswing through impact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swing6">
+                        Smooth tempo - low and slow takeaway
+                    </button>
+                </h3>
+                <div id="swing6" class="accordion-collapse collapse" data-bs-parent="#swingKeysAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/takeaway_low-and-slow-288x288.png" alt="Low and slow takeaway" class="content-image" loading="lazy">
+                        <p><strong>Smooth over fast:</strong> Consistent tempo is more important than swing speed for iron play.</p>
+                        <p><strong>Key tempo thoughts:</strong></p>
+                        <ul>
+                            <li><strong>"Low and slow":</strong> Start takeaway smoothly</li>
+                            <li><strong>"Don't try to kill it":</strong> Swing within yourself</li>
+                            <li><strong>"Tempo, tempo, tempo!":</strong> Focus on rhythm over power</li>
+                            <li><strong>"Swing like holding a garden hose":</strong> Maintain flowing motion</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: TOP 5 SWING THOUGHTS -->
+        <h2 class="section-title">Top 5 Swing Thoughts</h2>
+        <div class="accordion" id="swingThoughtsAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought1">
+                        1. Light grip reduces tension and increases feel
+                    </button>
+                </h3>
+                <div id="thought1" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/grip-like-holding-a-bird.png" alt="Grip like holding a bird" class="content-image" loading="lazy">
+                        <p><strong>What it promotes:</strong> Light grip pressure that reduces tension and increases feel.</p>
+                        <p><strong>When to use:</strong> When you feel tense, when rhythm is off, or when you need more touch and control.</p>
+                        <p><strong>Why it works:</strong> You'll automatically apply sufficient pressure during the swing. Starting light ensures you won't be too tight at impact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought2">
+                        2. Maintain wrist hinge, hands ahead of clubhead
+                    </button>
+                </h3>
+                <div id="thought2" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/impact_keep-the-lag-288x288.png" alt="Keep the lag through impact" class="content-image" loading="lazy">
+                        <p><strong>What it promotes:</strong> Maintaining wrist hinge through impact; hands ahead of clubhead.</p>
+                        <p><strong>When to use:</strong> When losing distance, hitting weak shots, or struggling with ball-first contact.</p>
+                        <p><strong>Why it works:</strong> Preserves angle between arms and club for maximum compression and clubhead speed at impact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought3">
+                        3. Hit down to compress ball against turf
+                    </button>
+                </h3>
+                <div id="thought3" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/impact_trap-the-ball-288x288.png" alt="Trap the ball against the turf" class="content-image" loading="lazy">
+                        <p><strong>What it promotes:</strong> Hitting down on the ball to compress it against the turf.</p>
+                        <p><strong>When to use:</strong> When struggling with ball-first contact, hitting thin/fat shots, or need better compression.</p>
+                        <p><strong>Why it works:</strong> Creates mental image of descending blow and proper impact position for irons.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought4">
+                        4. Hold spine angle, keep head at same height
+                    </button>
+                </h3>
+                <div id="thought4" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/impact_dont-stand-up-288x288.png" alt="Don't stand up at impact" class="content-image" loading="lazy">
+                        <p><strong>What it promotes:</strong> Maintaining spine angle and posture through impact.</p>
+                        <p><strong>When to use:</strong> When hitting thin shots, topping the ball, or inconsistent contact.</p>
+                        <p><strong>Why it works:</strong> Prevents early extension that raises swing arc and causes poor contact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thought5">
+                        5. Start takeaway smoothly to set rhythm
+                    </button>
+                </h3>
+                <div id="thought5" class="accordion-collapse collapse" data-bs-parent="#swingThoughtsAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/takeaway_low-and-slow-288x288.png" alt="Low and slow takeaway" class="content-image" loading="lazy">
+                        <p><strong>What it promotes:</strong> Smooth, controlled takeaway that sets up entire swing.</p>
+                        <p><strong>When to use:</strong> When rushing the swing, losing tempo, or struggling with consistency.</p>
+                        <p><strong>Why it works:</strong> Establishes proper swing path from the start and promotes smooth rhythm throughout.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 4: COMMON FIXES -->
+        <h2 class="section-title">Common Fixes</h2>
+        <div class="accordion" id="commonFixesAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix1">
+                        Fix: Hitting ground before ball (fat shots)
+                    </button>
+                </h3>
+                <div id="fix1" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <img src="images/irons/fat.png" alt="Fat shot contact" class="content-image" loading="lazy">
+                        <p>Club hits ground before ball. Bottom of swing arc is too far behind the ball or too low into the ground.</p>
+
+                        <h4>Fix</h4>
+                        <ul>
+                            <li><strong>Swaying:</strong> Hips move laterally instead of rotating
+                                <br><em>Fix: Rotate upper body without moving hips laterally; keep right knee flexed</em></li>
+                            <li><strong>Ball too far forward:</strong> Ball positioned past bottom of swing arc
+                                <br><em>Fix: Center ball in stance for wedges, move progressively forward for longer irons</em></li>
+                            <li><strong>Stance too wide:</strong> Lowers body and swing arc
+                                <br><em>Fix: Position feet shoulder-width apart</em></li>
+                            <li><strong>Weight on back foot:</strong> Promotes behind-ball contact
+                                <br><em>Fix: Distribute weight evenly or slightly forward</em></li>
+                            <li><strong>Failing to maintain spine angle:</strong> Dipping or moving forward
+                                <br><em>Fix: Keep spine angle constant from address through impact</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix2">
+                        Fix: Hitting below ball equator (thin shots)
+                    </button>
+                </h3>
+                <div id="fix2" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <img src="images/irons/thin-contact.png" alt="Thin shot contact" class="content-image" loading="lazy">
+                        <p>Leading edge hits ball below equator. Bottom of swing arc is too high or positioned incorrectly relative to ball.</p>
+
+                        <h4>Fix</h4>
+                        <ul>
+                            <li><strong>Standing up at impact (early extension):</strong> Raises swing arc
+                                <br><em>Fix: Keep head at same height from address through impact</em></li>
+                            <li><strong>Ball too far forward:</strong> Reach for ball causes standing up
+                                <br><em>Fix: Adjust ball position - center for mid-irons, progressively forward for longer clubs</em></li>
+                            <li><strong>Stance too narrow:</strong> Raises swing arc bottom
+                                <br><em>Fix: Widen to shoulder-width stance</em></li>
+                            <li><strong>Weight on back foot:</strong> Moves swing arc bottom backward
+                                <br><em>Fix: Weight equal or slightly favoring front foot</em></li>
+                            <li><strong>Scooping/flipping:</strong> Hands stop leading through impact
+                                <br><em>Fix: Maintain wrist hinge through impact; don't release early</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix3">
+                        Fix: Hitting top of ball (topped shots)
+                    </button>
+                </h3>
+                <div id="fix3" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <img src="images/irons/topped-contact.png" alt="Topped shot contact" class="content-image" loading="lazy">
+                        <p>Leading edge hits above ball's equator. Bottom of swing arc too high, too soon, or too late.</p>
+
+                        <h4>Fix</h4>
+                        <ul>
+                            <li><strong>Swaying during swing:</strong> Moves arc from setup position
+                                <br><em>Fix: Keep right knee leaned inward and flexed throughout backswing</em></li>
+                            <li><strong>Reverse pivot:</strong> Weight moves toward target on backswing
+                                <br><em>Fix: Transfer weight to back foot during backswing, front foot on downswing</em></li>
+                            <li><strong>Ball positioned incorrectly:</strong> Creates mismatch with swing arc
+                                <br><em>Fix: Start with center position, adjust from there</em></li>
+                            <li><strong>Incorrect weight distribution:</strong> Too much on front or back foot
+                                <br><em>Fix: Distribute weight equally at address</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix4">
+                        Fix: Ball flying straight right of target
+                    </button>
+                </h3>
+                <div id="fix4" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <img src="images/irons/push-ball-flight.png" alt="Push ball flight" class="content-image" loading="lazy">
+                        <p>Clubface open at impact but square to club path; inside-out swing path.</p>
+
+                        <h4>Fix</h4>
+                        <ul>
+                            <li><strong>Check alignment:</strong> Ensure you're not aimed right
+                                <br><em>Fix: Adopt square stance, clubface aimed at target</em></li>
+                            <li><strong>Inside-out path + weak grip:</strong> Promotes lazy release
+                                <br><em>Fix: Take club back square (not inside); strengthen grip (see 2-3 knuckles)</em></li>
+                            <li><strong>Ball too far back:</strong> Catch ball before face rotates square
+                                <br><em>Fix: Move ball forward in stance</em></li>
+                            <li><strong>Grip pressure too tight:</strong> Restricts release
+                                <br><em>Fix: Lighter grip pressure, especially right hand</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix5">
+                        Fix: Ball flying straight left of target
+                    </button>
+                </h3>
+                <div id="fix5" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Cause</h4>
+                        <img src="images/irons/pull-ball-flight.png" alt="Pull ball flight" class="content-image" loading="lazy">
+                        <p>Clubface closed at impact and square to path; outside-in swing path.</p>
+
+                        <h4>Fix</h4>
+                        <ul>
+                            <li><strong>Check alignment:</strong> Ensure you're not aimed left
+                                <br><em>Fix: Adopt square stance aligned at target</em></li>
+                            <li><strong>Outside-in path + strong grip:</strong> Promotes closed face
+                                <br><em>Fix: Take club back square (not outside); weaken grip (see 1-2 knuckles)</em></li>
+                            <li><strong>Ball too far forward:</strong> Hit during release when path goes left
+                                <br><em>Fix: Move ball back in stance</em></li>
+                            <li><strong>Over-the-top move:</strong> Club outside target line on downswing
+                                <br><em>Fix: Work on inside-square-inside path</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix6">
+                        Fix: Losing distance on iron shots
+                    </button>
+                </h3>
+                <div id="fix6" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Common Causes and Fixes</h4>
+                        <ul>
+                            <li><strong>Poor ball compression:</strong> Not hitting down on ball
+                                <br><em>Fix: Forward shaft lean, descending blow, ball-first contact</em></li>
+                            <li><strong>Weak impact position:</strong> Hands not leading at impact
+                                <br><em>Fix: Keep lag; hands ahead of clubhead through impact</em></li>
+                            <li><strong>Grip pressure too tight:</strong> Restricts clubhead speed
+                                <br><em>Fix: Grip like holding a bird</em></li>
+                            <li><strong>Decelerating through impact:</strong> Slowing down before ball
+                                <br><em>Fix: Hit THROUGH the ball, not AT it; accelerate through impact</em></li>
+                            <li><strong>Fat or thin contact:</strong> Energy wasted on ground or poor strike
+                                <br><em>Fix: Address specific contact issues above</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix7">
+                        Fix: Varying contact quality shot to shot
+                    </button>
+                </h3>
+                <div id="fix7" class="accordion-collapse collapse" data-bs-parent="#commonFixesAccordion">
+                    <div class="accordion-body">
+                        <h4>Common Causes and Fixes</h4>
+                        <ul>
+                            <li><strong>Inconsistent spine angle:</strong> Moving up/down during swing
+                                <br><em>Fix: Imagine head against wall; maintain height</em></li>
+                            <li><strong>Varying ball position:</strong> Setup not consistent
+                                <br><em>Fix: Use alignment sticks; develop consistent routine</em></li>
+                            <li><strong>Inconsistent stance width:</strong> Changes between shots
+                                <br><em>Fix: Establish shoulder-width baseline; stick to it</em></li>
+                            <li><strong>Swaying or lateral movement:</strong> Moving swing arc
+                                <br><em>Fix: Turn, don't sway; maintain right knee flex</em></li>
+                            <li><strong>Tempo variations:</strong> Fast then slow, or vice versa
+                                <br><em>Fix: Count rhythm (1-2-3); focus on tempo over power</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 5: DIFFICULT LIES -->
+        <h2 class="section-title">Difficult Lies</h2>
+        <div class="accordion" id="difficultLiesAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lie1">
+                        Adjust for ball above feet - aim right, expect draw
+                    </button>
+                </h3>
+                <div id="lie1" class="accordion-collapse collapse" data-bs-parent="#difficultLiesAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/ball-above-feet-lie.png" alt="Ball above feet lie" class="content-image" loading="lazy">
+                        <p><strong>Natural tendency:</strong> Ball will fly left of target.</p>
+                        <p><strong>Setup adjustments:</strong></p>
+                        <ul>
+                            <li>Aim right of target to compensate</li>
+                            <li>Grip down on the club (ball is closer to you)</li>
+                            <li>Stand more upright</li>
+                            <li>Expect a draw/hook ball flight</li>
+                            <li>Take one more club (distance will be shorter)</li>
+                        </ul>
+                        <p><strong>Swing key:</strong> Make a more controlled, compact swing. The slope will promote an around-the-body swing plane.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lie2">
+                        Adjust for ball below feet - aim left, expect fade
+                    </button>
+                </h3>
+                <div id="lie2" class="accordion-collapse collapse" data-bs-parent="#difficultLiesAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/ball-below-feet-lie.png" alt="Ball below feet lie" class="content-image" loading="lazy">
+                        <p><strong>Natural tendency:</strong> Ball will fly right of target; risk of thin contact or missing ball entirely.</p>
+                        <p><strong>Setup adjustments:</strong></p>
+                        <ul>
+                            <li>Aim left of target to compensate</li>
+                            <li>Widen your stance for more stability</li>
+                            <li>Bend more from the hips to reach ball</li>
+                            <li>Grip at full length (or higher) on club</li>
+                            <li>Flex knees more to get down to ball</li>
+                            <li>Expect a fade/slice ball flight</li>
+                        </ul>
+                        <p><strong>Swing key:</strong> Maintain your knee flex throughout. This is one of the most difficult lies - accept a more conservative approach.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lie3">
+                        Match slope on uphill lie - ball flies higher and shorter
+                    </button>
+                </h3>
+                <div id="lie3" class="accordion-collapse collapse" data-bs-parent="#difficultLiesAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/uphill-lie.png" alt="Uphill lie" class="content-image" loading="lazy">
+                        <p><strong>Natural tendency:</strong> Ball flies higher and shorter; tendency to hook.</p>
+                        <p><strong>Setup adjustments:</strong></p>
+                        <ul>
+                            <li>Tilt shoulders to match the slope</li>
+                            <li>Place more weight on downhill (back) foot</li>
+                            <li>Aim slightly right (ball will draw)</li>
+                            <li>Take one or two more clubs (shot will fly shorter)</li>
+                            <li>Position ball slightly forward in stance</li>
+                        </ul>
+                        <p><strong>Swing key:</strong> Swing with the slope. Risk hitting behind ball (fat), so focus on clean contact over distance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lie4">
+                        Match slope on downhill lie - ball flies lower and longer
+                    </button>
+                </h3>
+                <div id="lie4" class="accordion-collapse collapse" data-bs-parent="#difficultLiesAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/downhill-lie.png" alt="Downhill lie" class="content-image" loading="lazy">
+                        <p><strong>Natural tendency:</strong> Ball flies lower and longer; tendency to fade/slice; difficult lie.</p>
+                        <p><strong>Setup adjustments:</strong></p>
+                        <ul>
+                            <li>Tilt shoulders to match the slope (critical)</li>
+                            <li>Place more weight on downhill (front) foot</li>
+                            <li>Aim slightly left (ball will fade)</li>
+                            <li>Take one less club (ball flies farther)</li>
+                            <li>Position ball back in stance</li>
+                            <li>Accept a lower trajectory</li>
+                        </ul>
+                        <p><strong>Swing key:</strong> Swing down the slope. High risk of thin/topped shots. Prioritize solid contact and accept shorter distance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lie5">
+                        Ball back, weight forward on tight/bare lie
+                    </button>
+                </h3>
+                <div id="lie5" class="accordion-collapse collapse" data-bs-parent="#difficultLiesAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/tight-lie.png" alt="Tight lie on bare ground" class="content-image" loading="lazy">
+                        <p><strong>Challenge:</strong> Ball on very short grass or bare ground; minimal cushion. Risk of club bouncing off hard ground and hitting ball thin.</p>
+                        <p><strong>Setup adjustments:</strong></p>
+                        <ul>
+                            <li>Ball position slightly back of center</li>
+                            <li>Hands slightly more forward</li>
+                            <li>Weight slightly favoring front foot</li>
+                            <li>Narrow stance slightly for better control</li>
+                        </ul>
+                        <p><strong>Swing key:</strong> Focus on crisp, descending contact. Avoid trying to help ball up - let loft do the work. A clean, compressing strike is essential.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lie6">
+                        Hit down firmly when ball in old divot
+                    </button>
+                </h3>
+                <div id="lie6" class="accordion-collapse collapse" data-bs-parent="#difficultLiesAccordion">
+                    <div class="accordion-body">
+                        <p><strong>Situation:</strong> Ball resting in an old divot. Treat like a mini-downhill lie.</p>
+                        <p><strong>Setup adjustments:</strong></p>
+                        <ul>
+                            <li>Ball position back in stance</li>
+                            <li>Hands well forward</li>
+                            <li>Weight forward</li>
+                            <li>Take one more club</li>
+                            <li>Expect lower trajectory</li>
+                        </ul>
+                        <p><strong>Swing key:</strong> Steep angle of attack. Hit down firmly - you need to dig the ball out. Accept that this won't be a perfect shot.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lie7">
+                        Expect flyer from light rough - less spin, more roll
+                    </button>
+                </h3>
+                <div id="lie7" class="accordion-collapse collapse" data-bs-parent="#difficultLiesAccordion">
+                    <div class="accordion-body">
+                        <p><strong>Effect:</strong> Ball in first cut or light rough. Grass between clubface and ball reduces spin; ball may fly slightly farther ("flyer" lie).</p>
+                        <p><strong>Adjustments:</strong></p>
+                        <ul>
+                            <li>Minimal setup changes needed</li>
+                            <li>Consider taking one less club</li>
+                            <li>Expect less backspin</li>
+                            <li>Ball may release more on landing</li>
+                        </ul>
+                        <p><strong>Swing key:</strong> Normal swing; be aware ball may fly farther and roll more than expected.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lie8">
+                        Open face, steep swing from heavy rough
+                    </button>
+                </h3>
+                <div id="lie8" class="accordion-collapse collapse" data-bs-parent="#difficultLiesAccordion">
+                    <div class="accordion-body">
+                        <img src="images/irons/heavy-rough-lie.png" alt="Heavy rough lie" class="content-image" loading="lazy">
+                        <p><strong>Challenge:</strong> Ball buried in thick grass, possibly against the grain. Grass will grab the hosel and close the clubface; significant distance loss.</p>
+                        <p><strong>Setup adjustments:</strong></p>
+                        <ul>
+                            <li>Take more lofted club (or even wedge)</li>
+                            <li>Open clubface at address to compensate for closing</li>
+                            <li>Ball position center or slightly back</li>
+                            <li>Stronger grip</li>
+                            <li>Weight forward</li>
+                        </ul>
+                        <p><strong>Swing key:</strong> Steep, powerful swing. Grass will slow club dramatically. Priority is getting ball back to fairway, not distance.</p>
+                        <p><strong>Strategy:</strong> Accept that you may need to lay up rather than attempting a heroic shot.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p><strong>Content from Golf Distillery</strong><br>
+            Mobile-optimized for on-course reference<br>
+            <em>Bootstrap 5.3</em></p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
