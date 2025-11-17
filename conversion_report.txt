@@ -1,0 +1,276 @@
+================================================================================
+IMPERIAL TO METRIC CONVERSION REPORT
+Golf Training Hub - Golf Standard Conversions
+================================================================================
+
+SUMMARY BY FILE
+--------------------------------------------------------------------------------
+
+bunker-play.html: 17 conversions
+
+chipping-pitching.html: 13 conversions
+
+driver.html: 3 conversions
+
+hybrids.html: 5 conversions
+
+putter.html: 19 conversions
+
+station-3-wedge-play.html: 21 conversions
+
+station-4-chipping.html: 15 conversions
+
+station-5-pitching.html: 20 conversions
+
+station-6-bunker.html: 25 conversions
+
+station-7-putting.html: 13 conversions
+
+wedges-full-swing.html: 14 conversions
+
+woods.html: 3 conversions
+
+
+================================================================================
+DETAILED CONVERSIONS
+================================================================================
+
+
+================================================================================
+FILE: bunker-play.html
+================================================================================
+
+Line 50: 1-2 inches → 5-5 cm
+Line 70: 2 inches → 5 cm
+Line 74: 1-2 inches → 5-5 cm
+Line 83: 2 inches → 5 cm
+Line 108: 3 inches → 10 cm
+Line 151: 2 inches → 5 cm
+Line 182: 2 inches → 5 cm
+Line 244: 2 inches → 5 cm
+Line 244: 1 inch → 5 cm
+Line 265: 2 inches → 5 cm
+Line 277: 2 inches → 5 cm
+Line 288:  10 yards → 10m
+Line 299: 2 inches → 5 cm
+Line 334: 3-4 inches → 10-10 cm
+Line 362: 2-3 inches → 5-10 cm
+Line 366: 4-5 inches → 10-15 cm
+Line 366: 2 inches → 5 cm
+
+================================================================================
+FILE: chipping-pitching.html
+================================================================================
+
+Line 70: 30-100 Yards → 25-90m
+Line 75: 30-100 yards → 25-90m
+Line 82: 30-100 yards → 25-90m
+Line 101: 1-2 inches → 5-5 cm
+Line 115: 20-40 Yards → 20-35m
+Line 121: 40-60 Yards → 35-50m
+Line 127: 60-80 Yards → 50-70m
+Line 190:  25 yards → 25m
+Line 212: 6-8 inches → 15-20 cm
+Line 318: 1 inch → 5 cm
+Line 475: 10-20 yards → 10-20m
+Line 506: 5-15 yards → 5-15m
+Line 537: 30-50 yards → 25-50m
+
+================================================================================
+FILE: driver.html
+================================================================================
+
+Line 101: 2-6 inches → 5-15 cm
+Line 107: 2-6 inches → 5-15 cm
+Line 640: 1-2 inches → 5-5 cm
+
+================================================================================
+FILE: hybrids.html
+================================================================================
+
+Line 243: 180-220 yards → 160-200m
+Line 269: 4 inches → 10 cm
+Line 335: 180-220 yards → 160-200m
+Line 341: 180-220 yards → 160-200m
+Line 386: 10-20 yards → 10-20m
+
+================================================================================
+FILE: putter.html
+================================================================================
+
+Line 230: 6-8 inches → 15-20 cm
+Line 406: 20 feet → 6m
+Line 406: 10 feet → 3m
+Line 406: 12 inches → 30 cm
+Line 406: 6 inches → 15 cm
+Line 428: 10 in → 25 cm
+Line 471: 6-12 inches → 15-30 cm
+Line 477: 6-12 inches → 15-30 cm
+Line 513: 3-10 feet → 1-3m
+Line 527: 30 feet → 9m
+Line 527: 20 feet → 6m
+Line 527: 10 feet → 3m
+Line 527: 18 inches → 45 cm
+Line 527: 12 inches → 30 cm
+Line 527: 6 inches → 15 cm
+Line 543: 30-40 feet → 9-12m
+Line 617: 12-18 inches → 30-45 cm
+Line 623: 12-18 inches → 30-45 cm
+Line 624: 12-18 inches → 30-45 cm
+
+================================================================================
+FILE: station-3-wedge-play.html
+================================================================================
+
+Line 106: 110-130 yards → 100-120m
+Line 107: 95-110 yards → 90-100m
+Line 108: 80-95 yards → 70-90m
+Line 109: 65-80 yards → 60-70m
+Line 117:  5 yards → 5m
+Line 148:  10 yards → 10m
+Line 192: 70-80 yards → 60-70m
+Line 218:  60 yards → 50m
+Line 224:  60 yards → 50m
+Line 231: 15 feet → 4.5m
+Line 252: 90-100 yards → 80-90m
+Line 253: 60-75 yards → 50-70m
+Line 254: 40-50 yards → 35-50m
+Line 349: 2-3 yards → 0-5m
+Line 387:  10 yards → 10m
+Line 394: 10-15 yards → 10-15m
+Line 394: 10-15 feet → 3-4.5m
+Line 630: 2 inches → 5 cm
+Line 706:  90 yards → 80m
+Line 710:  10 yards → 10m
+Line 765: 40-70 yards → 35-60m
+
+================================================================================
+FILE: station-4-chipping.html
+================================================================================
+
+Line 138: 3 Feet → 1m
+Line 142: 3 Feet → 1m
+Line 149: 3 feet → 1m
+Line 162: 30 feet → 9m
+Line 162: 20 feet → 6m
+Line 162: 10 feet → 3m
+Line 179: 3 feet → 1m
+Line 224: 30 feet → 9m
+Line 583: 6-8 inches → 15-20 cm
+Line 639: 3 Feet → 1m
+Line 741: 15 feet → 4.5m
+Line 741: 15 feet → 4.5m
+Line 741: 30 feet → 9m
+Line 756: 3 Feet → 1m
+Line 760: 30 feet → 9m
+
+================================================================================
+FILE: station-5-pitching.html
+================================================================================
+
+Line 32: 10-80 yards → 10-70m
+Line 50: 10-20 YARDS → 10-20m
+Line 54: 10-20 Yards → 10-20m
+Line 91: 20-40 YARDS → 20-35m
+Line 95: 20-40 Yards → 20-35m
+Line 133: 40-60 YARDS → 35-50m
+Line 137: 40-60 Yards → 35-50m
+Line 153: 50-60 yard → 50-50m
+Line 154: 40-50 yard → 35-50m
+Line 155: 30-40 yard → 25-35m
+Line 176: 60-80 YARDS → 50-70m
+Line 180: 60-80 Yards → 50-70m
+Line 197: 70-80 yards → 60-70m
+Line 198: 60-70 yards → 50-60m
+Line 199: 50-60 yards → 50-50m
+Line 200: 10-12 yard → 10-10m
+Line 332: 1-2 inches → 5-5 cm
+Line 463:  30 yards → 25m
+Line 502:  40 yards → 35m
+Line 582: 4 inch → 10 cm
+
+================================================================================
+FILE: station-6-bunker.html
+================================================================================
+
+Line 59: 2 inches → 5 cm
+Line 76: 2 inches → 5 cm
+Line 105: 2 inches → 5 cm
+Line 105: 1 inch → 5 cm
+Line 120: 1 inch → 5 cm
+Line 149: 3 inches → 10 cm
+Line 348: 2 inches → 5 cm
+Line 348: 5 inches → 15 cm
+Line 363: 20-30 yards → 20-25m
+Line 364: 30-40 yards → 25-35m
+Line 390: 10 yards → 10m
+Line 418: 2 inches → 5 cm
+Line 462: 1 inch → 5 cm
+Line 526:  30 yards → 25m
+Line 527: 2 inches → 5 cm
+Line 533: 4 inches → 10 cm
+Line 533: 2 inches → 5 cm
+Line 565: 2 inches → 5 cm
+Line 571: 4-6 inches → 10-15 cm
+Line 571: 2 inches → 5 cm
+Line 574: 2 inches → 5 cm
+Line 609: 6 inches → 15 cm
+Line 614: 2 inches → 5 cm
+Line 649: 2 inches → 5 cm
+Line 649: 3 inches → 10 cm
+
+================================================================================
+FILE: station-7-putting.html
+================================================================================
+
+Line 77: 3-9 feet → 1-2.5m
+Line 116: 3-6 feet → 1-2m
+Line 137: 3-15 feet → 1-4.5m
+Line 172: 30-60 feet → 9-18m
+Line 173: 3 feet → 1m
+Line 198: 2 feet → 0.5m
+Line 218: 6 inches → 15 cm
+Line 225: 6-20 feet → 2-6m
+Line 242: 12-18 inches → 30-45 cm
+Line 267: 20 feet → 6m
+Line 302: 6-10 feet → 2-3m
+Line 562: 30 feet → 9m
+Line 585: 3-6 feet → 1-2m
+
+================================================================================
+FILE: wedges-full-swing.html
+================================================================================
+
+Line 42: 100-120 yards → 90-110m
+Line 46: 85-105 yards → 80-100m
+Line 50: 70-90 yards → 60-80m
+Line 54: 50-70 yards → 50-60m
+Line 74: 6-8 inches → 15-20 cm
+Line 129: 1-2 inches → 5-5 cm
+Line 135: 1-2 inches → 5-5 cm
+Line 323:  100 yards → 90m
+Line 323:  30 yards → 25m
+Line 351: 2 inches → 5 cm
+Line 465: 100-130 yards → 90-120m
+Line 471: 80-105 yards → 70-100m
+Line 477: 60-85 yards → 50-80m
+Line 483: 50-75 yards → 50-70m
+
+================================================================================
+FILE: woods.html
+================================================================================
+
+Line 392: 1 inch → 5 cm
+Line 402: 1 inch → 5 cm
+Line 696: 1-2 inches → 5-5 cm
+
+
+================================================================================
+STATISTICS
+================================================================================
+Total conversions: 168
+Files modified: 12
+
+Yard conversions: 65
+Foot conversions: 34
+Inch conversions: 68

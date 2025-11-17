@@ -1,0 +1,218 @@
+================================================================================
+IMPERIAL TO METRIC CONVERSION - VALIDATION REPORT
+================================================================================
+
+OVERALL STATISTICS
+--------------------------------------------------------------------------------
+Files checked: 24
+Metric measurements found: 168
+Imperial measurements remaining: 0
+Files with HTML integrity: 13/24
+
+⚠️  STATUS: ISSUES FOUND - See details below
+
+================================================================================
+ISSUES FOUND
+================================================================================
+
+
+File: bunker-play.html
+Issue Type: HTML_INTEGRITY
+  - Potential tag imbalance: 349 opening, 330 closing
+
+File: chipping-pitching.html
+Issue Type: HTML_INTEGRITY
+  - Potential tag imbalance: 478 opening, 449 closing
+
+File: driver.html
+Issue Type: HTML_INTEGRITY
+  - Potential tag imbalance: 533 opening, 498 closing
+
+File: hybrids.html
+Issue Type: HTML_INTEGRITY
+  - Potential tag imbalance: 253 opening, 229 closing
+
+File: irons.html
+Issue Type: HTML_INTEGRITY
+  - Potential tag imbalance: 640 opening, 573 closing
+
+File: putter.html
+Issue Type: HTML_INTEGRITY
+  - Potential tag imbalance: 484 opening, 469 closing
+
+File: station-1-driver-woods.html
+Issue Type: HTML_INTEGRITY
+  - Potential tag imbalance: 318 opening, 299 closing
+
+File: station-2-iron-play.html
+Issue Type: HTML_INTEGRITY
+  - Potential tag imbalance: 417 opening, 398 closing
+
+File: station-4-chipping.html
+Issue Type: HTML_INTEGRITY
+  - Potential tag imbalance: 524 opening, 512 closing
+
+File: wedges-full-swing.html
+Issue Type: HTML_INTEGRITY
+  - Potential tag imbalance: 415 opening, 386 closing
+
+File: woods.html
+Issue Type: HTML_INTEGRITY
+  - Potential tag imbalance: 591 opening, 559 closing
+
+================================================================================
+DETAILED RESULTS PER FILE
+================================================================================
+
+
+bunker-play.html
+--------------------------------------------------------------------------------
+Metric measurements: 1m, 16 cm
+HTML valid: ❌ No
+✅ No imperial measurements remaining
+
+chipping-pitching.html
+--------------------------------------------------------------------------------
+Metric measurements: 10m, 3 cm
+HTML valid: ❌ No
+✅ No imperial measurements remaining
+
+driver.html
+--------------------------------------------------------------------------------
+Metric measurements: 0m, 3 cm
+HTML valid: ❌ No
+✅ No imperial measurements remaining
+
+driving-range.html
+--------------------------------------------------------------------------------
+Metric measurements: 0m, 0 cm
+HTML valid: ✅ Yes
+✅ No imperial measurements remaining
+
+hybrids.html
+--------------------------------------------------------------------------------
+Metric measurements: 4m, 1 cm
+HTML valid: ❌ No
+✅ No imperial measurements remaining
+
+index.html
+--------------------------------------------------------------------------------
+Metric measurements: 0m, 0 cm
+HTML valid: ✅ Yes
+✅ No imperial measurements remaining
+
+irons.html
+--------------------------------------------------------------------------------
+Metric measurements: 0m, 0 cm
+HTML valid: ❌ No
+✅ No imperial measurements remaining
+
+on-course.html
+--------------------------------------------------------------------------------
+Metric measurements: 0m, 0 cm
+HTML valid: ✅ Yes
+✅ No imperial measurements remaining
+
+practice.html
+--------------------------------------------------------------------------------
+Metric measurements: 0m, 0 cm
+HTML valid: ✅ Yes
+✅ No imperial measurements remaining
+
+putter.html
+--------------------------------------------------------------------------------
+Metric measurements: 7m, 12 cm
+HTML valid: ❌ No
+✅ No imperial measurements remaining
+
+rough.html
+--------------------------------------------------------------------------------
+Metric measurements: 0m, 0 cm
+HTML valid: ✅ Yes
+✅ No imperial measurements remaining
+
+short-game.html
+--------------------------------------------------------------------------------
+Metric measurements: 0m, 0 cm
+HTML valid: ✅ Yes
+✅ No imperial measurements remaining
+
+station-1-driver-woods.html
+--------------------------------------------------------------------------------
+Metric measurements: 0m, 0 cm
+HTML valid: ❌ No
+✅ No imperial measurements remaining
+
+station-2-iron-play.html
+--------------------------------------------------------------------------------
+Metric measurements: 0m, 0 cm
+HTML valid: ❌ No
+✅ No imperial measurements remaining
+
+station-3-wedge-play.html
+--------------------------------------------------------------------------------
+Metric measurements: 20m, 1 cm
+HTML valid: ✅ Yes
+✅ No imperial measurements remaining
+
+station-4-chipping.html
+--------------------------------------------------------------------------------
+Metric measurements: 14m, 1 cm
+HTML valid: ❌ No
+✅ No imperial measurements remaining
+
+station-5-pitching.html
+--------------------------------------------------------------------------------
+Metric measurements: 18m, 2 cm
+HTML valid: ✅ Yes
+✅ No imperial measurements remaining
+
+station-6-bunker.html
+--------------------------------------------------------------------------------
+Metric measurements: 4m, 21 cm
+HTML valid: ✅ Yes
+✅ No imperial measurements remaining
+
+station-7-putting.html
+--------------------------------------------------------------------------------
+Metric measurements: 11m, 2 cm
+HTML valid: ✅ Yes
+✅ No imperial measurements remaining
+
+tight-lies.html
+--------------------------------------------------------------------------------
+Metric measurements: 0m, 0 cm
+HTML valid: ✅ Yes
+✅ No imperial measurements remaining
+
+trouble.html
+--------------------------------------------------------------------------------
+Metric measurements: 0m, 0 cm
+HTML valid: ✅ Yes
+✅ No imperial measurements remaining
+
+uneven-lies.html
+--------------------------------------------------------------------------------
+Metric measurements: 0m, 0 cm
+HTML valid: ✅ Yes
+✅ No imperial measurements remaining
+
+wedges-full-swing.html
+--------------------------------------------------------------------------------
+Metric measurements: 10m, 4 cm
+HTML valid: ❌ No
+✅ No imperial measurements remaining
+
+woods.html
+--------------------------------------------------------------------------------
+Metric measurements: 0m, 3 cm
+HTML valid: ❌ No
+✅ No imperial measurements remaining
+
+================================================================================
+METRIC MEASUREMENT BREAKDOWN
+================================================================================
+
+Total meter measurements: 99
+Total centimeter measurements: 69
+Total metric measurements: 168
