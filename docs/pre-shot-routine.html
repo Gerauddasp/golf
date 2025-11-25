@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Pre-Shot Routine - Golf Training Hub (Bootstrap)</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Golf Theme CSS -->
+    <link href="bootstrap-custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- HEADER -->
+        <header class="page-header">
+            <button class="btn-back" onclick="window.location.href='on-course.html'" aria-label="Back to on-course selection">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="on-course.html">On Course</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Pre-Shot Routine</li>
+                </ol>
+            </nav>
+        </header>
+
+        <!-- PAGE TITLE -->
+        <h1 class="page-title">🧠 Pre-Shot Routine</h1>
+
+        <!-- QUICK REFERENCE CARD (ALWAYS VISIBLE) -->
+        <div class="quick-ref-card">
+            <div class="quick-ref-title">Timing Targets</div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Phase Summary:</span>
+                <span class="quick-ref-value">Behind Ball (10-15s) → Approach (3-5s) → Execute (6-8s)</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Quiet Eye:</span>
+                <span class="quick-ref-value">Eyes steady (continues through swing)</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Stillness:</span>
+                <span class="quick-ref-value">1-3 seconds only</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Golden Rule:</span>
+                <span class="quick-ref-value">Same every time</span>
+            </div>
+        </div>
+
+        <!-- SECTION 1: THE STEP-BY-STEP ROUTINE -->
+        <h2 class="section-title">The Step-by-Step Routine</h2>
+        <div class="accordion" id="stepByStepAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#phase1">
+                        Phase 1: Behind the Ball (10-15 seconds)
+                    </button>
+                </h3>
+                <div id="phase1" class="accordion-collapse collapse show" data-bs-parent="#stepByStepAccordion">
+                    <div class="accordion-body">
+                        <h4>Position</h4>
+                        <ul>
+                            <li><strong>Distance:</strong> 2-3 meters directly behind ball, facing target</li>
+                            <li><strong>Bag placement:</strong> Set bag to your side (right side for right-handed golfers), NOT behind you - keeps it out of your walking path</li>
+                        </ul>
+
+                        <h4>Time Breakdown (10-15 seconds total)</h4>
+
+                        <p><strong>Seconds 0-5: Assess & Decide</strong></p>
+                        <ul>
+                            <li>Survey: Wind, lie, distance, hazards</li>
+                            <li>Select club (final decision - no changes later)</li>
+                            <li>Choose SPECIFIC target (not "the fairway" - pick exact spot)</li>
+                            <li>Pick intermediate target: 60-90 cm ahead on target line (leaf, divot, discoloration)</li>
+                            <li>Commit: Must feel 75% confident or adjust strategy NOW</li>
+                        </ul>
+
+                        <p><strong>Seconds 5-8: Visualize</strong></p>
+                        <ul>
+                            <li>See complete ball flight (takeoff → apex → landing)</li>
+                            <li>Picture shot shape if drawing/fading</li>
+                            <li>Brief but vivid - 3 seconds is enough</li>
+                        </ul>
+
+                        <p><strong>Second 8: Breathe</strong></p>
+                        <ul>
+                            <li>One deep breath through nose</li>
+                            <li>Exhale slowly through mouth</li>
+                            <li>Releases tension before practice swings</li>
+                        </ul>
+
+                        <p><strong>Seconds 9-15: Practice Swings</strong></p>
+                        <ul>
+                            <li><strong>2 practice swings FROM THIS POSITION</strong> (not beside ball)</li>
+                            <li>First swing: Feel tempo and rhythm (3 seconds)</li>
+                            <li>Second swing: Match visualized shot (3 seconds)</li>
+                            <li>Focus on FEEL, not mechanics</li>
+                        </ul>
+
+                        <h4>Critical Rules</h4>
+                        <ul>
+                            <li>ALL thinking happens here - once you leave, you're done deciding</li>
+                            <li>Never take practice swings beside the ball</li>
+                            <li>Stay behind ball for entire phase</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#phase2">
+                        Phase 2: Approach & Setup (3-5 seconds)
+                    </button>
+                </h3>
+                <div id="phase2" class="accordion-collapse collapse" data-bs-parent="#stepByStepAccordion">
+                    <div class="accordion-body">
+                        <h4>Walking Path</h4>
+                        <ul>
+                            <li><strong>Walk forward to the ball while keeping your eyes on the intermediate target</strong></li>
+                            <li>Natural, smooth transition from practice swing position</li>
+                            <li>No need to go back to your bag</li>
+                        </ul>
+
+                        <h4>Setup Sequence (3-5 seconds)</h4>
+
+                        <p><strong>Step 1: Set Clubface First</strong></p>
+                        <ul>
+                            <li>Place clubface behind ball</li>
+                            <li>Aim leading edge perpendicular to intermediate target</li>
+                            <li>Clubface alignment comes BEFORE body alignment</li>
+                        </ul>
+
+                        <p><strong>Step 2: Build Stance Around Clubface</strong></p>
+                        <ul>
+                            <li>Position feet parallel to clubface line</li>
+                            <li>Check ball position (forward for driver, centered for irons)</li>
+                            <li>Verify stance width</li>
+                            <li>Settle into posture</li>
+                        </ul>
+
+                        <p><strong>Step 3: Grip and Settle</strong></p>
+                        <ul>
+                            <li>Complete grip (light pressure)</li>
+                            <li>Feel balanced and athletic</li>
+                        </ul>
+
+                        <h4>Key Point</h4>
+                        <p>This phase should feel smooth and rehearsed. No hesitation. Setup flows naturally from your preparation behind ball.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#phase3">
+                        Phase 3: Execute (6-8 seconds)
+                    </button>
+                </h3>
+                <div id="phase3" class="accordion-collapse collapse" data-bs-parent="#stepByStepAccordion">
+                    <div class="accordion-body">
+                        <h4>The Execution Breakdown</h4>
+
+                        <p><strong>Seconds 0-2: Approach and Settle</strong></p>
+                        <ul>
+                            <li>Walk to ball, set clubface</li>
+                            <li>Build stance, complete grip</li>
+                            <li>Your eyes may start locking on ball during this settling</li>
+                        </ul>
+
+                        <p><strong>Seconds 2-4: Final Look + Quiet Eye Begins</strong></p>
+                        <ul>
+                            <li>One final glance at target (reinforces commitment)</li>
+                            <li>Return eyes to ball and LOCK them there</li>
+                            <li><strong>Quiet eye now active - eyes stay steady from here through impact</strong></li>
+                            <li>Brain is programming the motor sequence</li>
+                        </ul>
+
+                        <p><strong>Seconds 4-6: Brief Stillness + Trigger</strong></p>
+                        <ul>
+                            <li>All body movement stops (1-2 seconds of complete stillness)</li>
+                            <li><strong>Eyes still locked on ball (quiet eye continues)</strong></li>
+                            <li>Immediate trigger - backswing begins</li>
+                        </ul>
+
+                        <p><strong>Seconds 6-8: Backswing Starts</strong></p>
+                        <ul>
+                            <li>Body moves through backswing</li>
+                            <li><strong>Eyes REMAIN steady on ball position (quiet eye still active)</strong></li>
+                            <li>Quiet eye continues through impact</li>
+                        </ul>
+
+                        <h4>During Swing</h4>
+                        <ul>
+                            <li><strong>Zero swing thoughts</strong></li>
+                            <li>Only target awareness</li>
+                            <li>Athletic, automatic, instinctive</li>
+                            <li>Trust your preparation</li>
+                        </ul>
+
+                        <h4>Critical Understanding</h4>
+                        <p><strong>You are only motionless for 1-3 seconds, not 6 seconds!</strong> Quiet eye means your EYES stay steady (starting ~2 seconds before backswing and continuing through impact), NOT that your body stays still. This prevents muscle tension while maintaining visual focus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#summary">
+                        Quick Summary: The Full Sequence
+                    </button>
+                </h3>
+                <div id="summary" class="accordion-collapse collapse" data-bs-parent="#stepByStepAccordion">
+                    <div class="accordion-body">
+                        <h4>Total Time: 20-30 seconds</h4>
+
+                        <p><strong>Behind Ball (10-15 sec):</strong></p>
+                        <ol>
+                            <li>Position 2-3 meters back, bag to side</li>
+                            <li>Assess + decide (5 sec)</li>
+                            <li>Visualize (3 sec)</li>
+                            <li>Breathe (1 sec)</li>
+                            <li>Two practice swings from behind (6 sec)</li>
+                        </ol>
+
+                        <p><strong>Approach (3-5 sec):</strong></p>
+                        <ol>
+                            <li>Walk to ball keeping eyes on intermediate target</li>
+                            <li>Set clubface to intermediate target</li>
+                            <li>Build stance</li>
+                            <li>Grip and settle</li>
+                        </ol>
+
+                        <p><strong>Execute (6-8 sec):</strong></p>
+                        <ol>
+                            <li>Approach and settle (0-2 sec)</li>
+                            <li>Final look + quiet eye begins (2-4 sec) - eyes lock on ball</li>
+                            <li>Brief stillness + trigger (4-6 sec) - only 1-2 sec motionless</li>
+                            <li>Backswing starts (6-8 sec) - eyes stay steady (quiet eye continues)</li>
+                            <li>Swing with zero thoughts</li>
+                        </ol>
+
+                        <h4>Key Insight</h4>
+                        <p><strong>Motionless time = 1-3 seconds only.</strong> Quiet eye (eyes steady) begins before you're fully still and continues through your swing. Your eyes stay locked while your body moves.</p>
+
+                        <h4>The Golden Rule</h4>
+                        <p><strong>Same routine, same timing, every single shot.</strong> Consistency is more important than the exact duration. Pick your timing and stick with it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: UNDERSTANDING EACH ELEMENT -->
+        <h2 class="section-title">Understanding Each Element</h2>
+        <div class="accordion" id="understandingAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#quieteye">
+                        What is Quiet Eye?
+                    </button>
+                </h3>
+                <div id="quieteye" class="accordion-collapse collapse" data-bs-parent="#understandingAccordion">
+                    <div class="accordion-body">
+                        <h4>Definition</h4>
+                        <p><strong>Your eyes remain completely still, locked on the ball - starting about 2 seconds before your backswing and continuing through impact.</strong></p>
+
+                        <h4>Critical Understanding: Eyes ≠ Body</h4>
+                        <p><strong>Quiet eye is ONLY about your eyes being steady, NOT about your body being still.</strong> Your eyes lock on the ball while your body continues moving through the entire swing.</p>
+
+                        <h4>The Timeline</h4>
+                        <ul>
+                            <li>Quiet eye BEGINS: After final target look (~2 seconds before backswing)</li>
+                            <li>During brief stillness: Eyes stay locked (body still for only 1-2 seconds)</li>
+                            <li>During backswing: Eyes STILL locked (body moving)</li>
+                            <li>During downswing: Eyes STILL locked (body moving)</li>
+                            <li>Through impact: Eyes STILL locked (body moving)</li>
+                        </ul>
+
+                        <h4>Why It Works</h4>
+                        <ul>
+                            <li>Brain programs motor commands during steady eye fixation</li>
+                            <li>Visual system provides stable reference point</li>
+                            <li>Prevents last-second adjustments or doubts</li>
+                            <li>Elite golfers maintain 2-3 second steady gaze vs 1-1.5 seconds for amateurs</li>
+                        </ul>
+
+                        <h4>How to Practice</h4>
+                        <ul>
+                            <li>After final target look, freeze your GAZE on ball</li>
+                            <li>Keep eyes locked as you settle (1-2 seconds still)</li>
+                            <li>Keep eyes locked as backswing starts</li>
+                            <li>Eyes don't move until after impact</li>
+                            <li>Your body moves - only your eyes stay steady</li>
+                        </ul>
+
+                        <h4>Common Mistake</h4>
+                        <p>Looking back and forth between target and ball repeatedly. Do your target look, then COMMIT to ball fixation. One final look, then eyes stay locked on ball through the entire swing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#threesecond">
+                        The 3-Second Rule Explained
+                    </button>
+                </h3>
+                <div id="threesecond" class="accordion-collapse collapse" data-bs-parent="#understandingAccordion">
+                    <div class="accordion-body">
+                        <h4>What It Actually Means</h4>
+                        <p><strong>From the moment you stop all body movement to when you start your backswing = 1-3 seconds maximum.</strong></p>
+
+                        <h4>The Corrected Understanding</h4>
+                        <p>The "3-second rule" refers to the brief period of COMPLETE STILLNESS before you trigger your swing. This is NOT the same as quiet eye, which continues through your swing.</p>
+
+                        <h4>When to Start Counting</h4>
+                        <ul>
+                            <li>When your body becomes completely still (around second 4-5 of execution)</li>
+                            <li>While your eyes are ALREADY locked on ball (quiet eye is active)</li>
+                            <li>This is just the brief pause before trigger - typically 1-2 seconds, max 3 seconds</li>
+                        </ul>
+
+                        <h4>Why It Matters</h4>
+                        <p>Standing motionless over the ball longer than 1-3 seconds allows:</p>
+                        <ul>
+                            <li>Tension to build in muscles</li>
+                            <li>Doubt to creep into mind</li>
+                            <li>Overthinking to disrupt automatic execution</li>
+                            <li>Loss of rhythm from practice swing</li>
+                        </ul>
+
+                        <h4>How It Fits the 6-8 Second Window</h4>
+                        <ul>
+                            <li>Seconds 0-2: Approach and settle (may start eye lock)</li>
+                            <li>Seconds 2-4: Final look + quiet eye BEGINS (eyes lock, body still settling)</li>
+                            <li>Seconds 4-6: Brief stillness (1-2 sec motionless) + trigger</li>
+                            <li>Seconds 6-8: Backswing begins (quiet eye CONTINUES, body moving)</li>
+                        </ul>
+
+                        <h4>Key Insight</h4>
+                        <p><strong>You're only motionless for 1-3 seconds.</strong> Your eyes lock on the ball before you're fully still, and they stay locked after you start moving. This prevents excessive tension.</p>
+
+                        <h4>Practice Drill</h4>
+                        <p>Have someone count aloud once you become completely still: "One... two... GO!" Trigger by "GO" (2 seconds). This trains immediate execution without excessive pause.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#breathing">
+                        Breathing Technique
+                    </button>
+                </h3>
+                <div id="breathing" class="accordion-collapse collapse" data-bs-parent="#understandingAccordion">
+                    <div class="accordion-body">
+                        <h4>When to Breathe</h4>
+                        <ul>
+                            <li><strong>Behind ball:</strong> One deep breath after visualization, before practice swings</li>
+                            <li><strong>During approach:</strong> Natural breathing while walking</li>
+                            <li><strong>Before trigger:</strong> Short exhale to release tension (second 4-5)</li>
+                        </ul>
+
+                        <h4>The 4-6-8 Technique (Behind Ball)</h4>
+                        <p><strong>Use when nervous or tense:</strong></p>
+                        <ul>
+                            <li>Inhale through nose: 4 seconds</li>
+                            <li>Hold: 6 seconds</li>
+                            <li>Exhale through mouth: 8 seconds</li>
+                        </ul>
+
+                        <p><strong>Standard Breath (Normal conditions):</strong></p>
+                        <ul>
+                            <li>Inhale through nose: 2 seconds</li>
+                            <li>Exhale through mouth: 3 seconds</li>
+                            <li>Simple, calming reset</li>
+                        </ul>
+
+                        <h4>Why It Works</h4>
+                        <ul>
+                            <li>Slows heart rate</li>
+                            <li>Reduces muscle tension</li>
+                            <li>Calms nervous system</li>
+                            <li>Creates mental reset between thinking and doing</li>
+                        </ul>
+
+                        <h4>Common Mistake</h4>
+                        <p>Holding breath during swing. Breathe naturally through execution - never hold your breath.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#visualization">
+                        Visualization Details
+                    </button>
+                </h3>
+                <div id="visualization" class="accordion-collapse collapse" data-bs-parent="#understandingAccordion">
+                    <div class="accordion-body">
+                        <h4>What to Visualize</h4>
+                        <ul>
+                            <li><strong>Ball flight path:</strong> From takeoff to landing</li>
+                            <li><strong>Trajectory apex:</strong> High point of flight</li>
+                            <li><strong>Shot shape:</strong> Straight, draw, or fade</li>
+                            <li><strong>Landing spot:</strong> Exactly where it touches down</li>
+                            <li><strong>Roll behavior:</strong> How it bounces and stops</li>
+                        </ul>
+
+                        <h4>How Long</h4>
+                        <p>3 seconds is enough. Brief but vivid beats long and unfocused. Like watching a quick replay in your mind.</p>
+
+                        <h4>Engage Multiple Senses</h4>
+                        <ul>
+                            <li><strong>See:</strong> Ball flight against sky</li>
+                            <li><strong>Hear:</strong> Sound of perfect contact</li>
+                            <li><strong>Feel:</strong> Smooth tempo, balanced finish</li>
+                        </ul>
+
+                        <h4>Only Visualize Success</h4>
+                        <p>Never mentally rehearse a poor shot. Your brain doesn't distinguish - it will prepare for whatever you imagine. Always see the shot you WANT.</p>
+
+                        <h4>If You Can't Visualize Clearly</h4>
+                        <p>This signals you're too tense. Return to breathing to calm down, then try again. Clear visualization indicates readiness.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#practiceswing">
+                        Practice Swing Purpose
+                    </button>
+                </h3>
+                <div id="practiceswing" class="accordion-collapse collapse" data-bs-parent="#understandingAccordion">
+                    <div class="accordion-body">
+                        <h4>What You're Doing</h4>
+                        <p>Rehearsing the FEEL of the shot you visualized. Not mechanics - feel.</p>
+
+                        <h4>Two Swings</h4>
+                        <ul>
+                            <li><strong>First swing:</strong> Feel general tempo and rhythm</li>
+                            <li><strong>Second swing:</strong> Match the specific shot (draw/fade/trajectory)</li>
+                        </ul>
+
+                        <h4>Where to Take Them</h4>
+                        <p><strong>FROM BEHIND THE BALL</strong> - never beside it. Why:</p>
+                        <ul>
+                            <li>You can see target line while swinging</li>
+                            <li>No need to realign after swings</li>
+                            <li>Maintains separation of thinking zone (behind) and execution zone (at ball)</li>
+                            <li>Smooth transition when ready</li>
+                        </ul>
+
+                        <h4>Focus on Feel, Not Mechanics</h4>
+                        <ul>
+                            <li>Tempo and rhythm</li>
+                            <li>Smooth acceleration</li>
+                            <li>Balance through finish</li>
+                            <li>NOT: positions, angles, technical thoughts</li>
+                        </ul>
+
+                        <h4>Keep Them Purposeful</h4>
+                        <p>Each swing should match the shot you're about to hit. Don't make random swings - make rehearsal swings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#approach">
+                        Why Approach from Side
+                    </button>
+                </h3>
+                <div id="approach" class="accordion-collapse collapse" data-bs-parent="#understandingAccordion">
+                    <div class="accordion-body">
+                        <h4>The Path</h4>
+                        <p>Walk from behind ball toward it at roughly 45-degree angle (approaching from your right side if right-handed).</p>
+
+                        <h4>Why Not Straight From Behind?</h4>
+                        <ul>
+                            <li>Walking straight blocks your view of intermediate target</li>
+                            <li>Harder to maintain alignment</li>
+                            <li>Less natural movement</li>
+                            <li>Can disturb target line focus</li>
+                        </ul>
+
+                        <h4>Benefits of Side Approach</h4>
+                        <ul>
+                            <li>Keeps intermediate target visible as you approach</li>
+                            <li>Natural placement of clubface first, then stance</li>
+                            <li>Smooth, rehearsed movement</li>
+                            <li>Feels more athletic</li>
+                        </ul>
+
+                        <h4>Exact Angle</h4>
+                        <p>Don't worry about precise degrees. "From the side" means you're not walking straight down the target line. Approach so you can easily see your intermediate target and set clubface naturally.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#swingthoughts">
+                        Swing Thoughts: Zero Technical
+                    </button>
+                </h3>
+                <div id="swingthoughts" class="accordion-collapse collapse" data-bs-parent="#understandingAccordion">
+                    <div class="accordion-body">
+                        <h4>The Rule</h4>
+                        <p><strong>Once you're over the ball: NO technical thoughts.</strong></p>
+
+                        <h4>What NOT to Think</h4>
+                        <ul>
+                            <li>"Keep left arm straight"</li>
+                            <li>"Rotate hips first"</li>
+                            <li>"Shift weight to front foot"</li>
+                            <li>"Release hands through impact"</li>
+                            <li>Any body-part instruction</li>
+                        </ul>
+
+                        <h4>What You CAN Think</h4>
+                        <ul>
+                            <li><strong>Nothing:</strong> Clear mind (most common for tour players)</li>
+                            <li><strong>Target awareness:</strong> See your target</li>
+                            <li><strong>Feel cue:</strong> "Smooth" or "through the ball"</li>
+                            <li><strong>Rhythm:</strong> Hum a tempo in your head</li>
+                        </ul>
+
+                        <h4>Why Technical Thoughts Hurt</h4>
+                        <p>Conscious control of body parts disrupts automatic motor programs. Your swing is trained through practice. Over the ball, let it happen automatically.</p>
+
+                        <h4>The Mental State</h4>
+                        <p>Athletic, instinctive, reactive. Like catching a ball thrown to you - you don't think about mechanics, you just react. Same with your swing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#commitment">
+                        The 75% Confidence Rule
+                    </button>
+                </h3>
+                <div id="commitment" class="accordion-collapse collapse" data-bs-parent="#understandingAccordion">
+                    <div class="accordion-body">
+                        <h4>The Threshold</h4>
+                        <p>Before leaving the "behind ball" position, ask yourself: "Am I at least 75% confident I can execute this shot?"</p>
+
+                        <h4>If YES (≥75%)</h4>
+                        <ul>
+                            <li>Commit fully</li>
+                            <li>Proceed to execution</li>
+                            <li>NO second-guessing allowed</li>
+                        </ul>
+
+                        <h4>If NO (<75%)</h4>
+                        <ul>
+                            <li>STOP - don't proceed</li>
+                            <li>Adjust NOW: change clubs, targets, or shot shape</li>
+                            <li>Reassess until confidence reaches 75%</li>
+                        </ul>
+
+                        <h4>Why It Matters</h4>
+                        <p>Standing over a shot with doubt produces indecisive swings. Make the tough decision behind the ball, where you have time. Once committed, trust completely.</p>
+
+                        <h4>Examples</h4>
+                        <p><strong>Between clubs:</strong> Can't decide between 7 or 8-iron. Pick one and commit to a specific swing (smooth 7 or full 8). Get to 75%.</p>
+                        <p><strong>Risky shot:</strong> Need draw around tree but only 50% confident. Choose safer route. Get to 75%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: COMMON MISTAKES & PRACTICE DRILLS -->
+        <h2 class="section-title">Common Mistakes & Practice Drills</h2>
+        <div class="accordion" id="mistakesAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mistake1">
+                        Standing Over Ball Too Long
+                    </button>
+                </h3>
+                <div id="mistake1" class="accordion-collapse collapse" data-bs-parent="#mistakesAccordion">
+                    <div class="accordion-body">
+                        <h4>The Mistake</h4>
+                        <p>Taking 10, 15, 20+ seconds from stance to swing. This is the #1 amateur error.</p>
+
+                        <h4>Why It's Bad</h4>
+                        <ul>
+                            <li>Muscles tighten</li>
+                            <li>Doubt creeps in</li>
+                            <li>Overthinking disrupts automatic execution</li>
+                            <li>Rhythm from practice swing is lost</li>
+                        </ul>
+
+                        <h4>The Fix</h4>
+                        <p><strong>The 6-8 Second Rule:</strong> From completing stance to starting swing = 6-8 seconds. Aim for 6, never exceed 8. The 3-second trigger keeps you decisive.</p>
+
+                        <h4>Practice Drill: Timer Training</h4>
+                        <ol>
+                            <li>Have friend time you with stopwatch on 10 shots</li>
+                            <li>Goal: Stay within 6-8 second window consistently</li>
+                            <li>If over 8 seconds, consciously speed up</li>
+                            <li>Practice until it feels natural</li>
+                        </ol>
+
+                        <h4>Advanced Drill: The Countdown</h4>
+                        <p>Have someone count aloud once you're set: "One... two... three..." You MUST trigger by "three". Feels rushed initially, then becomes automatic.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mistake2">
+                        No Specific Target
+                    </button>
+                </h3>
+                <div id="mistake2" class="accordion-collapse collapse" data-bs-parent="#mistakesAccordion">
+                    <div class="accordion-body">
+                        <h4>The Mistake</h4>
+                        <p>Aiming at "the fairway" or "the green" instead of picking a precise spot.</p>
+
+                        <h4>Why It's Bad</h4>
+                        <ul>
+                            <li>Brain has no specific point to lock onto</li>
+                            <li>Reduces commitment and intention</li>
+                            <li>Harder to align accurately</li>
+                            <li>Can't evaluate if you hit your target</li>
+                        </ul>
+
+                        <h4>The Fix</h4>
+                        <p>Pick SPECIFIC targets:</p>
+                        <ul>
+                            <li>"The left edge of that bunker"</li>
+                            <li>"The flagstick"</li>
+                            <li>"That tree behind the green"</li>
+                            <li>"Where the fairway narrows"</li>
+                        </ul>
+
+                        <h4>Practice Drill: Intermediate Target Training</h4>
+                        <ol>
+                            <li>On range, place tees or coins 60-90 cm in front of ball</li>
+                            <li>Practice aiming clubface to these spots</li>
+                            <li>Build stance around clubface</li>
+                            <li>Do this on every shot for 2 weeks</li>
+                            <li>On course, find natural spots (divots, discoloration)</li>
+                        </ol>
+
+                        <h4>Why Intermediate Targets Work</h4>
+                        <p>Much easier to aim at something 60-90 cm away than 200 meters away. Dramatically improves alignment accuracy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mistake3">
+                        Technical Thoughts During Swing
+                    </button>
+                </h3>
+                <div id="mistake3" class="accordion-collapse collapse" data-bs-parent="#mistakesAccordion">
+                    <div class="accordion-body">
+                        <h4>The Mistake</h4>
+                        <p>Thinking about mechanics while standing over ball: "Keep left arm straight," "Rotate hips," etc.</p>
+
+                        <h4>Why It's Bad</h4>
+                        <ul>
+                            <li>Conscious control disrupts automatic motor programs</li>
+                            <li>Slows reaction time</li>
+                            <li>Creates tension</li>
+                            <li>Prevents athletic, instinctive execution</li>
+                        </ul>
+
+                        <h4>The Fix</h4>
+                        <ul>
+                            <li><strong>Practice:</strong> Work on mechanics during practice sessions</li>
+                            <li><strong>Pre-shot:</strong> Make any technical decisions behind ball</li>
+                            <li><strong>Execution:</strong> Zero mechanics - only target awareness</li>
+                        </ul>
+
+                        <h4>Practice Drill: Target-Only Rounds</h4>
+                        <ol>
+                            <li>Play 9 holes with ONE rule: only think about target</li>
+                            <li>Behind ball: pick target, visualize</li>
+                            <li>At ball: see target, swing</li>
+                            <li>No mechanical thoughts allowed</li>
+                            <li>Notice how much better you strike it</li>
+                        </ol>
+
+                        <h4>Mental Cue</h4>
+                        <p>"See target, hit target" - that's it. Let your practiced swing happen automatically.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mistake4">
+                        Skipping Visualization
+                    </button>
+                </h3>
+                <div id="mistake4" class="accordion-collapse collapse" data-bs-parent="#mistakesAccordion">
+                    <div class="accordion-body">
+                        <h4>The Mistake</h4>
+                        <p>Going through physical motions (practice swings, alignment) but skipping mental imagery of the shot.</p>
+
+                        <h4>Why It's Bad</h4>
+                        <ul>
+                            <li>Miss motor system pre-activation</li>
+                            <li>Lack clear intention</li>
+                            <li>Reduced commitment</li>
+                            <li>Swing becomes mechanical, not purposeful</li>
+                        </ul>
+
+                        <h4>The Fix</h4>
+                        <p>Make visualization non-negotiable - 3 seconds after assessment, before practice swings. See the complete shot: takeoff → flight → landing.</p>
+
+                        <h4>Practice Drill: Eyes-Closed Visualization</h4>
+                        <ol>
+                            <li>Stand behind ball on range</li>
+                            <li>Close eyes briefly</li>
+                            <li>Picture the exact shot (3 seconds)</li>
+                            <li>Open eyes and execute immediately</li>
+                            <li>Do this on every range ball for 1 week</li>
+                        </ol>
+
+                        <h4>Quality Check</h4>
+                        <p>If you can't visualize clearly, you're too tense. Breathe, calm down, then try again. Clear visualization = ready to execute.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mistake5">
+                        Inconsistent Timing
+                    </button>
+                </h3>
+                <div id="mistake5" class="accordion-collapse collapse" data-bs-parent="#mistakesAccordion">
+                    <div class="accordion-body">
+                        <h4>The Mistake</h4>
+                        <p>Routine timing varies wildly from shot to shot - fast on easy shots, slow on important shots.</p>
+
+                        <h4>Why It's Bad</h4>
+                        <ul>
+                            <li>Prevents routine from becoming automatic</li>
+                            <li>Different timing = different mental states</li>
+                            <li>Can't "fall back" on routine under pressure if it's always changing</li>
+                        </ul>
+
+                        <h4>The Fix</h4>
+                        <p>Pick YOUR timing (within 20-30 second range) and stick to it. Consistency matters more than exact duration.</p>
+
+                        <h4>Practice Drill: The Consistency Challenge</h4>
+                        <ol>
+                            <li>Time yourself on first shot (let's say 24 seconds)</li>
+                            <li>That's your target - aim for 22-26 seconds (±2 sec window)</li>
+                            <li>Hit 10 shots, friend times each one</li>
+                            <li>Goal: 8 out of 10 shots within your window</li>
+                            <li>When you achieve this, routine is consistent</li>
+                        </ol>
+
+                        <h4>On-Course Check</h4>
+                        <p>Your routine should feel identical on first tee and 18th green. Same timing, same steps, same feeling. That's the standard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mistake6">
+                        Abandoning Routine Under Pressure
+                    </button>
+                </h3>
+                <div id="mistake6" class="accordion-collapse collapse" data-bs-parent="#mistakesAccordion">
+                    <div class="accordion-body">
+                        <h4>The Mistake</h4>
+                        <p>Using routine on practice range and casual rounds, but rushing or changing it when nerves hit.</p>
+
+                        <h4>Why It's Bad</h4>
+                        <ul>
+                            <li>Routine only helps if you USE it when it matters</li>
+                            <li>Changing routine under pressure guarantees poor performance</li>
+                            <li>Nerves increase - need structure MORE, not less</li>
+                        </ul>
+
+                        <h4>The Fix</h4>
+                        <p>Your routine is your anchor in pressure. When nervous, fall back on the exact same routine you've practiced. Don't speed up, don't add extra swings, don't change anything.</p>
+
+                        <h4>Practice Drill: Pressure Testing</h4>
+                        <p><strong>Putting Pressure Drill:</strong></p>
+                        <ol>
+                            <li>Must make 5 putts in a row from 1.5m</li>
+                            <li>Miss one = start over</li>
+                            <li>Full routine on every putt</li>
+                            <li>Notice if timing stays consistent under pressure</li>
+                        </ol>
+
+                        <p><strong>Approach Shot Pressure:</strong></p>
+                        <ol>
+                            <li>Hit 3 greens in a row or do 10 pushups</li>
+                            <li>Full routine on each shot</li>
+                            <li>Check if you maintain your timing</li>
+                        </ol>
+
+                        <h4>Mental Cue for Pressure</h4>
+                        <p>"Fall back on my routine. Same timing, same steps, trust my preparation." This thought calms nerves and provides structure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRACTICE TIPS -->
+        <h2 class="section-title">Building Your Routine</h2>
+        <div class="accordion" id="practiceAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#practice1">
+                        Practice on Every Ball
+                    </button>
+                </h3>
+                <div id="practice1" class="accordion-collapse collapse" data-bs-parent="#practiceAccordion">
+                    <div class="accordion-body">
+                        <h4>The Rule</h4>
+                        <p><strong>Use your full routine on EVERY practice shot.</strong> Not every third ball. Every single shot.</p>
+
+                        <h4>Why</h4>
+                        <ul>
+                            <li>Builds automaticity through repetition</li>
+                            <li>Practice becomes realistic (mimics course)</li>
+                            <li>Develops consistent timing</li>
+                            <li>Routine becomes part of shot, not separate</li>
+                        </ul>
+
+                        <h4>How to Practice</h4>
+                        <p><strong>Random Practice Method:</strong></p>
+                        <ul>
+                            <li>Never hit same club twice in a row</li>
+                            <li>Change targets every shot</li>
+                            <li>Full routine, every ball</li>
+                            <li>Quality over quantity: 30 balls with routines > 100 balls without</li>
+                        </ul>
+
+                        <h4>Timeline</h4>
+                        <p>Expect 3-6 weeks of consistent practice before routine feels truly automatic. Be patient - this mental skill takes time.</p>
+
+                        <h4>The Payoff</h4>
+                        <p>After 6 weeks, your routine will feel as natural as breathing. You won't think about it - it just happens.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#practice2">
+                        The "8 Bad Shots" Acceptance
+                    </button>
+                </h3>
+                <div id="practice2" class="accordion-collapse collapse" data-bs-parent="#practiceAccordion">
+                    <div class="accordion-body">
+                        <h4>The Strategy</h4>
+                        <p>Before the round, decide: "I'll hit 8 bad shots today" (adjust number to your game).</p>
+
+                        <h4>How It Works</h4>
+                        <ul>
+                            <li>When a bad shot occurs, mentally check it off: "That's 1 of my 8"</li>
+                            <li>No emotional reaction - you expected it</li>
+                            <li>Move on immediately to next shot</li>
+                            <li>Focus stays on process, not outcome</li>
+                        </ul>
+
+                        <h4>Why It Helps</h4>
+                        <ul>
+                            <li>Normalizes imperfection</li>
+                            <li>Prevents one bad shot from spiraling into six</li>
+                            <li>Reduces frustration and tension</li>
+                            <li>Keeps you in present moment</li>
+                        </ul>
+
+                        <h4>The Math</h4>
+                        <p>If you hit 50 full shots in a round and 8 are bad, that's 42 good shots. Focus on the 42, not the 8.</p>
+
+                        <h4>Post-Shot Routine</h4>
+                        <p>After bad shot:</p>
+                        <ol>
+                            <li>Breathe (5 seconds)</li>
+                            <li>One technical note: "Came over the top" (5 seconds)</li>
+                            <li>"That's shot X of 8, move on" (5 seconds)</li>
+                            <li>Return to present</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#practice3">
+                        Making It Automatic
+                    </button>
+                </h3>
+                <div id="practice3" class="accordion-collapse collapse" data-bs-parent="#practiceAccordion">
+                    <div class="accordion-body">
+                        <h4>The Stages</h4>
+
+                        <p><strong>Weeks 1-2: Cognitive Stage</strong></p>
+                        <ul>
+                            <li>Feels awkward and conscious</li>
+                            <li>Need to think through each step</li>
+                            <li>Timing inconsistent</li>
+                            <li><em>What to do:</em> Use checklist, don't worry about perfection</li>
+                        </ul>
+
+                        <p><strong>Weeks 3-6: Associative Stage</strong></p>
+                        <ul>
+                            <li>Starting to feel natural</li>
+                            <li>Timing becomes consistent</li>
+                            <li>Less conscious monitoring needed</li>
+                            <li><em>What to do:</em> Continue every-ball practice, test under mild pressure</li>
+                        </ul>
+
+                        <p><strong>Weeks 6+: Automatic Stage</strong></p>
+                        <ul>
+                            <li>Feels completely natural</li>
+                            <li>Happens without thinking</li>
+                            <li>Consistent under pressure</li>
+                            <li><em>What to do:</em> Maintain through continued use</li>
+                        </ul>
+
+                        <h4>How You'll Know It's Automatic</h4>
+                        <ul>
+                            <li>Don't think about steps - they just happen</li>
+                            <li>Timing is consistent without checking</li>
+                            <li>Feels as natural as breathing</li>
+                            <li>Under pressure, you fall into it automatically</li>
+                            <li>Breaking routine feels wrong</li>
+                        </ul>
+
+                        <h4>The Goal</h4>
+                        <p>Your routine becomes a trigger. When you step behind the ball, your brain knows: "Here we go" and everything unfolds automatically.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p><strong>Pre-Shot Routine Guide</strong><br>
+            Step-by-step execution for on-course use<br>
+            <em>Bootstrap 5.3 • Golf Training Hub</em></p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
