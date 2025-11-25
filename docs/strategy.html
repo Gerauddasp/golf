@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Course Strategy - Golf Training Hub</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Golf Theme CSS -->
+    <link href="bootstrap-custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- HEADER -->
+        <header class="page-header">
+            <button class="btn-back" onclick="window.location.href='on-course.html'" aria-label="Back">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="on-course.html">On Course</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Strategy</li>
+                </ol>
+            </nav>
+        </header>
+
+        <!-- PAGE TITLE -->
+        <h1 class="page-title">Course Strategy</h1>
+
+        <!-- HERO CARD -->
+        <div class="strategy-hero">
+            <div class="strategy-hero__title">The Game Plan</div>
+            <div class="strategy-hero__subtitle">Data-driven decisions for lower scores</div>
+        </div>
+
+        <!-- DRIVER STRATEGIES -->
+        <h2 class="section-title">Driver</h2>
+        <div class="strategy-grid">
+            <div class="strategy-card strategy-card--driver">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">✅</span>
+                    <span class="strategy-card__club">60m+ ZONE</span>
+                </div>
+                <p class="strategy-card__rule">Can clear hazard or 60m+ landing = driver, high tee</p>
+            </div>
+
+            <div class="strategy-card strategy-card--driver">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">⚠️</span>
+                    <span class="strategy-card__club">40-60m ZONE</span>
+                </div>
+                <p class="strategy-card__rule">Medium landing zone = driver, low tee for control</p>
+            </div>
+
+            <div class="strategy-card strategy-card--driver">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">🚫</span>
+                    <span class="strategy-card__club">&lt;40m ZONE</span>
+                </div>
+                <p class="strategy-card__rule">Tight landing zone = fairway wood (don't risk driver)</p>
+            </div>
+
+            <div class="strategy-card strategy-card--driver">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">⚡</span>
+                    <span class="strategy-card__club">POWER</span>
+                </div>
+                <p class="strategy-card__rule">95% power every time - consistency beats distance</p>
+            </div>
+        </div>
+
+        <!-- PUTTING STRATEGIES -->
+        <h2 class="section-title">Putting</h2>
+        <div class="strategy-grid">
+            <div class="strategy-card strategy-card--putting">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">🎯</span>
+                    <span class="strategy-card__club">10% ZONE</span>
+                </div>
+                <p class="strategy-card__rule">10m putt = aim within 1m circle of hole</p>
+            </div>
+
+            <div class="strategy-card strategy-card--putting">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">⬆️</span>
+                    <span class="strategy-card__club">BREAK READING</span>
+                </div>
+                <p class="strategy-card__rule">Aim high on slopes - most miss low</p>
+            </div>
+        </div>
+
+        <!-- SHORT GAME STRATEGIES -->
+        <h2 class="section-title">Short Game</h2>
+        <div class="strategy-grid">
+            <div class="strategy-card strategy-card--short-game">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">⬇️</span>
+                    <span class="strategy-card__club">CHIPPING</span>
+                </div>
+                <p class="strategy-card__rule">Keep it low - less air = more control</p>
+            </div>
+
+            <div class="strategy-card strategy-card--short-game">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">🛤️</span>
+                    <span class="strategy-card__club">WEDGES</span>
+                </div>
+                <p class="strategy-card__rule">Safe corridor first, flag second (4m buffer)</p>
+            </div>
+
+            <div class="strategy-card strategy-card--short-game">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">🔄</span>
+                    <span class="strategy-card__club">DISTANCE CONTROL</span>
+                </div>
+                <p class="strategy-card__rule">Change backswing length, not swing speed</p>
+            </div>
+        </div>
+
+        <!-- APPROACH STRATEGIES -->
+        <h2 class="section-title">Approach</h2>
+        <div class="strategy-grid">
+            <div class="strategy-card strategy-card--approach">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">🔙</span>
+                    <span class="strategy-card__club">TROUBLE FRONT</span>
+                </div>
+                <p class="strategy-card__rule">Aim long - play average of pin and back edge</p>
+            </div>
+
+            <div class="strategy-card strategy-card--approach">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">🔜</span>
+                    <span class="strategy-card__club">TROUBLE BACK</span>
+                </div>
+                <p class="strategy-card__rule">Aim short - use the runway in front</p>
+            </div>
+
+            <div class="strategy-card strategy-card--approach">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">🍦</span>
+                    <span class="strategy-card__club">MISS CONE</span>
+                </div>
+                <p class="strategy-card__rule">Aim at middle of green - protect your misses</p>
+            </div>
+        </div>
+
+        <!-- PAR 5 STRATEGIES -->
+        <h2 class="section-title">Par 5s</h2>
+        <div class="strategy-grid">
+            <div class="strategy-card strategy-card--par5">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">🟢</span>
+                    <span class="strategy-card__club">GREEN LIGHT</span>
+                </div>
+                <p class="strategy-card__rule">No hazards = always go for the green</p>
+            </div>
+
+            <div class="strategy-card strategy-card--par5">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">🟡</span>
+                    <span class="strategy-card__club">YELLOW LIGHT</span>
+                </div>
+                <p class="strategy-card__rule">Can't reach = chase it as far as possible</p>
+            </div>
+
+            <div class="strategy-card strategy-card--par5">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">🔴</span>
+                    <span class="strategy-card__club">RED LIGHT</span>
+                </div>
+                <p class="strategy-card__rule">In trouble = pick shot you'd make 9/10 times</p>
+            </div>
+        </div>
+
+        <!-- RECOVERY STRATEGIES -->
+        <h2 class="section-title">Recovery</h2>
+        <div class="strategy-grid">
+            <div class="strategy-card strategy-card--recovery">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">⚠️</span>
+                    <span class="strategy-card__club">GOLDEN RULE</span>
+                </div>
+                <p class="strategy-card__rule">One bad shot OK - two kills your score</p>
+            </div>
+
+            <div class="strategy-card strategy-card--recovery">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">↩️</span>
+                    <span class="strategy-card__club">ZIGZAG</span>
+                </div>
+                <p class="strategy-card__rule">One zig out, one zag back to good position</p>
+            </div>
+
+            <div class="strategy-card strategy-card--recovery">
+                <div class="strategy-card__header">
+                    <span class="strategy-card__icon">📐</span>
+                    <span class="strategy-card__club">PITCH OUT</span>
+                </div>
+                <p class="strategy-card__rule">In trouble? Pitch sideways to fairway</p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p class="strategy-attribution">
+                Strategy insights from <a href="https://www.youtube.com/@GolfDigest" target="_blank" rel="noopener">Golf Digest's "The Game Plan"</a> series
+            </p>
+            <p>Featuring data from Scott Fawcett (Decade Golf) & Mark Broadie</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

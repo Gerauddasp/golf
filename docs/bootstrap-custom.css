@@ -363,3 +363,139 @@ footer {
         flex: 1;
     }
 }
+
+/* ========================================
+   STRATEGY CARDS - Ultra Compact
+   ======================================== */
+
+/* Hero Card */
+.strategy-hero {
+    background: var(--golf-dark);
+    color: #ffffff;
+    padding: 1.25rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 0 1rem 1.5rem;
+}
+
+.strategy-hero__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.strategy-hero__subtitle {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Strategy Grid */
+.strategy-grid {
+    display: grid;
+    gap: 0.75rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Strategy Card */
+.strategy-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    border-left: 4px solid var(--golf-medium);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.strategy-card__header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.strategy-card__icon {
+    font-size: 1.25rem;
+}
+
+.strategy-card__club {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6b7280;
+    letter-spacing: 0.05em;
+}
+
+.strategy-card__rule {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--golf-dark);
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Category Colors */
+.strategy-card--driver {
+    border-left-color: #3b82f6;
+}
+
+.strategy-card--putting {
+    border-left-color: #4a9071;
+}
+
+.strategy-card--short-game {
+    border-left-color: #10b981;
+}
+
+.strategy-card--approach {
+    border-left-color: #f59e0b;
+}
+
+.strategy-card--par5 {
+    border-left-color: #8b5cf6;
+}
+
+.strategy-card--recovery {
+    border-left-color: #ef4444;
+}
+
+/* Strategy Tip Card (embedded in club pages) */
+.strategy-tip-card {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #eff6ff;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin: 0 1rem 1rem;
+    font-size: 0.875rem;
+}
+
+.strategy-tip-icon {
+    font-size: 1rem;
+}
+
+.strategy-tip-text {
+    flex: 1;
+    color: #1e40af;
+    font-weight: 500;
+}
+
+.strategy-tip-link {
+    color: #3b82f6;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.strategy-tip-link:hover {
+    text-decoration: underline;
+}
+
+/* Strategy Attribution */
+.strategy-attribution {
+    margin-bottom: 0.25rem;
+}
+
+.strategy-attribution a {
+    color: var(--golf-medium);
+}
