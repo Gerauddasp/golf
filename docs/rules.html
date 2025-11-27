@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Rules & Penalties - Golf Training Hub</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Golf Theme CSS -->
+    <link href="bootstrap-custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- HEADER -->
+        <header class="page-header">
+            <button class="btn-back" onclick="window.location.href='on-course.html'" aria-label="Back to on-course menu">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="on-course.html">On-Course</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Rules & Penalties</li>
+                </ol>
+            </nav>
+        </header>
+
+        <!-- PAGE TITLE -->
+        <h1 class="page-title">📜 Rules & Penalties</h1>
+
+        <!-- QUICK REFERENCE -->
+        <div class="quick-ref-card">
+            <div class="quick-ref-title">Quick Penalty Reference</div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Out of Bounds (white):</span>
+                <span class="quick-ref-value">+2, replay from original spot</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Penalty Area (red):</span>
+                <span class="quick-ref-value">+1, drop within 2 club-lengths</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Penalty Area (yellow):</span>
+                <span class="quick-ref-value">+1, drop behind hazard</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Lost Ball:</span>
+                <span class="quick-ref-value">+2, replay from original spot</span>
+            </div>
+            <div class="quick-ref-item">
+                <span class="quick-ref-label">Unplayable:</span>
+                <span class="quick-ref-value">+1, 3 drop options</span>
+            </div>
+            <div class="quick-ref-item mt-2 pt-2" style="border-top: 1px solid rgba(255,255,255,0.3);">
+                <span class="quick-ref-label">Remember:</span>
+                <span class="quick-ref-value">Drops are FREE - only swings count!</span>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT SECTIONS -->
+        <h2 class="section-title">Detailed Rules</h2>
+        <div class="row g-3">
+            <!-- Out of Bounds -->
+            <div class="col-12 col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Out of Bounds (White Stakes)</h3>
+                        <p class="text-muted mb-2"><strong>Penalty:</strong> Stroke + Distance (+2 total)</p>
+                        <ul>
+                            <li><strong>Marker:</strong> White stakes or white lines</li>
+                            <li><strong>What to do:</strong> Return to where you played the last shot and hit again</li>
+                            <li><strong>Provisional Ball:</strong> If you think it might be OB, announce "provisional" and hit another ball before going to look</li>
+                        </ul>
+                        <div class="alert alert-warning mt-2 mb-2 p-2">
+                            <small><strong>Example:</strong> Tee shot OB (1) + penalty (+2) = lying 3. Drop ball (free), hit it in hole (4). <strong>Total: 4</strong></small>
+                        </div>
+                        <div class="alert alert-info mt-0 mb-0 p-2">
+                            <small><strong>Local Rule E-5:</strong> Drop in fairway instead of going back. Still +2 but saves time! Check scorecard.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Penalty Areas -->
+            <div class="col-12 col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Penalty Areas (Red/Yellow Stakes)</h3>
+                        <p class="text-muted mb-2"><strong>Penalty:</strong> +1 stroke</p>
+
+                        <p><strong>Red Stakes (Lateral):</strong></p>
+                        <ul>
+                            <li>Drop within 2 club-lengths of where ball crossed, no nearer hole</li>
+                            <li>Or drop on opposite side (same distance from hole)</li>
+                        </ul>
+
+                        <p><strong>Yellow Stakes (Regular):</strong></p>
+                        <ul>
+                            <li>Drop on line behind where ball crossed, going back as far as you want</li>
+                            <li>Or replay from original spot (+1 only)</li>
+                        </ul>
+
+                        <p><strong>Both colors:</strong> You can always play it as it lies (no penalty) if possible!</p>
+
+                        <div class="alert alert-warning mt-2 mb-0 p-2">
+                            <small><strong>Example:</strong> Tee shot in water (1) + penalty (+1) = lying 2. Drop (free), hit to green (3), putt in (4). <strong>Total: 4</strong></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lost Ball -->
+            <div class="col-12 col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Lost Ball</h3>
+                        <p class="text-muted mb-2"><strong>Penalty:</strong> Stroke + Distance (+2 total)</p>
+                        <ul>
+                            <li><strong>Search time:</strong> 3 minutes maximum</li>
+                            <li><strong>What to do:</strong> Return to where you played the last shot and hit again</li>
+                            <li><strong>Counting:</strong> Same as Out of Bounds</li>
+                            <li><strong>Provisional Ball:</strong> If you think it might be lost, announce "provisional" and hit another ball BEFORE going to look</li>
+                        </ul>
+                        <p class="fst-italic text-muted mt-2"><small>If you find your ball within 3 mins, you must play it (unless you already played provisional from closer to hole)</small></p>
+                        <div class="alert alert-info mt-2 mb-0 p-2">
+                            <small><strong>Local Rule E-5:</strong> Same as OB - drop in fairway near where ball was lost instead of going back. Still +2. Check if course allows it.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unplayable Lie -->
+            <div class="col-12 col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Unplayable Lie</h3>
+                        <p class="text-muted mb-2"><strong>Penalty:</strong> +1 stroke</p>
+                        <p>You can declare any ball unplayable anywhere (except in penalty area). You have 3 options:</p>
+                        <ul>
+                            <li><strong>Option 1:</strong> Drop within 2 club-lengths, no nearer hole</li>
+                            <li><strong>Option 2:</strong> Go back on a line from the hole through where ball was - as far back as you want</li>
+                            <li><strong>Option 3:</strong> Replay from where you hit the previous shot</li>
+                        </ul>
+                        <p class="fst-italic text-muted mt-2"><small>In a bunker? Options 1 & 2 must stay in bunker (or +2 to drop outside)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p><strong>Based on R&A/USGA Rules of Golf</strong><br>
+            Mobile-optimized for on-course reference</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
