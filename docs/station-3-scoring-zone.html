@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Station 3: Scoring Zone - Golf Training Hub</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-custom.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- HEADER -->
+        <header class="page-header">
+            <button class="btn-back" onclick="window.location.href='driving-range.html'" aria-label="Back">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="practice.html">Practice</a></li>
+                    <li class="breadcrumb-item"><a href="driving-range.html">Driving Range</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Station 3</li>
+                </ol>
+            </nav>
+        </header>
+
+        <!-- PAGE TITLE -->
+        <h1 class="page-title">Scoring Zone</h1>
+
+        <!-- HERO CARD -->
+        <div class="strategy-hero">
+            <div class="strategy-hero__title">The Goal is GET CLOSE</div>
+            <div class="strategy-hero__subtitle">Master four wedge swings: Full, 10:30, 9:00, 7:30</div>
+        </div>
+
+        <!-- OVERVIEW CARD -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Four Swings to Master</h5>
+                <table class="table table-sm mb-3">
+                    <tr>
+                        <td><strong>Full</strong></td>
+                        <td>100%</td>
+                        <td>Full swing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>10:30</strong></td>
+                        <td>~90%</td>
+                        <td>Left arm over shoulder</td>
+                    </tr>
+                    <tr>
+                        <td><strong>9:00</strong></td>
+                        <td>~75%</td>
+                        <td>Left arm parallel</td>
+                    </tr>
+                    <tr>
+                        <td><strong>7:30</strong></td>
+                        <td>~50%</td>
+                        <td>Left arm past hip</td>
+                    </tr>
+                </table>
+                <p class="text-muted mb-0"><small>Distances are % of YOUR full swing. Use Trackman to build your personal matrix.</small></p>
+            </div>
+        </div>
+
+        <!-- CLOCK SYSTEM EXPLAINER -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">The Clock System (Dave Pelz)</h5>
+                <p class="text-muted mb-2">Ball is at 6:00. Your <strong>left arm</strong> is the clock hand - where it points at top of backswing = your position.</p>
+                <table class="table table-sm mb-0">
+                    <tr>
+                        <td><strong>7:30</strong></td>
+                        <td>Left arm just past hip</td>
+                        <td>~50% distance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>9:00</strong></td>
+                        <td>Left arm parallel to ground</td>
+                        <td>~75% distance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>10:30</strong></td>
+                        <td>Left arm over trail shoulder</td>
+                        <td>~90% distance</td>
+                    </tr>
+                </table>
+                <div class="alert alert-info mb-0 mt-2 p-2">
+                    <small><strong>Key:</strong> Same tempo for ALL positions. Only backswing length changes, never speed.</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== -->
+        <!-- THE FOUR WEDGE SWINGS -->
+        <!-- ==================== -->
+        <h2 class="section-title">The Four Wedge Swings</h2>
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Setup Differences</h5>
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th></th>
+                                <th>Full</th>
+                                <th>10:30</th>
+                                <th>9:00</th>
+                                <th>7:30</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>% of Full</strong></td>
+                                <td>100%</td>
+                                <td>~90%</td>
+                                <td>~75%</td>
+                                <td>~50%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Left Arm</strong></td>
+                                <td>Full swing</td>
+                                <td>Over shoulder</td>
+                                <td>Parallel</td>
+                                <td>Past hip</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ball Position</strong></td>
+                                <td>Forward</td>
+                                <td>Center</td>
+                                <td>Center</td>
+                                <td>Center-back</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Stance</strong></td>
+                                <td>Shoulder width</td>
+                                <td>Slightly narrow</td>
+                                <td>Narrow</td>
+                                <td>Narrow</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Weight</strong></td>
+                                <td>50/50</td>
+                                <td>55% front</td>
+                                <td>60% front</td>
+                                <td>65% front</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Grip</strong></td>
+                                <td>Normal</td>
+                                <td>Choke 1cm</td>
+                                <td>Choke 2cm</td>
+                                <td>Choke 2-3cm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="alert alert-info mb-0 mt-2 p-2">
+                    <small><strong>Key:</strong> Same tempo for ALL swings. Only backswing length changes, never speed.</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRE-SHOT ROUTINE (SHARED) -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Pre-Shot Routine (All Wedges)</h5>
+                <ol class="mb-0">
+                    <li>Check exact distance (GPS/rangefinder)</li>
+                    <li>Select club + clock position from YOUR matrix</li>
+                    <li>Pick specific landing spot</li>
+                    <li>One practice swing at that length</li>
+                    <li>Commit - same tempo, trust your number</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- ==================== -->
+        <!-- YOUR DISTANCE MATRIX -->
+        <!-- ==================== -->
+        <h2 class="section-title">Your Personal Distance Matrix</h2>
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Your Distance Matrix</h5>
+                <p class="text-muted mb-3">Fill this in over time. Use average carry distances, not best shots.</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-sm">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Club</th>
+                                <th>Full</th>
+                                <th>10:30</th>
+                                <th>9:00</th>
+                                <th>7:30</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>PW</strong></td>
+                                <td>___m</td>
+                                <td>___m</td>
+                                <td>___m</td>
+                                <td>___m</td>
+                            </tr>
+                            <tr>
+                                <td><strong>GW</strong></td>
+                                <td>___m</td>
+                                <td>___m</td>
+                                <td>___m</td>
+                                <td>___m</td>
+                            </tr>
+                            <tr>
+                                <td><strong>SW</strong></td>
+                                <td>___m</td>
+                                <td>___m</td>
+                                <td>___m</td>
+                                <td>___m</td>
+                            </tr>
+                            <tr>
+                                <td><strong>LW</strong></td>
+                                <td>___m</td>
+                                <td>___m</td>
+                                <td>___m</td>
+                                <td>___m</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="alert alert-info mb-0 p-2">
+                    <small><strong>Pro tip:</strong> Take a photo of this matrix once filled in. Keep it on your phone for on-course reference!</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== -->
+        <!-- GIR % BY DISTANCE -->
+        <!-- ==================== -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Why This Matters: GIR by Distance</h5>
+                <p class="text-muted mb-2">Closer approach = higher chance of hitting green</p>
+                <table class="table table-sm mb-0">
+                    <tr>
+                        <td><strong>&lt;90m</strong></td>
+                        <td>Pro: 81%</td>
+                        <td>Amateur: 40%+</td>
+                    </tr>
+                    <tr>
+                        <td><strong>90-115m</strong></td>
+                        <td>Pro: 74%</td>
+                        <td>Amateur: 35%+</td>
+                    </tr>
+                    <tr>
+                        <td><strong>115-135m</strong></td>
+                        <td>Pro: 69%</td>
+                        <td>Amateur: 30%+</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- ==================== -->
+        <!-- TRACKMAN EXERCISES -->
+        <!-- ==================== -->
+        <h2 class="section-title">Trackman Practice</h2>
+
+        <!-- Exercise 1: Distance Mapping -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">1. Distance Mapping</h5>
+                <p class="text-muted mb-2"><strong>Purpose:</strong> Build YOUR personal distance matrix</p>
+
+                <table class="table table-sm mb-3">
+                    <tr><td><strong>Mode</strong></td><td>Practice</td></tr>
+                    <tr><td><strong>Balls</strong></td><td>5 shots per club/swing combo</td></tr>
+                    <tr><td><strong>Watch</strong></td><td>Carry Distance (average, not best)</td></tr>
+                </table>
+
+                <h6>How To</h6>
+                <ol>
+                    <li>Select <strong>Practice</strong> from main menu</li>
+                    <li>Start with PW at full swing</li>
+                    <li>Hit 5 balls, note average carry</li>
+                    <li>Repeat at 10:30, 9:00, and 7:30 positions</li>
+                    <li>Move to next club and repeat</li>
+                </ol>
+
+                <div class="alert alert-success mb-0 p-2">
+                    <small><strong>Success:</strong> Complete your distance matrix. Know YOUR numbers with confidence.</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise 2: On the Edge Challenge -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">2. On the Edge Challenge</h5>
+                <p class="text-muted mb-2"><strong>Purpose:</strong> Prove you control your wedge distances</p>
+
+                <table class="table table-sm mb-3">
+                    <tr><td><strong>Mode</strong></td><td>Games → On the Edge</td></tr>
+                    <tr><td><strong>Target</strong></td><td>Your 9:00 SW distance</td></tr>
+                    <tr><td><strong>Watch</strong></td><td>Get close WITHOUT going over</td></tr>
+                </table>
+
+                <h6>How To</h6>
+                <ol>
+                    <li>Select <strong>Games</strong> → <strong>On the Edge</strong></li>
+                    <li>Set target at your 9:00 SW distance from matrix</li>
+                    <li>Use your 9:00 swing (left arm parallel)</li>
+                    <li>Goal: Closest to line without going over</li>
+                </ol>
+
+                <div class="alert alert-success mb-0 p-2">
+                    <small><strong>Success:</strong> 6/10 balls finish in the scoring zone. Master of distance control!</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== -->
+        <!-- ADVANCED TECHNIQUES -->
+        <!-- ==================== -->
+        <h2 class="section-title">Advanced Techniques</h2>
+
+        <div class="accordion mb-4" id="advancedAccordion">
+            <!-- Trajectory Control Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#trajectorySection">
+                        Trajectory Control
+                    </button>
+                </h2>
+                <div id="trajectorySection" class="accordion-collapse collapse" data-bs-parent="#advancedAccordion">
+                    <div class="accordion-body">
+                        <div class="accordion" id="trajectoryAccordion">
+                            <!-- High Soft Shots -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#trajectory1">
+                                        High Soft Shots
+                                    </button>
+                                </h3>
+                                <div id="trajectory1" class="accordion-collapse collapse" data-bs-parent="#trajectoryAccordion">
+                                    <div class="accordion-body">
+                                        <p><strong>When to use:</strong> Tight pin positions, firm greens, need to stop the ball quickly, obstacle to clear.</p>
+
+                                        <h4 class="h6 fw-bold mt-3">Setup Adjustments:</h4>
+                                        <ul>
+                                            <li><strong>Ball position:</strong> Forward in stance (inside left heel)</li>
+                                            <li><strong>Stance:</strong> Slightly open (align left of target)</li>
+                                            <li><strong>Weight:</strong> Balanced or slightly favoring back foot</li>
+                                            <li><strong>Clubface:</strong> Open 5-10 degrees at address</li>
+                                            <li><strong>Hands:</strong> Even with or slightly behind ball (not forward)</li>
+                                        </ul>
+
+                                        <h4 class="h6 fw-bold mt-3">Swing Keys:</h4>
+                                        <ul>
+                                            <li><strong>Tempo:</strong> Smooth and controlled, no aggressive hit</li>
+                                            <li><strong>Path:</strong> Swing along body line (slightly out-to-in)</li>
+                                            <li><strong>Release:</strong> Allow club to release fully, don't hold off</li>
+                                            <li><strong>Finish:</strong> High hands, full finish</li>
+                                        </ul>
+
+                                        <h4 class="h6 fw-bold mt-3">Practice Drill:</h4>
+                                        <ol>
+                                            <li>Start with lob wedge (most loft)</li>
+                                            <li>Hit 10 balls with high trajectory focus</li>
+                                            <li>Observe apex height and landing softness</li>
+                                            <li>Progress to sand wedge and gap wedge</li>
+                                        </ol>
+
+                                        <h4 class="h6 fw-bold mt-3">Success Metric:</h4>
+                                        <p class="mb-0">Ball lands softly with minimal roll (0-5m maximum).</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Low Penetrating Shots -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#trajectory2">
+                                        Low Penetrating Shots
+                                    </button>
+                                </h3>
+                                <div id="trajectory2" class="accordion-collapse collapse" data-bs-parent="#trajectoryAccordion">
+                                    <div class="accordion-body">
+                                        <p><strong>When to use:</strong> Windy conditions, running shot onto green, need extra roll, punch out from trouble.</p>
+
+                                        <h4 class="h6 fw-bold mt-3">Setup Adjustments:</h4>
+                                        <ul>
+                                            <li><strong>Ball position:</strong> Back in stance (center or back of center)</li>
+                                            <li><strong>Stance:</strong> Narrow, slightly closed stance</li>
+                                            <li><strong>Weight:</strong> 70% on front foot</li>
+                                            <li><strong>Hands:</strong> Well ahead of ball at address</li>
+                                            <li><strong>Shaft lean:</strong> Significant forward lean (delofts club)</li>
+                                        </ul>
+
+                                        <h4 class="h6 fw-bold mt-3">Swing Keys:</h4>
+                                        <ul>
+                                            <li><strong>Backswing:</strong> Shorter, more controlled (3/4 length max)</li>
+                                            <li><strong>Downswing:</strong> Hands lead, maintain forward shaft lean</li>
+                                            <li><strong>Impact:</strong> Ball-first contact, crisp divot</li>
+                                            <li><strong>Finish:</strong> Abbreviated, low hands, chest toward target</li>
+                                        </ul>
+
+                                        <h4 class="h6 fw-bold mt-3">Club Selection:</h4>
+                                        <p>Consider using pitching wedge or gap wedge instead of sand/lob wedge to reduce trajectory naturally.</p>
+
+                                        <h4 class="h6 fw-bold mt-3">Practice Drill:</h4>
+                                        <ol>
+                                            <li>Set up obstacle at waist height, 10m in front</li>
+                                            <li>Practice hitting under the obstacle</li>
+                                            <li>Hit 15 balls focusing on low trajectory</li>
+                                            <li>Note how much further the ball rolls vs. high shot</li>
+                                        </ol>
+
+                                        <h4 class="h6 fw-bold mt-3">Success Metric:</h4>
+                                        <p class="mb-0">Ball flight peaks at 3-4.5m max, rolls out 10-15m after landing.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Spin Control -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#trajectory3">
+                                        Spin Control Fundamentals
+                                    </button>
+                                </h3>
+                                <div id="trajectory3" class="accordion-collapse collapse" data-bs-parent="#trajectoryAccordion">
+                                    <div class="accordion-body">
+                                        <p><strong>Purpose:</strong> Understand what creates spin and how to control it.</p>
+
+                                        <h4 class="h6 fw-bold mt-3">Factors That Create Backspin:</h4>
+                                        <ul>
+                                            <li><strong>Clean contact:</strong> Ball-first, then turf</li>
+                                            <li><strong>Clubhead speed:</strong> Faster speed = more spin</li>
+                                            <li><strong>Loft:</strong> More loft = more spin potential</li>
+                                            <li><strong>Grooves:</strong> Clean, sharp grooves essential</li>
+                                            <li><strong>Ball condition:</strong> Clean, quality ball spins more</li>
+                                            <li><strong>Lie:</strong> Tight lies produce more spin than fluffy lies</li>
+                                        </ul>
+
+                                        <h4 class="h6 fw-bold mt-3">How to Maximize Spin:</h4>
+                                        <ol>
+                                            <li><strong>Clean equipment:</strong> Wipe clubface and ball before shot</li>
+                                            <li><strong>Descending blow:</strong> Strike ball on downswing, take divot after</li>
+                                            <li><strong>Aggressive swing:</strong> Don't decelerate through impact</li>
+                                            <li><strong>Quality contact:</strong> Center of clubface, not toe or heel</li>
+                                            <li><strong>Square to slightly open face:</strong> Avoid closing clubface</li>
+                                        </ol>
+
+                                        <h4 class="h6 fw-bold mt-3">How to Reduce Spin (When Needed):</h4>
+                                        <ul>
+                                            <li>Use less lofted club (PW instead of SW)</li>
+                                            <li>Ball position slightly back</li>
+                                            <li>Hands forward, deloft the club</li>
+                                            <li>Shallower angle of attack</li>
+                                            <li>Softer swing speed</li>
+                                        </ul>
+
+                                        <h4 class="h6 fw-bold mt-3">Practice Drill:</h4>
+                                        <ol>
+                                            <li>Hit 10 balls with focus on maximum spin</li>
+                                            <li>Hit 10 balls with focus on minimum spin</li>
+                                            <li>Compare landing and roll behavior</li>
+                                        </ol>
+
+                                        <p class="fst-italic text-muted mb-0"><small>Note: Realistic expectations - amateur golfers typically achieve 4,000-7,000 rpm with wedges. Tour pros can exceed 10,000 rpm with perfect conditions.</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shot Shaping Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shotShapingSection">
+                        Shot Shaping with Wedges
+                    </button>
+                </h2>
+                <div id="shotShapingSection" class="accordion-collapse collapse" data-bs-parent="#advancedAccordion">
+                    <div class="accordion-body">
+                        <div class="accordion" id="shotShapingAccordion">
+                            <!-- Draw with Wedges -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shotShaping1">
+                                        Draw with Wedges (Right-to-Left)
+                                    </button>
+                                </h3>
+                                <div id="shotShaping1" class="accordion-collapse collapse" data-bs-parent="#shotShapingAccordion">
+                                    <div class="accordion-body">
+                                        <p><strong>When to use:</strong> Pin tucked on left side, right-to-left wind, need extra roll after landing.</p>
+
+                                        <h4 class="h6 fw-bold mt-3">Setup:</h4>
+                                        <ul>
+                                            <li><strong>Alignment:</strong> Aim body and feet right of target</li>
+                                            <li><strong>Clubface:</strong> Square to target (closed relative to stance)</li>
+                                            <li><strong>Ball position:</strong> Center or slightly back of center</li>
+                                            <li><strong>Grip:</strong> Standard or slightly stronger grip</li>
+                                        </ul>
+
+                                        <h4 class="h6 fw-bold mt-3">Swing Path:</h4>
+                                        <ul>
+                                            <li>Swing along body line (in-to-out path)</li>
+                                            <li>Allow clubface to close through impact</li>
+                                            <li>Full release of hands and forearms</li>
+                                            <li>Feel right hand rolling over left after impact</li>
+                                        </ul>
+
+                                        <h4 class="h6 fw-bold mt-3">Ball Flight:</h4>
+                                        <p>Ball starts right of target, curves back left. Lands with more forward roll than straight shot.</p>
+
+                                        <h4 class="h6 fw-bold mt-3">Practice Drill:</h4>
+                                        <ol>
+                                            <li>Set alignment stick on ground pointing right of target</li>
+                                            <li>Align body parallel to stick</li>
+                                            <li>Set clubface square to actual target</li>
+                                            <li>Hit 10 balls focusing on swing path along body line</li>
+                                        </ol>
+
+                                        <h4 class="h6 fw-bold mt-3">Success Metric:</h4>
+                                        <p class="mb-0">8 out of 10 balls start right and curve back toward target.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fade with Wedges -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shotShaping2">
+                                        Fade with Wedges (Left-to-Right)
+                                    </button>
+                                </h3>
+                                <div id="shotShaping2" class="accordion-collapse collapse" data-bs-parent="#shotShapingAccordion">
+                                    <div class="accordion-body">
+                                        <p><strong>When to use:</strong> Pin tucked on right side, left-to-right wind, need softer landing with less roll.</p>
+
+                                        <h4 class="h6 fw-bold mt-3">Setup:</h4>
+                                        <ul>
+                                            <li><strong>Alignment:</strong> Aim body and feet left of target</li>
+                                            <li><strong>Clubface:</strong> Square to target (open relative to stance)</li>
+                                            <li><strong>Ball position:</strong> Slightly forward of center</li>
+                                            <li><strong>Grip:</strong> Standard or slightly weaker grip</li>
+                                            <li><strong>Stance:</strong> Can be slightly wider for stability</li>
+                                        </ul>
+
+                                        <h4 class="h6 fw-bold mt-3">Swing Path:</h4>
+                                        <ul>
+                                            <li>Swing along body line (out-to-in path)</li>
+                                            <li>Hold clubface slightly open through impact</li>
+                                            <li>Feel like you're cutting across the ball</li>
+                                            <li>Abbreviated finish, don't roll hands over</li>
+                                        </ul>
+
+                                        <h4 class="h6 fw-bold mt-3">Ball Flight:</h4>
+                                        <p>Ball starts left of target, curves back right. Higher trajectory, softer landing, minimal roll.</p>
+
+                                        <h4 class="h6 fw-bold mt-3">Practice Drill:</h4>
+                                        <ol>
+                                            <li>Set alignment stick pointing left of target</li>
+                                            <li>Align body parallel to stick</li>
+                                            <li>Set clubface square to actual target</li>
+                                            <li>Hit 10 balls with out-to-in path</li>
+                                        </ol>
+
+                                        <h4 class="h6 fw-bold mt-3">Success Metric:</h4>
+                                        <p class="mb-0">8 out of 10 balls start left and curve back toward target with controlled trajectory.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- When to Shape -->
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shotShaping3">
+                                        When to Shape Wedge Shots
+                                    </button>
+                                </h3>
+                                <div id="shotShaping3" class="accordion-collapse collapse" data-bs-parent="#shotShapingAccordion">
+                                    <div class="accordion-body">
+                                        <p><strong>Strategic Considerations:</strong></p>
+
+                                        <h4 class="h6 fw-bold mt-3">Best Times to Shape Wedge Shots:</h4>
+                                        <ul>
+                                            <li><strong>Tucked pins:</strong> Curve ball toward pin from safe angle</li>
+                                            <li><strong>Wind play:</strong> Use curve to hold ball against wind</li>
+                                            <li><strong>Green slope:</strong> Land on high side, let slope feed ball to pin</li>
+                                            <li><strong>Trouble avoidance:</strong> Curve away from hazards</li>
+                                            <li><strong>Roll control:</strong> Draw for extra roll, fade to check up</li>
+                                        </ul>
+
+                                        <h4 class="h6 fw-bold mt-3">When NOT to Shape:</h4>
+                                        <ul>
+                                            <li>Under pressure - go with your natural shot</li>
+                                            <li>Haven't practiced the shot recently</li>
+                                            <li>Straight shot is perfectly fine option</li>
+                                            <li>Conditions (lie, wind) make shaping unpredictable</li>
+                                        </ul>
+
+                                        <h4 class="h6 fw-bold mt-3">Practice Recommendation:</h4>
+                                        <p>Spend 80% of practice on straight shots, 20% on shaping. Shape shots are tools for specific situations, not your default approach.</p>
+
+                                        <h4 class="h6 fw-bold mt-3">On-Course Decision Matrix:</h4>
+                                        <ol>
+                                            <li>Identify target and optimal landing area</li>
+                                            <li>Assess if straight shot works well</li>
+                                            <li>If yes - hit straight shot with confidence</li>
+                                            <li>If no - consider which shape provides best miss</li>
+                                            <li>Execute shape only if practiced and confident</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== -->
+        <!-- QUICK FIXES -->
+        <!-- ==================== -->
+        <div class="quick-fixes mt-5">
+            <h2 class="quick-fixes-title mb-3">Quick Fixes - Having Trouble?</h2>
+
+            <div class="accordion" id="quickFixes">
+                <!-- Fix 1: Thin Wedge Shots -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix1">
+                            Thin Wedge Shots
+                        </button>
+                    </h2>
+                    <div id="fix1" class="accordion-collapse collapse" data-bs-parent="#quickFixes">
+                        <div class="accordion-body">
+                            <h4>Common Causes</h4>
+                            <ul>
+                                <li>Rising up through impact (loss of posture)</li>
+                                <li>Weight hanging back on trail foot</li>
+                                <li>Trying to "scoop" or help ball up</li>
+                                <li>Decelerating through impact</li>
+                            </ul>
+
+                            <h4>Quick Fix</h4>
+                            <ol>
+                                <li><strong>Weight forward:</strong> 60-70% on front foot at setup, stay there</li>
+                                <li><strong>Hands forward:</strong> Ensure hands ahead of ball at address and impact</li>
+                                <li><strong>Stay down:</strong> Maintain spine angle through impact - don't stand up</li>
+                                <li><strong>Accelerate:</strong> Swing through the ball, not at it</li>
+                            </ol>
+
+                            <h4>Drill</h4>
+                            <p><strong>Coin Drill:</strong> Place coin 5 cm in front of ball. Goal is to hit the coin after hitting the ball. Forces you to stay down and through impact.</p>
+
+                            <h4>Success Check</h4>
+                            <p class="mb-0">Taking divot after ball, solid contact, ball launches with proper trajectory.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fix 2: Fat Wedge Shots -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix2">
+                            Fat Wedge Shots (Heavy Contact)
+                        </button>
+                    </h2>
+                    <div id="fix2" class="accordion-collapse collapse" data-bs-parent="#quickFixes">
+                        <div class="accordion-body">
+                            <h4>Common Causes</h4>
+                            <ul>
+                                <li>Weight falling back onto trail foot in downswing</li>
+                                <li>Releasing club too early (casting)</li>
+                                <li>Ball position too far forward</li>
+                                <li>Trying to "scoop" ball into air</li>
+                            </ul>
+
+                            <h4>Quick Fix</h4>
+                            <ol>
+                                <li><strong>Ball position:</strong> Move ball back to center of stance</li>
+                                <li><strong>Weight shift:</strong> Feel 70% weight on front foot through entire swing</li>
+                                <li><strong>Hands lead:</strong> Keep hands ahead of clubhead through impact</li>
+                                <li><strong>Chest forward:</strong> Chest over ball at impact, not behind</li>
+                            </ol>
+
+                            <h4>Drill</h4>
+                            <p><strong>Front-Foot-Only Drill:</strong> Hit 10 balls standing only on front foot. Forces proper weight distribution and prevents falling back.</p>
+
+                            <h4>Practice Progression</h4>
+                            <ol>
+                                <li>10 swings front-foot-only (no ball)</li>
+                                <li>10 balls front-foot-only</li>
+                                <li>10 balls normal stance, maintaining same feeling</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fix 3: Inconsistent Distance Control -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix3">
+                            Inconsistent Distance Control
+                        </button>
+                    </h2>
+                    <div id="fix3" class="accordion-collapse collapse" data-bs-parent="#quickFixes">
+                        <div class="accordion-body">
+                            <h4>Common Causes</h4>
+                            <ul>
+                                <li>Varying backswing length</li>
+                                <li>Inconsistent tempo/rhythm</li>
+                                <li>Poor contact location on clubface</li>
+                                <li>Changing setup from shot to shot</li>
+                            </ul>
+
+                            <h4>Quick Fix</h4>
+                            <ol>
+                                <li><strong>Standardize backswing:</strong> Use clock system (7:30, 9:00, 10:30, Full)</li>
+                                <li><strong>Constant tempo:</strong> Same rhythm for all distances - only vary backswing length</li>
+                                <li><strong>Center contact:</strong> Focus on middle of clubface every shot</li>
+                                <li><strong>Pre-shot routine:</strong> Same setup process every time</li>
+                            </ol>
+
+                            <h4>Drill</h4>
+                            <p><strong>Four-Distance Drill:</strong></p>
+                            <ol>
+                                <li>Use one wedge and hit 4 clock positions</li>
+                                <li>Hit 5 balls at each: 7:30, 9:00, 10:30, Full</li>
+                                <li>Only think about arm position (don't think about distance)</li>
+                                <li>Record averages in your matrix</li>
+                                <li>Goal: 4/5 balls within 10m of your average at each position</li>
+                            </ol>
+
+                            <h4>Key Principle</h4>
+                            <p class="fst-italic mb-0">"Swing length controls distance, not swing speed. Same tempo, different lengths."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fix 4: Can't Get Ball to Check Up -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fix4">
+                            Can't Get Ball to Check Up (Spin Issues)
+                        </button>
+                    </h2>
+                    <div id="fix4" class="accordion-collapse collapse" data-bs-parent="#quickFixes">
+                        <div class="accordion-body">
+                            <h4>Potential Causes</h4>
+                            <ul>
+                                <li>Worn grooves on wedges</li>
+                                <li>Dirty clubface or ball</li>
+                                <li>Sweeping contact instead of descending blow</li>
+                                <li>Decelerating through impact</li>
+                                <li>Poor lie (grass between ball and clubface)</li>
+                            </ul>
+
+                            <h4>Equipment Check</h4>
+                            <ol>
+                                <li><strong>Groove condition:</strong> Replace wedges every 50-75 rounds</li>
+                                <li><strong>Clean clubface:</strong> Use brush/towel before every shot</li>
+                                <li><strong>Ball quality:</strong> Use premium balls with urethane cover</li>
+                            </ol>
+
+                            <h4>Technique Fix</h4>
+                            <ol>
+                                <li><strong>Steeper attack:</strong> Ball position center or back, hands forward</li>
+                                <li><strong>Accelerate through:</strong> Never decelerate - swing through the ball</li>
+                                <li><strong>Crisp contact:</strong> Ball first, then divot - no grass between</li>
+                                <li><strong>Square to open face:</strong> Don't close clubface at impact</li>
+                            </ol>
+
+                            <h4>Drill</h4>
+                            <p><strong>Divot Direction Drill:</strong></p>
+                            <ul>
+                                <li>Hit 20 wedge shots focusing on crisp divots pointing at target</li>
+                                <li>Divot should start after ball position</li>
+                                <li>Deeper divot = more descending blow = more spin</li>
+                            </ul>
+
+                            <h4>Realistic Expectations</h4>
+                            <p>From fairway lies with premium equipment and good technique, expect:</p>
+                            <ul>
+                                <li><strong>Full swing from 80+ yards:</strong> Ball may spin and check</li>
+                                <li><strong>Partial swings 35-60m:</strong> Minimal spin, some roll</li>
+                                <li><strong>From rough:</strong> "Flyer" lie reduces spin significantly</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STRATEGY LINK -->
+        <div class="card mb-3 mt-4">
+            <div class="card-body text-center">
+                <p class="mb-2">For scoring goals and level-specific targets:</p>
+                <a href="strategy.html" class="btn btn-outline-primary">View Course Strategy</a>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p><strong>Content from Golf Distillery</strong><br>
+            Mobile-optimized for driving range use</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -450,8 +450,20 @@ footer {
     border-left-color: #f59e0b;
 }
 
+.strategy-card--par3 {
+    border-left-color: #06b6d4;
+}
+
+.strategy-card--par4 {
+    border-left-color: #ec4899;
+}
+
 .strategy-card--par5 {
     border-left-color: #8b5cf6;
+}
+
+.strategy-card--scoring {
+    border-left-color: #14b8a6;
 }
 
 .strategy-card--recovery {
